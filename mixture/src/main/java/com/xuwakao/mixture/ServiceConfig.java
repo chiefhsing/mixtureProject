@@ -1,4 +1,3 @@
-/** Automatically generated file. DO NOT MODIFY */
 package com.xuwakao.mixture;
 
 /**
@@ -7,6 +6,8 @@ package com.xuwakao.mixture;
 public class ServiceConfig {
     private boolean debuggable = false;
     public static final String LOG_FILE_NAME = "log.txt";
+
+    public static final String EXTERNAL_DIR = "xuwakao";
 
     private static ServiceConfig config;
 

@@ -1,5 +1,6 @@
 package com.xuwakao.mixture.Utils;
 
+import android.os.*;
 import android.util.Log;
 
 import com.xuwakao.mixture.ServiceConfig;
@@ -126,6 +127,7 @@ public class MLog {
         Log.e(tag, msg);
     }
 
+
     /**
      *
      * @param tag
@@ -134,5 +136,60 @@ public class MLog {
      */
     public static void error(String tag, String msg, Throwable tr){
         Log.w(tag, msg, tr);
+    }
+
+    private static void writeToLog(String tag, String msg){
+
+    }
+
+    private static String logFileString(String tag, String msg){
+        StringBuilder sb = new StringBuilder();
+        sb.append(msg);
+        sb.append("(PID:");
+        sb.append(android.os.Process.myPid());
+        sb.append(")");
+        sb.append("(TID:");
+        sb.append(Thread.currentThread().getId());
+        sb.append(")");
+        sb.append("(TAG:");
+        sb.append(tag);
+        sb.append(")");
+        sb.append("at (");
+        sb.append(getCallerFilename());
+        sb.append(":");
+        sb.append(getCallerMethodName());
+        sb.append(":");
+        sb.append(getCallerLineNumber());
+        sb.append(")");
+        String ret = sb.toString();
+        return ret;
+    }
+
+    /**
+     * get the line number on where some method call current method
+     *
+     * @return line number
+     */
+    private static int getCallerLineNumber() {
+        return Thread.currentThread().getStackTrace()[4].getLineNumber();
+    }
+
+
+    /**
+     * get the file name of who is the caller
+     *
+     * @return file name
+     */
+    private static String getCallerFilename() {
+        return Thread.currentThread().getStackTrace()[4].getFileName();
+    }
+
+
+    /**
+     * get the name of method who call current method
+     * @return
+     */
+    private static String getCallerMethodName() {
+        return Thread.currentThread().getStackTrace()[4].getMethodName();
     }
 }
