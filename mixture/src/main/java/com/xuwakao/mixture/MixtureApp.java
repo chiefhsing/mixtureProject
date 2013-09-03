@@ -2,11 +2,14 @@ package com.xuwakao.mixture;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.net.ConnectivityManager;
 
 import com.xuwakao.mixture.Utils.MLog;
+import com.xuwakao.mixture.Utils.NetworkMonitor;
 
 /**
  * Created by xuwakao on 13-8-28.
@@ -40,6 +43,8 @@ public class MixtureApp extends Application{
 
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
+
+        ServiceConfig.getInstance().setConfiguration(newConfig);
     }
 
     public void onLowMemory() {
@@ -52,6 +57,15 @@ public class MixtureApp extends Application{
     private void doInit(){
         appContext = this;
         initLog();
+        initNetworkMonitor();
+    }
+
+    /**
+     * Initialize the network state monitor
+     */
+    private void initNetworkMonitor() {
+        IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        this.registerReceiver(NetworkMonitor.getInstance(), filter);
     }
 
     /**

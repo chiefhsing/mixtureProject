@@ -90,7 +90,7 @@ public class FileUtils {
     }
 
     /**
-     * Get the internal app cach directory
+     * Get the internal app cach directory(e.g. /data/data/com.xuwakao.mixture/cache)
      * @param context The context to use
      * @return The internal cache dir
      */

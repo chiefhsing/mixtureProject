@@ -1,5 +1,7 @@
 package com.xuwakao.mixture;
 
+import android.content.res.Configuration;
+
 /**
  * Created by xuwakao on 13-8-28.
  */
@@ -10,6 +12,7 @@ public class ServiceConfig {
     public static final String EXTERNAL_DIR = "xuwakao";
 
     private static ServiceConfig config;
+    private Configuration configuration;
 
     private ServiceConfig(){
 
@@ -36,5 +39,13 @@ public class ServiceConfig {
      */
     public boolean isDebuggable(){
         return this.debuggable;
+    }
+
+    public void setConfiguration(Configuration configuration) {
+        this.configuration = configuration;
+    }
+
+    public Configuration getConfiguration() {
+        return configuration;
     }
 }

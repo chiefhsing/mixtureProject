@@ -1,0 +1,5 @@
+package com.xuwakao.mixture.core;
+
+public class NetworkMonitor{
+
+}
