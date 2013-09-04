@@ -2,7 +2,7 @@
 <resources>
 
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/strings.xml -->
-    <string name="app_name">Mixture-framwork</string>
+    <string name="app_name">mixFramwork</string>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

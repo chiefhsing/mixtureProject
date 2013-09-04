@@ -16,7 +16,7 @@ import java.util.List;
  * Network state monitor
  */
 public class NetworkMonitor extends BroadcastReceiver{
-    private static final String TAG = MLog.makeLogTag(NetworkMonitor.class);
+//    private static final String TAG = MLog.makeLogTag(NetworkMonitor.class);
 
     private static final int NETWORK_UNAVAILABLE = -1;
 
@@ -64,7 +64,7 @@ public class NetworkMonitor extends BroadcastReceiver{
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        MLog.verbose(TAG, "NetworkMonitor onReceive, intent = " + intent.getAction());
+//        MLog.verbose(TAG, "NetworkMonitor onReceive, intent = " + intent.getAction());
         if(this.listeners.isEmpty()){
             return;
         }

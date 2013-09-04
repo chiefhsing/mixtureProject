@@ -1,0 +1,36 @@
+<component name="libraryTable">
+  <library name="google-http-java-client-1.16.0-libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../google-http-java-client-1.16.0-rc/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../google-http-java-client-1.16.0-rc/libs" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-jdo/src/main/java/com/google/api/client/extensions/jdo" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-jdo/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-xml/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-xml/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-gson/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-gson/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-test/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-test/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-android/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-jackson/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-jackson/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-findbugs/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-findbugs/google-http-client-findbugs-test/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-jackson2/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-jackson2/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-protobuf/src/main/java/com/google/api/client/http/protobuf" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-protobuf/src/main/java/com/google/api/client/protobuf" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-protobuf/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-appengine/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-appengine/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client-android-test/src/main/java" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../google-http-java-client-1.16.0-rc/libs" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../google-http-java-client-1.16.0-rc/libs" recursive="false" type="SOURCES" />
+  </library>
+</component>
