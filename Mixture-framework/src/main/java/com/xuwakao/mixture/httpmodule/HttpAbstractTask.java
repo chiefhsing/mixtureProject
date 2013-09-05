@@ -3,6 +3,7 @@ package com.xuwakao.mixture.httpmodule;
 import android.util.Log;
 
 import java.util.concurrent.Callable;
+import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
@@ -10,7 +11,6 @@ import java.util.concurrent.FutureTask;
  * Created by xujiexing on 13-9-3.
  */
 public abstract class HttpAbstractTask<V> extends FutureTask<V>{
-    private static final String TAG = "HttpAbstractTask";
 
     /**
      * Creates a {@code FutureTask} that will, upon running, execute the
@@ -35,26 +35,31 @@ public abstract class HttpAbstractTask<V> extends FutureTask<V>{
      */
     @Override
     protected void done() {
-        Log.i(TAG, "### HttpAbstractTask has DONE ###");
+        Log.i(HttpServiceConfig.HTTP_TASK_TAG, "### HttpAbstractTask has DONE ###");
         super.done();
         try {
-            success(this.get());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            Log.w(TAG, "### HttpAbstractTask has InterruptedException occured and the throwable message = " + e.getMessage() + " ###");
-            this.canceled();
+            successJob(this.get());
         } catch (ExecutionException e) {
-            e.printStackTrace();
-            Log.w(TAG, "### HttpAbstractTask has ExecutionException occured and the throwable message = " + e.getMessage() + " ###");
-            this.exceptional(e);
-        }finally {
-
+            Log.w(HttpServiceConfig.HTTP_TASK_TAG, "### HttpAbstractTask has ExecutionException occured and the throwable message = " + e + " ###");
+            this.exceptionalJob(e);
+        }catch (CancellationException e){
+            Log.w(HttpServiceConfig.HTTP_TASK_TAG, "### HttpAbstractTask has CancellationException occured and the throwable message = " + e + " ###");
+            this.canceledJob();
+        }
+        /**
+         * {@link java.util.concurrent.FutureTask#awaitDone} cause this exception,idealy it would not happen here,because work done
+         */
+        catch (InterruptedException e) {
+            //TODO
+        }
+        finally {
+            //TODO
         }
     }
 
-    protected abstract void success(V result);
-    protected abstract void canceled();
-    protected abstract void exceptional(Exception e);
+    protected abstract void successJob(V result);
+    protected abstract void canceledJob();
+    protected abstract void exceptionalJob(Exception e);
 
     public static abstract class HttpTaskRunnable<Params, Result> implements Callable<Result> {
         Params mParam;

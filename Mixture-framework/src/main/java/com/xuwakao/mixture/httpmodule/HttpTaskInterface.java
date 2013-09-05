@@ -12,4 +12,14 @@ public interface HttpTaskInterface {
      */
     public HttpTaskInterface submit();
 
+    /**
+     * Cancel this task
+     *
+     * @param mayInterruptIfRunning Whether force to cancel task even when the task is running now.
+     *                              Neither set false nor true would the task return the result.
+     *                              But set false, the job followed would be execute continue,otherwise,the
+     *                              thread quit directly.
+     */
+    public void cancel(boolean mayInterruptIfRunning);
+
 }

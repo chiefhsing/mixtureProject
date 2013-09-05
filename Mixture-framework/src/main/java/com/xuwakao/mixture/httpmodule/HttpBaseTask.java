@@ -1,5 +1,6 @@
 package com.xuwakao.mixture.httpmodule;
 
+import android.os.Looper;
 import android.util.Log;
 
 import com.xuwakao.mixture.utils.Utils;
@@ -8,11 +9,20 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * Created by xujiexing on 13-9-4.
+ *
+ * All the http task is strongly recommended to extend this base class.
+ *
  */
 public abstract class HttpBaseTask extends HttpAbsTaskWrapper implements HttpTaskInterface{
 
-    protected HttpBaseTask(HttpAbsRequestParam param) {
-        super(param);
+    /**
+     * Constructor
+     *
+     * @param param  The param used to execute the request
+     * @param looper The looper of the thread which execute this task
+     */
+    protected HttpBaseTask(HttpAbsRequestParam param, Looper looper) {
+        super(param, looper);
     }
 
     /**
@@ -24,6 +34,12 @@ public abstract class HttpBaseTask extends HttpAbsTaskWrapper implements HttpTas
     public HttpTaskInterface submit() {
         HttpTaskWorker.getInstance().submit(this);
         return this;
+    }
+
+    @Override
+    public void cancel(boolean mayInterruptIfRunning) {
+        if(!this.getTask().isDone() && !this.getTask().isCancelled())
+            this.getTask().cancel(mayInterruptIfRunning);
     }
 
     public static class HttpRequestParamBase extends HttpAbsRequestParam implements Comparable<HttpWorkPriority>{

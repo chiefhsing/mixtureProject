@@ -2,12 +2,14 @@ package com.xuwakao.mixture.UI;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 
 import com.xuwakao.mixture.R;
 import com.xuwakao.mixture.Utils.FileUtils;
 import com.xuwakao.mixture.Utils.MLog;
 import com.xuwakao.mixture.httpmodule.HttpBaseTask;
+import com.xuwakao.mixture.test.HttpTestTask;
 import com.xuwakao.mixture.httpmodule.HttpWorkPriority;
 
 public class MainActivity extends Activity {
@@ -20,11 +22,18 @@ public class MainActivity extends Activity {
         MLog.verbose(TAG, FileUtils.getInternalCacheDir(this).getPath());
 
         HttpBaseTask.HttpRequestParamBase param = new HttpBaseTask.HttpRequestParamBase();
-        param.url = "url";
+        param.url = "http://xuwakao.com";
         param.priority = HttpWorkPriority.DEFAULT;
         param.retryCount = 10;
-        HttpBaseTask task = new HttpBaseTask(param);
+        final HttpTestTask task = new HttpTestTask(param, getMainLooper());
         task.submit();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                task.cancel(false);
+            }
+        },5000);
     }
 
 
