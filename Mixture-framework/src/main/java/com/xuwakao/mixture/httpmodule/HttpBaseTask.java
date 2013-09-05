@@ -2,38 +2,17 @@ package com.xuwakao.mixture.httpmodule;
 
 import android.util.Log;
 
+import com.xuwakao.mixture.utils.Utils;
+
 import java.util.concurrent.ExecutionException;
 
 /**
  * Created by xujiexing on 13-9-4.
  */
-public class HttpBaseTask extends HttpAbsTaskWrapper{
+public abstract class HttpBaseTask extends HttpAbsTaskWrapper implements HttpTaskInterface{
 
-    public HttpBaseTask(HttpAbsRequestParam param) {
+    protected HttpBaseTask(HttpAbsRequestParam param) {
         super(param);
-    }
-
-    @Override
-    protected HttpAbsResult executeJob(HttpAbsRequestParam mParams) {
-        Log.v("HttpBaseTask", "HttpBaseTask is excuting some job");
-        return new HttpAbsResult() {
-            @Override
-            public String toString() {
-                return "HttpAbsResult return";
-            }
-        };
-    }
-
-    @Override
-    protected void doneJob() {
-        try {
-            HttpAbsResult result = (HttpAbsResult) getTask().get();
-            Log.v("HttpBaseTask", result.toString());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
     }
 
     /**
@@ -45,5 +24,24 @@ public class HttpBaseTask extends HttpAbsTaskWrapper{
     public HttpTaskInterface submit() {
         HttpTaskWorker.getInstance().submit(this);
         return this;
+    }
+
+    public static class HttpRequestParamBase extends HttpAbsRequestParam implements Comparable<HttpWorkPriority>{
+        @Override
+        public String toString() {
+            return Utils.makeToString(HttpRequestParamBase.class, new Object[]{url, priority, retryCount});
+        }
+
+        @Override
+        public int compareTo(HttpWorkPriority another) {
+            return this.priority.compareTo(another);
+        }
+    }
+
+    public static class HttpResultBase extends HttpAbsResult{
+        @Override
+        public String toString() {
+            return Utils.makeToString(HttpResultBase.class,new Object[]{resultCode ,url, exception});
+        }
     }
 }

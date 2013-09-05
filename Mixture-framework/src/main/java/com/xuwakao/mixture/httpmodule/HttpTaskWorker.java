@@ -1,5 +1,7 @@
 package com.xuwakao.mixture.httpmodule;
 
+import android.os.Handler;
+
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;

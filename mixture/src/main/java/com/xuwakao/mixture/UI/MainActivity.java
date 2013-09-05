@@ -8,6 +8,7 @@ import com.xuwakao.mixture.R;
 import com.xuwakao.mixture.Utils.FileUtils;
 import com.xuwakao.mixture.Utils.MLog;
 import com.xuwakao.mixture.httpmodule.HttpBaseTask;
+import com.xuwakao.mixture.httpmodule.HttpWorkPriority;
 
 public class MainActivity extends Activity {
     private static final String TAG = MLog.makeLogTag(MainActivity.class);
@@ -18,7 +19,11 @@ public class MainActivity extends Activity {
 
         MLog.verbose(TAG, FileUtils.getInternalCacheDir(this).getPath());
 
-        HttpBaseTask task = new HttpBaseTask(null);
+        HttpBaseTask.HttpRequestParamBase param = new HttpBaseTask.HttpRequestParamBase();
+        param.url = "url";
+        param.priority = HttpWorkPriority.DEFAULT;
+        param.retryCount = 10;
+        HttpBaseTask task = new HttpBaseTask(param);
         task.submit();
     }
 
