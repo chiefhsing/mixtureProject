@@ -21,19 +21,29 @@ public class MainActivity extends Activity {
 
         MLog.verbose(TAG, FileUtils.getInternalCacheDir(this).getPath());
 
-        HttpBaseTask.HttpRequestParamBase param = new HttpBaseTask.HttpRequestParamBase();
-        param.url = "http://xuwakao.com";
-        param.priority = HttpWorkPriority.DEFAULT;
-        param.retryCount = 10;
-        final HttpTestTask task = new HttpTestTask(param, getMainLooper());
-        task.submit();
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                task.cancel(false);
+        for(int i = 1000; i < 1020; i++){
+            HttpBaseTask.HttpRequestParamBase param = new HttpBaseTask.HttpRequestParamBase();
+            param.url = "http://xuwakao.com/index=" + i;
+            param.priority = HttpWorkPriority.DEFAULT;
+            param.retryCount = 10;
+            if(i == 1013 || i == 1007 || i == 1019){
+                param.priority = HttpWorkPriority.HIGH;
             }
-        },5000);
+
+            if(i == 1012 || i == 1009){
+                param.priority = HttpWorkPriority.LOW;
+            }
+
+            final HttpTestTask task = new HttpTestTask(param, getMainLooper());
+            task.submit();
+        }
+
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                task.cancel(true);
+//            }
+//        },5000);
     }
 
 

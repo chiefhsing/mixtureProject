@@ -9,7 +9,7 @@ public abstract class HttpAbsResult {
         SUCCESS, CANCELED, EXCEPTIONAL;
     }
 
-    public static HttpResultCode resultCode;
-    public static String url;
-    public static Exception exception;
+    public HttpResultCode resultCode;
+    public String url;
+    public Exception exception;
 }

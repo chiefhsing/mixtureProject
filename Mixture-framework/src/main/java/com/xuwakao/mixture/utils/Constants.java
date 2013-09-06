@@ -17,6 +17,8 @@ public class Constants {
     public static final String RIGHT_PARENTHESES = " ) ";
     public static final String LEFT_BRACE = " { ";
     public static final String RIGHT_BRACE = " } ";
+    public static final String DOT = ".";
+    public static final String TRIPLE_OCTOTHORPE = "###";
 
 
 

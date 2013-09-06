@@ -45,39 +45,37 @@ public abstract class HttpAbsTaskWrapper{
             }
         };
 
-        this.task = new HttpAbstractTask<HttpAbsResult>(this.runnable) {
-
+        this.task = new HttpAbstractTask<HttpAbsRequestParam,HttpAbsResult>(this.runnable,this.mParam) {
             @Override
-            protected void successJob(HttpAbsResult result) {
-                Log.v(HttpServiceConfig.HTTP_TASK_TAG, "### HttpAbsTaskWrapper successJob with result = " + result + ", mParam = " + HttpAbsTaskWrapper.this.mParam + " ###");
-
-                if(internalHandler == null){
-                    throw new IllegalStateException();
-                }
-                internalHandler.obtainMessage(SUCCESS_MESSAGE, result).sendToTarget();
+            protected void exceptionalJob(Exception e) {
+                postReuslt(EXCEPTIONAL_MESSAGE, e);
             }
 
             @Override
-            protected void exceptionalJob(Exception e) {
-                Log.v(HttpServiceConfig.HTTP_TASK_TAG, "### HttpAbsTaskWrapper exceptionalJob with Exception = " + e.getMessage() + ", mParam = " + HttpAbsTaskWrapper.this.mParam + " ###");
-
-                if(internalHandler == null){
-                    throw new IllegalStateException();
-                }
-                internalHandler.obtainMessage(EXCEPTIONAL_MESSAGE, e).sendToTarget();
+            protected void successJob(HttpAbsResult result) {
+                postReuslt(SUCCESS_MESSAGE, result);
             }
 
             @Override
             protected void canceledJob() {
-                Log.v(HttpServiceConfig.HTTP_TASK_TAG, "### HttpAbsTaskWrapper cancel with mParam = " + HttpAbsTaskWrapper.this.mParam + "###");
-
-                if(internalHandler == null){
-                    throw new IllegalStateException();
-                }
-                internalHandler.obtainMessage(CANCELED_MESSAGE).sendToTarget();
+                postReuslt(CANCELED_MESSAGE, null);
             }
         };
 
+    }
+
+    /**
+     * Post result
+     * @param what
+     * @param object
+     */
+    public void postReuslt(int what, Object object){
+        if(internalHandler == null){
+            throw new IllegalStateException();
+        }
+
+        Log.v(HttpServiceConfig.HTTP_TASK_TAG, "### HttpAbsTaskWrapper postResult with what = " + what + ", object = " + object + " ###");
+        internalHandler.obtainMessage(what, object).sendToTarget();
     }
 
     /**
@@ -103,7 +101,7 @@ public abstract class HttpAbsTaskWrapper{
 
         @Override
         public void handleMessage(Message msg) {
-            Log.v(HttpServiceConfig.HTTP_TASK_TAG, "### InternalHandler with msg = " + msg + " ###");
+            Log.v(HttpServiceConfig.HTTP_TASK_TAG, "### InternalHandler with msg = " + msg + " in thread = " + Thread.currentThread().getName() +" ###");
 
             int what = msg.what;
             switch (what){
@@ -122,7 +120,12 @@ public abstract class HttpAbsTaskWrapper{
         }
     }
 
-    protected abstract HttpAbsResult executeJob(HttpAbsRequestParam mParams) throws Exception;
+    @Override
+    public String toString() {
+        return this.task.toString();
+    }
+
+    protected abstract  HttpAbsResult executeJob(HttpAbsRequestParam mParams) throws Exception;
     protected abstract void successJob(HttpAbsResult result);
     protected abstract void canceledJob();
     protected abstract void exceptionalJob(Exception e);

@@ -10,7 +10,9 @@ import java.util.concurrent.FutureTask;
 /**
  * Created by xujiexing on 13-9-3.
  */
-public abstract class HttpAbstractTask<V> extends FutureTask<V>{
+public abstract class HttpAbstractTask<Params extends Comparable,Result> extends FutureTask<Result> implements Comparable<HttpAbstractTask<Params,Result>>{
+
+    protected Params param;
 
     /**
      * Creates a {@code FutureTask} that will, upon running, execute the
@@ -20,8 +22,9 @@ public abstract class HttpAbstractTask<V> extends FutureTask<V>{
      * @param runnable the callable task
      * @throws NullPointerException if the callable is null
      */
-    public HttpAbstractTask(Callable<V> runnable) {
+    public HttpAbstractTask(Callable<Result> runnable, Params param) {
         super(runnable);
+        this.param = param;
     }
 
     /**
@@ -35,7 +38,8 @@ public abstract class HttpAbstractTask<V> extends FutureTask<V>{
      */
     @Override
     protected void done() {
-        Log.i(HttpServiceConfig.HTTP_TASK_TAG, "### HttpAbstractTask has DONE ###");
+        Log.i(HttpServiceConfig.HTTP_TASK_TAG, "### HttpAbstractTask " + this + " has DONE with param = " + param +
+                "in thread = " + Thread.currentThread() +" ###");
         super.done();
         try {
             successJob(this.get());
@@ -57,7 +61,12 @@ public abstract class HttpAbstractTask<V> extends FutureTask<V>{
         }
     }
 
-    protected abstract void successJob(V result);
+    @Override
+    public int compareTo(HttpAbstractTask<Params, Result> another) {
+        return this.param.compareTo(another.param);
+    }
+
+    protected abstract void successJob(Result result);
     protected abstract void canceledJob();
     protected abstract void exceptionalJob(Exception e);
 

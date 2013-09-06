@@ -25,19 +25,17 @@ public class HttpTestTask extends HttpBaseTask {
     }
 
     @Override
-    protected HttpAbsResult executeJob(HttpAbsRequestParam mParams) throws Exception {
-        Log.v(HttpServiceConfig.HTTP_TASK_TAG, "before executeJob withe mParams = " + mParams);
-        HttpResultBase result = null;
-        synchronized (lock){
-            lock.wait(1000);
-            result = new HttpResultBase();
-            result.url = mParams.url;
-            result.resultCode = HttpAbsResult.HttpResultCode.EXCEPTIONAL;
-            result.exception = new InterruptedException("xuwakao request fails");
-            lock.wait(10000);
-        }
+    protected HttpAbsResult executeJob(final HttpAbsRequestParam mParams) throws Exception {
+        Log.v(HttpServiceConfig.HTTP_TASK_TAG, "executeJob" + this +" before with mParams = " + mParams + " in thread = " + Thread.currentThread());
+        final HttpResultBase result = new HttpResultBase();
 
-        Log.v(HttpServiceConfig.HTTP_TASK_TAG, "after executeJob with mParams = " + mParams);
+        Thread.currentThread().sleep(3000);
+
+        result.url = mParams.url;
+        result.resultCode = HttpAbsResult.HttpResultCode.SUCCESS;
+//            result.exception = new InterruptedException("xuwakao request fails");
+
+        Thread.currentThread().sleep(3000);
         return result;
     }
 
@@ -48,11 +46,11 @@ public class HttpTestTask extends HttpBaseTask {
 
     @Override
     protected void canceledJob() {
-        Log.v(HttpServiceConfig.HTTP_TASK_TAG, "canceledJob");
+        Log.w(HttpServiceConfig.HTTP_TASK_TAG, "canceledJob");
     }
 
     @Override
     protected void exceptionalJob(Exception e) {
-        Log.v(HttpServiceConfig.HTTP_TASK_TAG, "exceptionalJob with Exception = " + e.getMessage());
+        Log.w(HttpServiceConfig.HTTP_TASK_TAG, "exceptionalJob with Exception = " + e.getMessage());
     }
 }

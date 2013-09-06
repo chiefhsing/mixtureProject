@@ -3,20 +3,20 @@ package com.xuwakao.mixture.httpmodule;
 /**
  * Created by xujiexing on 13-9-4.
  */
-public abstract class HttpAbsRequestParam {
+public abstract class HttpAbsRequestParam implements Comparable<HttpAbsRequestParam>{
 
     /**
      * The url related to this worker
      */
-    public static String url;
+    public String url;
 
     /**
      * The priority of the job
      */
-    public static HttpWorkPriority priority;
+    public HttpWorkPriority priority;
 
     /**
      * The amount of retrial
      */
-    public static int retryCount;
+    public int retryCount;
 }

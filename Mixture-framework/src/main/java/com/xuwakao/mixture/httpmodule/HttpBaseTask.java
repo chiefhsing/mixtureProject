@@ -1,11 +1,8 @@
 package com.xuwakao.mixture.httpmodule;
 
 import android.os.Looper;
-import android.util.Log;
 
 import com.xuwakao.mixture.utils.Utils;
-
-import java.util.concurrent.ExecutionException;
 
 /**
  * Created by xujiexing on 13-9-4.
@@ -42,15 +39,15 @@ public abstract class HttpBaseTask extends HttpAbsTaskWrapper implements HttpTas
             this.getTask().cancel(mayInterruptIfRunning);
     }
 
-    public static class HttpRequestParamBase extends HttpAbsRequestParam implements Comparable<HttpWorkPriority>{
+    public static class HttpRequestParamBase extends HttpAbsRequestParam{
         @Override
         public String toString() {
             return Utils.makeToString(HttpRequestParamBase.class, new Object[]{url, priority, retryCount});
         }
 
         @Override
-        public int compareTo(HttpWorkPriority another) {
-            return this.priority.compareTo(another);
+        public int compareTo(HttpAbsRequestParam another) {
+            return this.priority.compareTo(another.priority);
         }
     }
 

@@ -13,7 +13,7 @@ public class Utils {
      * @return
      */
     public static String makeToString(Class cls,Object... objects){
-        StringBuilder builder = new StringBuilder(cls.getSimpleName());
+        StringBuilder builder = new StringBuilder();
 
         builder.append(buildParamString(objects));
 
@@ -32,14 +32,14 @@ public class Utils {
      */
     public static String makeLogMessage(Class cls, Method method,Object... objects){
         StringBuilder builder = new StringBuilder();
-        builder.append("### ");
+        builder.append(Constants.TRIPLE_OCTOTHORPE + " ");
         builder.append(cls.getSimpleName());
-        builder.append(".");
+        builder.append(Constants.DOT);
         builder.append(method.getName());
         builder.append(Constants.LEFT_PARENTHESES);
         builder.append(buildParamString(objects));
         builder.append(Constants.RIGHT_PARENTHESES);
-        builder.append(" ###");
+        builder.append(" " + Constants.TRIPLE_OCTOTHORPE);
         return builder.toString();
     }
 
