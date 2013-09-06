@@ -1,9 +1,6 @@
 package com.xuwakao.mixture.httpmodule;
 
-import android.os.HandlerThread;
-
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadFactory;
@@ -43,7 +40,7 @@ public class HttpTaskWorker{
 
     private static void doInit() {
         HttpWorkPriority.InvertedComparator comparator = new HttpWorkPriority.InvertedComparator<HttpWorkPriority>();
-        queue = new PriorityBlockingQueue<Runnable>(8, comparator);
+        queue = new PriorityBlockingQueue<Runnable>(HttpServiceConfig.EXECUTOR_QUEUE_INITIALIZED_CAPACITY, comparator);
         executor = new ThreadPoolExecutor(HttpServiceConfig.EXECUTOR_CORE_POOL_MIN_SIZE,
                 HttpServiceConfig.EXECUTOR_POOL_MAX_SIZE,
                 HttpServiceConfig.EXCESS_THREAD_KEEP_ALIVE_TIME,
