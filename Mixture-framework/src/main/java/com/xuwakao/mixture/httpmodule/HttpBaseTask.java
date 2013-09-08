@@ -39,22 +39,27 @@ public abstract class HttpBaseTask extends HttpAbsTaskWrapper implements HttpTas
             this.getTask().cancel(mayInterruptIfRunning);
     }
 
-    public static class HttpRequestParamBase extends HttpAbsRequestParam{
-        @Override
-        public String toString() {
-            return Utils.makeToString(HttpRequestParamBase.class, new Object[]{url, priority, retryCount});
+    @Override
+    protected boolean retryJob() {
+        if(this.getParam().retryCount-- > 0 ){
+            HttpTaskWorker.getInstance().submit(this);
+            return true;
         }
-
-        @Override
-        public int compareTo(HttpAbsRequestParam another) {
-            return this.priority.compareTo(another.priority);
-        }
+        return false;
     }
 
-    public static class HttpResultBase extends HttpAbsResult{
-        @Override
-        public String toString() {
-            return Utils.makeToString(HttpResultBase.class,new Object[]{resultCode ,url, exception});
-        }
+    @Deprecated
+    @Override
+    protected void successJob(HttpAbsResult result) {
+    }
+
+    @Deprecated
+    @Override
+    protected void canceledJob() {
+    }
+
+    @Deprecated
+    @Override
+    protected void exceptionalJob(Exception e) {
     }
 }

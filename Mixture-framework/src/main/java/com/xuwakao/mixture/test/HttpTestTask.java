@@ -12,8 +12,6 @@ import com.xuwakao.mixture.httpmodule.HttpServiceConfig;
  * Created by xujiexing on 13-9-5.
  */
 public class HttpTestTask extends HttpBaseTask {
-    private Object lock = new Object();
-
     /**
      * Constructor
      *
@@ -30,27 +28,13 @@ public class HttpTestTask extends HttpBaseTask {
         final HttpResultBase result = new HttpResultBase();
 
         Thread.currentThread().sleep(3000);
-
         result.url = mParams.url;
-        result.resultCode = HttpAbsResult.HttpResultCode.SUCCESS;
-//            result.exception = new InterruptedException("xuwakao request fails");
-
         Thread.currentThread().sleep(3000);
         return result;
     }
 
     @Override
-    protected void successJob(HttpAbsResult result) {
-        Log.v(HttpServiceConfig.HTTP_TASK_TAG, "successJob with result = " + result);
-    }
-
-    @Override
-    protected void canceledJob() {
-        Log.w(HttpServiceConfig.HTTP_TASK_TAG, "canceledJob");
-    }
-
-    @Override
-    protected void exceptionalJob(Exception e) {
-        Log.w(HttpServiceConfig.HTTP_TASK_TAG, "exceptionalJob with Exception = " + e.getMessage());
+    protected void doneWithResult(HttpAbsResult result) {
+        Log.v(HttpServiceConfig.HTTP_TASK_TAG, "doneWithResult " + this + " return reuslt = " + result);
     }
 }

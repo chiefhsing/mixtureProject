@@ -66,10 +66,4 @@ public class HttpTaskWorker{
             return new Thread(r, "Http # " + threadId.incrementAndGet() + " # Thread");
         }
     }
-
-    public static class ScheduleTaskPolicy implements RejectedExecutionHandler {
-        @Override
-        public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
-        }
-    }
 }

@@ -5,6 +5,8 @@ import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
 
+import com.xuwakao.mixture.utils.Utils;
+
 /**
  * Created by xujiexing on 13-9-4.
  */
@@ -48,17 +50,17 @@ public abstract class HttpAbsTaskWrapper{
         this.task = new HttpAbstractTask<HttpAbsRequestParam,HttpAbsResult>(this.runnable,this.mParam) {
             @Override
             protected void exceptionalJob(Exception e) {
-                postReuslt(EXCEPTIONAL_MESSAGE, e);
+                postResult(EXCEPTIONAL_MESSAGE, e);
             }
 
             @Override
             protected void successJob(HttpAbsResult result) {
-                postReuslt(SUCCESS_MESSAGE, result);
+                postResult(SUCCESS_MESSAGE, result);
             }
 
             @Override
             protected void canceledJob() {
-                postReuslt(CANCELED_MESSAGE, null);
+                postResult(CANCELED_MESSAGE, null);
             }
         };
 
@@ -69,7 +71,7 @@ public abstract class HttpAbsTaskWrapper{
      * @param what
      * @param object
      */
-    public void postReuslt(int what, Object object){
+    public void postResult(int what, Object object){
         if(internalHandler == null){
             throw new IllegalStateException();
         }
@@ -102,21 +104,33 @@ public abstract class HttpAbsTaskWrapper{
         @Override
         public void handleMessage(Message msg) {
             Log.v(HttpServiceConfig.HTTP_TASK_TAG, "### InternalHandler with msg = " + msg + " in thread = " + Thread.currentThread().getName() +" ###");
+            HttpAbsResult result = null;
 
             int what = msg.what;
             switch (what){
                 case SUCCESS_MESSAGE:
-                    HttpAbsTaskWrapper.this.successJob((HttpAbsResult) msg.obj);
+                    result = (HttpAbsResult) msg.obj;
+                    result.resultCode = HttpAbsResult.HttpResultCode.SUCCESS;
+                    result.exception = null;
                     break;
                 case CANCELED_MESSAGE:
-                    HttpAbsTaskWrapper.this.canceledJob();
+                    result = new HttpBaseTask.HttpResultBase();
+                    result.resultCode = HttpAbsResult.HttpResultCode.CANCELED;
+                    result.exception = null;
                     break;
                 case EXCEPTIONAL_MESSAGE:
-                    HttpAbsTaskWrapper.this.exceptionalJob((Exception) msg.obj);
-                    break;
+                    if(HttpAbsTaskWrapper.this.retryJob()){
+                        return;
+                    }
+
+                    result = new HttpBaseTask.HttpResultBase();
+                    result.resultCode = HttpAbsResult.HttpResultCode.EXCEPTIONAL;
+                    result.exception = (Exception) msg.obj;
                 default:
                     break;
             }
+            result.url = getParam().url;
+            HttpAbsTaskWrapper.this.doneWithResult(result);
         }
     }
 
@@ -125,8 +139,44 @@ public abstract class HttpAbsTaskWrapper{
         return this.task.toString();
     }
 
-    protected abstract  HttpAbsResult executeJob(HttpAbsRequestParam mParams) throws Exception;
+    protected abstract HttpAbsResult executeJob(HttpAbsRequestParam mParams) throws Exception;
+    protected abstract void doneWithResult(HttpAbsResult result);
+    protected abstract boolean retryJob();
+
+    @Deprecated
     protected abstract void successJob(HttpAbsResult result);
+    @Deprecated
     protected abstract void canceledJob();
+    /**
+     * There is no need to retry job in this method.
+     *
+     * Whether job is attempted to retry or not,it is based on the attribute {@link com.xuwakao.mixture.httpmodule.HttpAbsRequestParam#retryCount}
+     * and the http module has ability to handle retrying job internally.
+     * This method is used to handle exception,for example,give some UI response to users and so on.
+     * You can customize retryJob by subclassing this class,like {@link HttpBaseTask#retryJob()}.
+     * But it's strongly recommended to subclass {@link com.xuwakao.mixture.httpmodule.HttpBaseTask},but not this.
+     *
+     * @param e
+     */
+    @Deprecated
     protected abstract void exceptionalJob(Exception e);
+
+    public static class HttpRequestParamBase extends HttpAbsRequestParam{
+        @Override
+        public String toString() {
+            return Utils.makeToString(HttpRequestParamBase.class, new Object[]{url, priority, retryCount});
+        }
+
+        @Override
+        public int compareTo(HttpAbsRequestParam another) {
+            return this.priority.compareTo(another.priority);
+        }
+    }
+
+    public static class HttpResultBase extends HttpAbsResult{
+        @Override
+        public String toString() {
+            return Utils.makeToString(HttpResultBase.class,new Object[]{resultCode ,url, exception});
+        }
+    }
 }
