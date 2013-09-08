@@ -117,7 +117,7 @@
       <file leaf-file-name="HttpTestTask.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/test/HttpTestTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="33" selection-start="1071" selection-end="1071" vertical-scroll-proportion="1.1850394" vertical-offset="59" max-vertical-offset="600">
+            <state line="37" column="86" selection-start="1304" selection-end="1304" vertical-scroll-proportion="1.0791367" vertical-offset="15" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -147,7 +147,7 @@
       <file leaf-file-name="HttpBaseTask.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpBaseTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="15" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="1035">
+            <state line="60" column="15" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="1035">
               <folding />
             </state>
           </provider>
@@ -165,7 +165,7 @@
       <file leaf-file-name="HttpTaskWorker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpTaskWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="5" selection-start="2345" selection-end="2345" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1035">
+            <state line="67" column="5" selection-start="2345" selection-end="2345" vertical-scroll-proportion="0.0" vertical-offset="365" max-vertical-offset="1035">
               <folding />
             </state>
           </provider>
@@ -174,8 +174,11 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/UI/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="30" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="780">
-              <folding />
+            <state line="59" column="41" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="1020">
+              <folding>
+                <element signature="e#1742#2009#0" expanded="true" />
+                <element signature="e#1998#1999#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -312,7 +315,6 @@
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpAbstractTask.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpAbsResult.java" />
-        <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/UI/MainActivity.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpWorkPriority.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpServiceConfig.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpAbsRequestParam.java" />
@@ -320,6 +322,7 @@
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpAbsTaskWrapper.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpBaseTask.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/test/HttpTestTask.java" />
+        <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/UI/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -864,7 +867,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="17" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2148541" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -877,13 +880,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5265252" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33952254" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6087533" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39257294" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963072" sideWeight="0.6167109" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25394547" sideWeight="0.39124668" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25394547" sideWeight="0.60742706" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2519894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0915805" sideWeight="0.5344828" order="2" side_tool="false" content_ui="combo" />
@@ -978,13 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/UI/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpAbsRequestParam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="22" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
@@ -1006,13 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpTaskWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="5" selection-start="2345" selection-end="2345" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpAbsResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="31" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
@@ -1027,13 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpBaseTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="15" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpAbsTaskWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="175" column="40" selection-start="5842" selection-end="5842" vertical-scroll-proportion="0.0" vertical-offset="2264" max-vertical-offset="2745">
@@ -1044,9 +1026,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/UI/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="41" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="1020">
+          <folding>
+            <element signature="e#1742#2009#0" expanded="true" />
+            <element signature="e#1998#1999#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpBaseTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="15" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/httpmodule/HttpTaskWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="5" selection-start="2345" selection-end="2345" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/test/HttpTestTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="33" selection-start="1071" selection-end="1071" vertical-scroll-proportion="1.1850394" vertical-offset="59" max-vertical-offset="600">
+        <state line="37" column="86" selection-start="1304" selection-end="1304" vertical-scroll-proportion="1.0791367" vertical-offset="15" max-vertical-offset="600">
           <folding />
         </state>
       </provider>

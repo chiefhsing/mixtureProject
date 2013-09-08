@@ -29,7 +29,7 @@ public class HttpTestTask extends HttpBaseTask {
 
         Thread.currentThread().sleep(3000);
         result.url = mParams.url;
-        Thread.currentThread().sleep(3000);
+        Thread.currentThread().sleep(6000);
         return result;
     }
 

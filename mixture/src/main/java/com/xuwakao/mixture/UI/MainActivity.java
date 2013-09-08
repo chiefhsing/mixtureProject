@@ -21,6 +21,9 @@ public class MainActivity extends Activity {
 
         MLog.verbose(TAG, FileUtils.getInternalCacheDir(this).getPath());
 
+        HttpTestTask task08 = null;
+        HttpTestTask task03 = null;
+
         for(int i = 1000; i < 1020; i++){
             HttpBaseTask.HttpRequestParamBase param = new HttpBaseTask.HttpRequestParamBase();
             param.url = "http://xuwakao.com/index=" + i;
@@ -35,15 +38,28 @@ public class MainActivity extends Activity {
             }
 
             final HttpTestTask task = new HttpTestTask(param, getMainLooper());
+            if(i == 1003){
+                task03 = task;
+            }
+
+            if(i == 1008){
+                task08 = task;
+            }
             task.submit();
         }
 
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                task.cancel(true);
-//            }
-//        },5000);
+        final HttpTestTask finalTask03 = task03;
+        final HttpTestTask finalTask08 = task08;
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                assert finalTask03 != null;
+                finalTask03.cancel(true);
+
+                assert finalTask08 != null;
+                finalTask08.cancel(true);
+            }
+        },5000);
     }
 
 
