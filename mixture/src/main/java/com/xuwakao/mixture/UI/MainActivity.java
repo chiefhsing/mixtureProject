@@ -6,11 +6,11 @@ import android.os.Handler;
 import android.view.Menu;
 
 import com.xuwakao.mixture.R;
-import com.xuwakao.mixture.Utils.FileUtils;
-import com.xuwakao.mixture.Utils.MLog;
-import com.xuwakao.mixture.httpmodule.HttpBaseTask;
-import com.xuwakao.mixture.test.HttpTestTask;
-import com.xuwakao.mixture.httpmodule.HttpWorkPriority;
+import com.xuwakao.mixture.framework.httpmodule.HttpBaseTask;
+import com.xuwakao.mixture.framework.httpmodule.HttpWorkPriority;
+import com.xuwakao.mixture.framework.test.HttpTestTask;
+import com.xuwakao.mixture.framework.utils.MLog;
+import com.xuwakao.mixture.utils.FileUtils;
 
 public class MainActivity extends Activity {
     private static final String TAG = MLog.makeLogTag(MainActivity.class);

@@ -1,10 +1,10 @@
-package com.xuwakao.mixture.Utils;
+package com.xuwakao.mixture.utils;
 
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Environment;
 
-import com.xuwakao.mixture.ServiceConfig;
+import com.xuwakao.mixture.framework.ServiceConfig;
 
 import java.io.File;
 

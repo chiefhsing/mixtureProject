@@ -8,8 +8,8 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 
-import com.xuwakao.mixture.Utils.MLog;
-import com.xuwakao.mixture.Utils.NetworkMonitor;
+import com.xuwakao.mixture.framework.ServiceConfig;
+import com.xuwakao.mixture.utils.NetworkMonitor;
 
 /**
  * Created by xuwakao on 13-8-28.

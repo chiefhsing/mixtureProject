@@ -1,4 +1,4 @@
-package com.xuwakao.mixture.Utils;
+package com.xuwakao.mixture.utils;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
