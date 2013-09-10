@@ -8,7 +8,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 
-import com.xuwakao.mixture.framework.ServiceConfig;
+import com.xuwakao.mixture.framework.AppConfig;
 import com.xuwakao.mixture.utils.NetworkMonitor;
 
 /**
@@ -44,7 +44,7 @@ public class MixtureApp extends Application{
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
 
-        ServiceConfig.getInstance().setConfiguration(newConfig);
+        AppConfig.getInstance().setConfiguration(newConfig);
     }
 
     public void onLowMemory() {
@@ -56,6 +56,8 @@ public class MixtureApp extends Application{
      */
     private void doInit(){
         appContext = this;
+        AppConfig.create(getApplicationContext());
+
         initLog();
         initNetworkMonitor();
     }
@@ -72,7 +74,7 @@ public class MixtureApp extends Application{
      * initialize all about log system
      */
     private void initLog(){
-        ServiceConfig.getInstance().setDebuggable(isDebuggable());
+        AppConfig.getInstance().setDebuggable(isDebuggable());
     }
 
     /**

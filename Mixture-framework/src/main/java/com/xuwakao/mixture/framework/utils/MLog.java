@@ -2,7 +2,7 @@ package com.xuwakao.mixture.framework.utils;
 
 import android.util.Log;
 
-import com.xuwakao.mixture.framework.ServiceConfig;
+import com.xuwakao.mixture.framework.AppConfig;
 
 /**
  * Created by xuwakao on 13-8-28.
@@ -15,12 +15,13 @@ public class MLog {
 
     /**
      * common function for making log tag
+     *
      * @param str
      * @return
      */
-    public static String makeLogTag(String str){
-        if(str.length() > MAX_LOG_TAG_LENGTH - LOG_PREFIX_LENGTH){
-            return LOG_PREFIX + str.substring(0,MAX_LOG_TAG_LENGTH - LOG_PREFIX_LENGTH - 1);
+    public static String makeLogTag(String str) {
+        if (str.length() > MAX_LOG_TAG_LENGTH - LOG_PREFIX_LENGTH) {
+            return LOG_PREFIX + str.substring(0, MAX_LOG_TAG_LENGTH - LOG_PREFIX_LENGTH - 1);
         }
 
         return LOG_PREFIX + str;
@@ -35,113 +36,111 @@ public class MLog {
 
     /**
      * print verbose level log,before logging it's strongly recommoned check whether isLoggable
+     *
      * @param tag
      * @param msg
      */
-    public static void verbose(String tag, String msg){
-        if(ServiceConfig.getInstance().isDebuggable()){
-            Log.i(tag,msg);
+    public static void verbose(String tag, String msg) {
+        if (AppConfig.getInstance().isDebuggable()) {
+            Log.i(tag, msg);
         }
     }
 
     /**
-     *print verbose level log,before logging it's strongly recommoned check whether isLoggable
+     * print verbose level log,before logging it's strongly recommoned check whether isLoggable
+     *
      * @param tag
      * @param msg
      * @param tr
      */
-    public static void verbose(String tag, String msg, Throwable tr){
-        if(ServiceConfig.getInstance().isDebuggable()){
+    public static void verbose(String tag, String msg, Throwable tr) {
+        if (AppConfig.getInstance().isDebuggable()) {
             Log.i(tag, msg, tr);
         }
     }
 
     /**
      * print debug level log,before logging it's strongly recommoned check whether isLoggable
+     *
      * @param tag
      * @param msg
      */
-    public static void debug(String tag, String msg){
-        if(ServiceConfig.getInstance().isDebuggable()){
+    public static void debug(String tag, String msg) {
+        if (AppConfig.getInstance().isDebuggable()) {
             Log.d(tag, msg);
         }
     }
 
     /**
      * print debug level log,before logging it's strongly recommoned check whether isLoggable
+     *
      * @param tag
      * @param msg
      * @param tr
      */
-    public static void debug(String tag, String msg, Throwable tr){
-        if(ServiceConfig.getInstance().isDebuggable()){
+    public static void debug(String tag, String msg, Throwable tr) {
+        if (AppConfig.getInstance().isDebuggable()) {
             Log.d(tag, msg, tr);
         }
     }
 
     /**
-     *
      * @param tag
      * @param msg
      */
-    public static void info(String tag, String msg){
+    public static void info(String tag, String msg) {
         Log.i(tag, msg);
     }
 
     /**
-     *
      * @param tag
      * @param msg
      * @param tr
      */
-    public static void info(String tag, String msg, Throwable tr){
+    public static void info(String tag, String msg, Throwable tr) {
         Log.i(tag, msg, tr);
     }
 
     /**
-     *
      * @param tag
      * @param msg
      */
-    public static void warn(String tag, String msg){
+    public static void warn(String tag, String msg) {
         Log.w(tag, msg);
     }
 
     /**
-     *
      * @param tag
      * @param msg
      * @param tr
      */
-    public static void warn(String tag, String msg, Throwable tr){
+    public static void warn(String tag, String msg, Throwable tr) {
         Log.w(tag, msg, tr);
     }
 
     /**
-     *
      * @param tag
      * @param msg
      */
-    public static void error(String tag, String msg){
+    public static void error(String tag, String msg) {
         Log.e(tag, msg);
     }
 
 
     /**
-     *
      * @param tag
      * @param msg
      * @param tr
      */
-    public static void error(String tag, String msg, Throwable tr){
+    public static void error(String tag, String msg, Throwable tr) {
         Log.w(tag, msg, tr);
     }
 
-    private static void writeToLog(String tag, String msg){
+    private static void writeToLog(String tag, String msg) {
 
     }
 
-    private static String logFileString(String tag, String msg){
+    private static String logFileString(String tag, String msg) {
         StringBuilder sb = new StringBuilder();
         sb.append(msg);
         sb.append("(PID:");
@@ -186,6 +185,7 @@ public class MLog {
 
     /**
      * get the name of method who call current method
+     *
      * @return
      */
     private static String getCallerMethodName() {
