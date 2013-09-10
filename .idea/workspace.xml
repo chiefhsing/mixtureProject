@@ -99,7 +99,40 @@
       <file leaf-file-name="HttpTestTask.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/test/HttpTestTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="65" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1230">
+            <state line="57" column="16" selection-start="2455" selection-end="2455" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1245">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtils.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/FileUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.33261338" vertical-offset="41" max-vertical-offset="3375">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MLog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/MLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3000">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,6 +144,26 @@
         <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/test/TestImage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="49" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3750">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpAbsTaskWrapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/HttpAbsTaskWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="2940">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpBaseTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/HttpBaseTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="29" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -136,10 +189,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpTaskWorker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/network/HttpTaskWorker.java">
+      <file leaf-file-name="AppConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/AppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="42" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="810">
+            <state line="24" column="31" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1065">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,13 +200,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppConfig.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/AppConfig.java">
+      <file leaf-file-name="NetworkMonitor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/utils/NetworkMonitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="31" selection-start="646" selection-end="646" vertical-scroll-proportion="0.31512606" vertical-offset="210" max-vertical-offset="1065">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="21" column="41" selection-start="572" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1575">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,7 +223,7 @@
       <file leaf-file-name="TestCase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/test/TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="36" selection-start="1915" selection-end="1915" vertical-scroll-proportion="0.0" vertical-offset="649" max-vertical-offset="1125">
+            <state line="67" column="41" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.0" vertical-offset="649" max-vertical-offset="1125">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -256,7 +307,6 @@
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/httpmodule/HttpTaskWorker.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/test/TestImage.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/FileUtils.java" />
-        <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/test/HttpTestTask.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/network/AndroidHttpImpl.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/Utils.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/network/MHttpClient.java" />
@@ -265,6 +315,7 @@
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/network/HttpTaskWorker.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/network/MHttpRequestFactory.java" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/test/TestCase.java" />
+        <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/test/HttpTestTask.java" />
       </list>
     </option>
   </component>
@@ -310,28 +361,6 @@
               <option name="myItemId" value="mixture" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-http-client-android-1.16.0-rc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-http-client-android-1.16.0-rc.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -419,112 +448,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Mixture-framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixtureProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mixture-framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixtureProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mixture-framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixtureProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mixture" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -611,41 +534,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixtureProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1048,13 +937,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5265252" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33952254" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.331565" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.331565" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7718833" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963072" sideWeight="0.6167109" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7718833" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31420374" sideWeight="0.66843504" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31420374" sideWeight="0.66843504" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15566714" sideWeight="0.66843504" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2519894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1103,53 +992,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/os/Build.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="32" selection-start="8338" selection-end="8338" vertical-scroll-proportion="0.0" vertical-offset="2741" max-vertical-offset="7020">
-          <folding>
-            <element signature="e#0#22589#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client/src/main/java/com/google/api/client/http/javanet/NetHttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="62" selection-start="2262" selection-end="2262" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1365">
-          <folding>
-            <element signature="e#0#3437#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client/src/main/java/com/google/api/client/http/LowLevelHttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="22" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="2340">
-          <folding>
-            <element signature="e#0#4465#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client/src/main/java/com/google/api/client/http/HttpTransport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="34" selection-start="3665" selection-end="3665" vertical-scroll-proportion="0.0" vertical-offset="1256" max-vertical-offset="2460">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client/src/main/java/com/google/api/client/http/HttpRequestFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="37" selection-start="3473" selection-end="3473" vertical-scroll-proportion="0.0" vertical-offset="1436" max-vertical-offset="2415">
-          <folding>
-            <element signature="e#0#5047#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../mercurial-project/google-http-java-client/google-http-client/src/main/java/com/google/api/client/http/GenericUrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="7" selection-start="1780" selection-end="1780" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8985">
@@ -1180,37 +1022,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/test/HttpTestTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="65" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1230">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/test/TestImage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="49" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3750">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/UI/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/test/TestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="36" selection-start="1915" selection-end="1915" vertical-scroll-proportion="0.0" vertical-offset="649" max-vertical-offset="1125">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1223,18 +1038,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/network/HttpTaskWorker.java">
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="42" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="810">
+        <state line="24" column="31" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1065">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/UI/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="31" selection-start="646" selection-end="646" vertical-scroll-proportion="0.31512606" vertical-offset="210" max-vertical-offset="1065">
+        <state line="21" column="26" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/utils/NetworkMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="41" selection-start="572" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/test/TestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="41" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.0" vertical-offset="649" max-vertical-offset="1125">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/HttpAbsTaskWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="2940">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/http/HttpBaseTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="29" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/test/HttpTestTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="16" selection-start="2455" selection-end="2455" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1245">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/MLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3000">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.33261338" vertical-offset="41" max-vertical-offset="3375">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
