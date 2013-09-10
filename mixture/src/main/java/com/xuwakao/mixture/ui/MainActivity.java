@@ -1,4 +1,4 @@
-package com.xuwakao.mixture.UI;
+package com.xuwakao.mixture.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
