@@ -18,8 +18,8 @@ public class MainActivity extends Activity {
 
         MLog.verbose(TAG, FileUtils.getInternalCacheDir(this).getPath());
 
-        TestCase.httpModuleTest(getMainLooper());
-//        TestCase.imageFetchTest(getMainLooper());
+//        TestCase.httpModuleTest(getMainLooper());
+        TestCase.imageFetchTest(getMainLooper());
 
     }
 

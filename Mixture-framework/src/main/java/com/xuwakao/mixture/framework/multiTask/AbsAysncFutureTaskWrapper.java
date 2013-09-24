@@ -8,6 +8,8 @@ import com.xuwakao.mixture.framework.ServiceConfig;
 import com.xuwakao.mixture.framework.utils.MLog;
 import com.xuwakao.mixture.framework.utils.Utils;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by xujiexing on 13-9-23.
  */
@@ -30,6 +32,8 @@ public abstract class AbsAysncFutureTaskWrapper {
 
     private InternalHandler internalHandler;
 
+    private boolean completed = false;
+
     /**
      * Constructor
      *
@@ -43,6 +47,7 @@ public abstract class AbsAysncFutureTaskWrapper {
             @Override
             public TaskAbsResult call() throws Exception {
                 this.mParam = AbsAysncFutureTaskWrapper.this.mParam;
+
                 return executeJob(this.mParam);
             }
         };
@@ -63,7 +68,6 @@ public abstract class AbsAysncFutureTaskWrapper {
                 postResult(CANCELED_MESSAGE, null);
             }
         };
-
     }
 
     /**
@@ -148,6 +152,7 @@ public abstract class AbsAysncFutureTaskWrapper {
 
         public TaskRequestParamBase() {
             this.priority = TaskPriority.DEFAULT;
+            this.timeout = Integer.MAX_VALUE;
         }
 
         @Override

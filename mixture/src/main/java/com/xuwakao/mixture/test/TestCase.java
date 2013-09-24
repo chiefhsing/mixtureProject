@@ -25,7 +25,7 @@ public class TestCase {
             HttpTaskRequestParam param = new HttpTaskRequestParam();
             param.url = "http://xuwakao.com/index=" + i;
             param.priority = TaskPriority.DEFAULT;
-            param.retryCount = 10;
+            param.retryCount = 0;
             if(i == 1013 || i == 1007 || i == 1019){
                 param.priority = TaskPriority.HIGH;
             }

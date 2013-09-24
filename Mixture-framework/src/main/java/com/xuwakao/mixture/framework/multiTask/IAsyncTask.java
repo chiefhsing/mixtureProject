@@ -5,7 +5,7 @@ package com.xuwakao.mixture.framework.multiTask;
  */
 public interface IAsyncTask {
     /**
-     * Every task must be able to submit some computation to somewhere
+     * Every task must be able to submit some computation to somewhere with specified executor
      *
      * @return The caller itself
      */

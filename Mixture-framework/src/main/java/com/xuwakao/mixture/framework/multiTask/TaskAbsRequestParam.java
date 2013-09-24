@@ -13,4 +13,9 @@ public abstract class TaskAbsRequestParam implements Comparable<TaskAbsRequestPa
      * The amount of retrial
      */
     public int retryCount;
+
+    /**
+     * Time out(seconds)
+     */
+    public int timeout;
 }

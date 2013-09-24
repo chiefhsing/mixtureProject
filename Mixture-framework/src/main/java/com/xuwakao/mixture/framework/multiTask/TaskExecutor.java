@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Created by xujiexing on 13-9-23.
  */
-public class TaskExecutor {
+public class TaskExecutor extends AbsTaskExecutor {
     private static ThreadPoolExecutor executor;
     private static BlockingQueue<Runnable> queue;
 
@@ -47,8 +47,15 @@ public class TaskExecutor {
      *
      * @param taskWrapper
      */
-    public void submit(AbsAysncFutureTaskWrapper taskWrapper) {
+    @Override
+    public synchronized void submit(AbsAysncFutureTaskWrapper taskWrapper) {
         executor.execute(taskWrapper.getTask());
+    }
+
+    @Override
+    public void shutDown() {
+        executor.shutdown();
+        worker = null;
     }
 
     public static class TaskThreadFactory implements ThreadFactory {
