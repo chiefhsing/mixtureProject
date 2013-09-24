@@ -1,10 +1,10 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1378197855000 680 c76f4caaa7a8dfe9727fa93001b3aee3b22d6716 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/styles.xml
-1378284483000 74 12c594423a5f45fa5057ec8b4c6269cfd95bbccd /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/strings.xml
-1377594678000 5237 7761bceaf18ed25cdba5f34bf00a55616d078acf /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/drawable-mdpi/ic_launcher.png
-1378197855000 381 b129b276e01126de5b3b753572ac67cbfc19454c /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values-v14/styles.xml
-1378197855000 324 aa1f5f1723de9aee2669dc44a26fbc0ce776d35f /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values-v11/styles.xml
-1377594678000 14383 82acdd75e3fcc36026109406625edc69d4d7212d /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/drawable-xhdpi/ic_launcher.png
-1377594678000 9397 4a5a9affbb731f195fc18fea78d51be7db7536a2 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/drawable-hdpi/ic_launcher.png
+1378810340000 680 c76f4caaa7a8dfe9727fa93001b3aee3b22d6716 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/styles.xml
+1378810340000 74 12c594423a5f45fa5057ec8b4c6269cfd95bbccd /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/strings.xml
+1378810340000 5237 7761bceaf18ed25cdba5f34bf00a55616d078acf /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/drawable-mdpi/ic_launcher.png
+1378810340000 381 b129b276e01126de5b3b753572ac67cbfc19454c /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values-v14/styles.xml
+1378810340000 324 aa1f5f1723de9aee2669dc44a26fbc0ce776d35f /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values-v11/styles.xml
+1378810340000 14383 82acdd75e3fcc36026109406625edc69d4d7212d /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/drawable-xhdpi/ic_launcher.png
+1378810340000 9397 4a5a9affbb731f195fc18fea78d51be7db7536a2 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/drawable-hdpi/ic_launcher.png

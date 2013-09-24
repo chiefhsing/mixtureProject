@@ -4,8 +4,6 @@
       <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.google.http-client/google-http-client/1.16.0-rc/jar/15829e350ac64819c3d34e664dd4214cfb648fda/google-http-client-1.16.0-rc.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../google-http-java-client-1.16.0-rc/libs-sources/google-http-client-1.16.0-rc-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
