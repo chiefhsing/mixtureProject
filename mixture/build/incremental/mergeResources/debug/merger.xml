@@ -4375,14 +4375,399 @@ false
     <dataSet config="main" >
         <source path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res" >
             <file
+                name="action_help_2"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/action_help_2.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="action_search_2"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/action_search_2.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="drawer_shadow"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/drawer_shadow.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_attach"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_attach.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_call"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_call.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_copy"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_copy.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_cut"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_cut.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_delete"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_delete.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_done"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_done.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_edit"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_edit.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_locate"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_locate.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_mail"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_mail.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_mail_add"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_mail_add.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_microphone"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_microphone.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_overflow"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_overflow.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_paste"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_paste.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_photo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_photo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_refresh"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_refresh.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_search"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_search.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_select_all"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_select_all.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_send"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_send.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_share"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_share.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_star"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_star.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_user"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_user.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_user_add"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_user_add.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_video"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_video.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_drawer.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
+                name="drawer_shadow"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/drawer_shadow.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_attach"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_attach.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_call"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_call.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_copy"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_copy.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_cut"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_cut.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_delete"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_delete.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_done"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_done.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_edit"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_edit.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_locate"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_locate.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_mail"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_mail.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_mail_add"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_mail_add.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_microphone"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_microphone.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_overflow"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_overflow.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_paste"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_paste.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_photo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_photo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_refresh"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_refresh.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_search"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_search.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_select_all"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_select_all.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_send"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_send.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_share"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_share.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_star"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_star.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_user"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_user.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_user_add"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_user_add.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_action_video"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_video.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_drawer.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_launcher.png"
                 qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="drawer_shadow"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/drawer_shadow.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_attach"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_attach.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_call"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_call.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_copy"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_copy.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_cut"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_cut.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_delete"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_delete.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_done"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_done.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_edit"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_edit.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_locate"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_locate.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_mail"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_mail.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_mail_add"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_mail_add.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_microphone"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_microphone.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_overflow"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_overflow.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_paste"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_paste.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_photo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_photo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_refresh"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_refresh.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_search"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_search.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_select_all"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_select_all.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_send"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_send.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_share"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_share.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_star"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_star.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_user"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_user.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_user_add"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_user_add.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_video"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_video.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_drawer.png"
+                qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
@@ -4400,10 +4785,83 @@ false
                 qualifiers=""
                 type="layout" />
             <file
+                name="drawer_list_item"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/drawer_list_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_planet"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/fragment_planet.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="main"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/menu/main.xml"
                 qualifiers=""
                 type="menu" />
+            <file
+                name="main_activity_actions"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/menu/main_activity_actions.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/arrays.xml"
+                qualifiers="" >
+                <string-array name="planets_array" >
+                    <item>
+mercury
+                    </item>
+                    <item>
+venus
+                    </item>
+                    <item>
+earth
+                    </item>
+                    <item>
+mars
+                    </item>
+                    <item>
+jupiter
+                    </item>
+                    <item>
+saturn
+                    </item>
+                    <item>
+uranus
+                    </item>
+                    <item>
+neptune
+                    </item>
+                </string-array>
+            </file>
+            <file
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/colors.xml"
+                qualifiers="" >
+                <color name="color_green" >#669900
+                </color>
+                <color name="color_grey" >#9933CC
+                </color>
+                <color name="color_red" >#CC0000
+                </color>
+                <color name="color_green_shine" >#99CC00
+                </color>
+                <color name="color_black" >#000000
+                </color>
+                <color name="color_red_light" >#FF4444
+                </color>
+                <color name="color_blue" >#0099CC
+                </color>
+                <color name="color_grey_light" >#AA66CC
+                </color>
+                <color name="color_white" >#FFFFFF
+                </color>
+                <color name="color_blue_light" >#33B5E5
+                </color>
+                <color name="color_yellow_ligtht" >#FFBB33
+                </color>
+                <color name="color_yellow" >#FF8800
+                </color>
+            </file>
             <file
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/dimens.xml"
                 qualifiers="" >
@@ -4423,7 +4881,11 @@ false
                 </string>
                 <string name="action_search" >search
                 </string>
+                <string name="drawer_open" >Open navigation drawer
+                </string>
                 <string name="hello_world" >Hello world!
+                </string>
+                <string name="drawer_close" >Close navigation drawer
                 </string>
                 <string name="action_delete" >delete
                 </string>
@@ -4479,364 +4941,44 @@ false
                 </style>
             </file>
             <file
-                name="ic_action_copy"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_copy.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_photo"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_photo.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_refresh"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_refresh.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_delete"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_delete.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_copy"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_copy.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_cut"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_cut.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_overflow"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_overflow.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_star"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_star.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_refresh"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_refresh.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_microphone"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_microphone.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_call"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_call.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_paste"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_paste.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_delete"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_delete.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_photo"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_photo.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_edit"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_edit.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_cut"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_cut.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_user_add"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_user_add.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_edit"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_edit.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_mail_add"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_mail_add.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_microphone"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_microphone.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_star"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_star.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_video"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_video.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_user_add"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_user_add.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_mail_add"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_mail_add.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_user"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_user.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_locate"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_locate.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_paste"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_paste.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_attach"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_attach.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_video"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_video.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_send"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_send.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_select_all"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_select_all.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_send"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_send.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_overflow"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_overflow.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_share"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_share.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_search"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_search.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_share"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_share.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_edit"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_edit.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_send"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_send.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_cut"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_cut.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_done"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_done.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_attach"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_attach.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_call"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_call.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_search"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_search.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_locate"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_locate.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_star"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_star.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_overflow"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_overflow.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_photo"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_photo.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_refresh"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_refresh.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_mail"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_mail.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_done"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_done.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_mail"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_mail.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_call"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_call.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_select_all"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_select_all.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_select_all"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_select_all.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_search"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_search.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_share"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_share.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_delete"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_delete.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_paste"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_paste.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_mail_add"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/ic_action_mail_add.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_action_user_add"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_user_add.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_microphone"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_microphone.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_attach"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_attach.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_video"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_video.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_copy"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_copy.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_action_mail"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_mail.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_user"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_user.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_locate"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_locate.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_done"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/ic_action_done.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_action_user"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_user.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="main_activity_actions"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/menu/main_activity_actions.xml"
+                name="venus"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/venus.jpg"
                 qualifiers=""
-                type="menu" />
-            <file
-                name="action_search_2"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/action_search_2.png"
-                qualifiers="hdpi"
                 type="drawable" />
             <file
-                name="action_help_2"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/action_help_2.png"
-                qualifiers="hdpi"
+                name="mars"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/mars.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="jupiter"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/jupiter.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="neptune"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/neptune.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mercury"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/mercury.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="uranus"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/uranus.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="earth"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/earth.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="saturn"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/saturn.jpg"
+                qualifiers=""
                 type="drawable" />
         </source>
         <source path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/res/rs/debug" />

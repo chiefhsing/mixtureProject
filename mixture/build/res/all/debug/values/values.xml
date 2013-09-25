@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/arrays.xml -->
+    <string-array name="planets_array">
+        <item>mercury</item>
+        <item>venus</item>
+        <item>earth</item>
+        <item>mars</item>
+        <item>jupiter</item>
+        <item>saturn</item>
+        <item>uranus</item>
+        <item>neptune</item>
+    </string-array>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <attr name="actionBarDivider" format="reference" />
     <attr name="actionBarItemBackground" format="reference" />
@@ -76,7 +87,20 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/colors.xml -->
+    <color name="color_black">#000000</color>
+    <color name="color_blue">#0099CC</color>
+    <color name="color_blue_light">#33B5E5</color>
+    <color name="color_green">#669900</color>
+    <color name="color_green_shine">#99CC00</color>
+    <color name="color_grey">#9933CC</color>
+    <color name="color_grey_light">#AA66CC</color>
+    <color name="color_red">#CC0000</color>
+    <color name="color_red_light">#FF4444</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_yellow">#FF8800</color>
+    <color name="color_yellow_ligtht">#FFBB33</color>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <declare-styleable name="ActionBar">
 
         <!-- The type of navigation to use. -->
@@ -509,6 +533,8 @@
     <string name="action_search">search</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">mixture</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme.Light">

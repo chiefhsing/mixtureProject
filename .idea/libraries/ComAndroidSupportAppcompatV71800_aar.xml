@@ -6,6 +6,9 @@
       <root url="jar://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../android/android-sdk-macosx/sources/android-17" />
+      <root url="file://$PROJECT_DIR$/../../android/android-sdk-macosx/sources/android-17" />
+    </SOURCES>
   </library>
 </component>
