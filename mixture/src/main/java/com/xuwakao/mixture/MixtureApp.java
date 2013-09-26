@@ -7,15 +7,21 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
+import android.view.ViewConfiguration;
 
 import com.xuwakao.mixture.framework.AppConfig;
+import com.xuwakao.mixture.framework.ServiceConfig;
+import com.xuwakao.mixture.framework.utils.MLog;
 import com.xuwakao.mixture.utils.NetworkMonitor;
+
+import java.lang.reflect.Field;
 
 /**
  * Created by xuwakao on 13-8-28.
  */
 public class MixtureApp extends Application{
     public static Context appContext;
+    private static final String TAG = MLog.makeLogTag(MixtureApp.class);
 
     /**
      * Called when the application is starting, before any activity, service,
@@ -60,6 +66,21 @@ public class MixtureApp extends Application{
 
         initLog();
         initNetworkMonitor();
+        getOverflowMenu();
+    }
+
+    private void getOverflowMenu() {
+        try {
+            ViewConfiguration config = ViewConfiguration.get(this);
+            Field menuKeyField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
+            if(menuKeyField != null) {
+                menuKeyField.setAccessible(true);
+                menuKeyField.setBoolean(config, false);
+            }
+        } catch (Exception e) {
+            MLog.error(TAG, "error occurs : " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     /**

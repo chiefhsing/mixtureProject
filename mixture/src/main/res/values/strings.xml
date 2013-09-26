@@ -9,4 +9,12 @@
     <string name="action_help">help</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_share">share</string>
+    <string name="action_overflow">overflow</string>
+    <string name="action_attach">attach</string>
+    <string name="action_copy">copy</string>
+    <string name="action_done">done</string>
+    <string name="action_mail_add">addMail</string>
+    <string name="action_star">star</string>
+    <string name="action_video">video</string>
 </resources>

@@ -9,6 +9,9 @@
     <SOURCES>
       <root url="file://$PROJECT_DIR$/../../android/android-sdk-macosx/sources/android-17" />
       <root url="file://$PROJECT_DIR$/../../android/android-sdk-macosx/sources/android-17" />
+      <root url="file://$PROJECT_DIR$/../../android/android-sdk-macosx/sources/android-17" />
+      <root url="file://$APPLICATION_HOME_DIR$/sdk/extras/android/support/v13/src/java" />
+      <root url="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18" />
     </SOURCES>
   </library>
 </component>

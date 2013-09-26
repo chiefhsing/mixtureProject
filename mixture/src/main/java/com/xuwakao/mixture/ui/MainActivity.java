@@ -1,15 +1,23 @@
 package com.xuwakao.mixture.ui;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ActionProvider;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.ShareActionProvider;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -31,36 +39,45 @@ public class MainActivity extends ActionBarActivity {
 
     private String[] mPlanetTitles;
     private DrawerLayout mDrawerLayout;
-    private ListView mDrawerList;
+    private ListView mLeftDrawerList;
+    private ListView mRightDrawerList;
     private CharSequence mTitle;
-    private ActionBarDrawerToggle mDrawerToggle;
+    private ActionBarDrawerToggle mLeftDrawerToggle;
     private CharSequence mDrawerTitle;
+    private ShareActionProvider mShareActionProvider;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
+        ActionBar.LayoutParams lp = new ActionBar.LayoutParams(
+                ActionBar.LayoutParams.WRAP_CONTENT,
+                ActionBar.LayoutParams.WRAP_CONTENT);
+        lp.gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
+        actionBar.setCustomView(LayoutInflater.from(getBaseContext()).inflate(R.layout.action_bar_title, null), lp);
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM, ActionBar.DISPLAY_SHOW_CUSTOM);
 
         mTitle = mDrawerTitle = getTitle();
 
         mPlanetTitles = getResources().getStringArray(R.array.planets_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList = (ListView) findViewById(R.id.left_drawer);
+        mLeftDrawerList = (ListView) findViewById(R.id.left_drawer);
+        mRightDrawerList = (ListView) findViewById(R.id.right_drawer);
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
+//        mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.END);
 
         // Set the adapter for the list view
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, R.id.item_title, mPlanetTitles));
+        mLeftDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, R.id.item_title, mPlanetTitles));
         // Set the list's click listener
-        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+        mLeftDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
         // ActionBarDrawerToggle ties together the the proper interactions
         // between the sliding drawer and the action bar app icon
-        mDrawerToggle = new ActionBarDrawerToggle(
+        mLeftDrawerToggle = new ActionBarDrawerToggle(
                 this,                  /* host Activity */
                 mDrawerLayout,         /* DrawerLayout object */
                 R.drawable.ic_drawer,  /* nav drawer image to replace 'Up' caret */
@@ -77,7 +94,7 @@ public class MainActivity extends ActionBarActivity {
                 ActivityCompat.invalidateOptionsMenu(MainActivity.this);
             }
         };
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.setDrawerListener(mLeftDrawerToggle);
 
         if (savedInstanceState == null) {
             selectItem(0);
@@ -89,15 +106,35 @@ public class MainActivity extends ActionBarActivity {
         // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_activity_actions, menu);
+
+//        MenuItem searchItem = menu.findItem(R.id.action_search);
+//        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+
+        // Set up ShareActionProvider's default share intent
+        MenuItem shareItem = menu.findItem(R.id.action_share);
+        mShareActionProvider = (ShareActionProvider)
+                MenuItemCompat.getActionProvider(shareItem);
+        mShareActionProvider.setShareIntent(getDefaultIntent());
+
+//        MenuItem callItem = menu.findItem(R.id.action_attach);
+
         return super.onCreateOptionsMenu(menu);
+    }
+
+    /** Defines a default (dummy) share intent to initialize the action provider.
+     * However, as soon as the actual content to be used in the intent
+     * is known or changes, you must update the share intent by again calling
+     * mShareActionProvider.setShareIntent()
+     */
+    private Intent getDefaultIntent() {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("image/*");
+        return intent;
     }
 
     /* Called whenever we call invalidateOptionsMenu() */
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        // If the nav drawer is open, hide action items related to the content view
-        boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-        menu.findItem(R.id.action_search).setVisible(!drawerOpen);
         return super.onPrepareOptionsMenu(menu);
     }
 
@@ -105,7 +142,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // The action bar home/up action should open or close the drawer.
         // ActionBarDrawerToggle will take care of this.
-        if (mDrawerToggle.onOptionsItemSelected(item)) {
+        if (mLeftDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
         // Handle presses on the action bar items
@@ -121,14 +158,14 @@ public class MainActivity extends ActionBarActivity {
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         // Sync the toggle state after onRestoreInstanceState has occurred.
-        mDrawerToggle.syncState();
+        mLeftDrawerToggle.syncState();
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         // Pass any configuration change to the drawer toggls
-        mDrawerToggle.onConfigurationChanged(newConfig);
+        mLeftDrawerToggle.onConfigurationChanged(newConfig);
     }
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
@@ -153,9 +190,9 @@ public class MainActivity extends ActionBarActivity {
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
         // Highlight the selected item, update the title, and close the drawer
-        mDrawerList.setItemChecked(position, true);
+        mLeftDrawerList.setItemChecked(position, true);
         setTitle(mPlanetTitles[position]);
-        mDrawerLayout.closeDrawer(mDrawerList);
+        mDrawerLayout.closeDrawer(mLeftDrawerList);
     }
 
     @Override
