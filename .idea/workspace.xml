@@ -149,10 +149,8 @@
       <file leaf-file-name="MenuDrawerActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MenuDrawerActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="31" selection-start="637" selection-end="637" vertical-scroll-proportion="0.694165" vertical-offset="0" max-vertical-offset="1530">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="10" column="34" selection-start="357" selection-end="357" vertical-scroll-proportion="-1.2676057" vertical-offset="780" max-vertical-offset="1530">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1976,10 +1974,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MenuDrawerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="31" selection-start="637" selection-end="637" vertical-scroll-proportion="0.694165" vertical-offset="0" max-vertical-offset="1530">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="10" column="34" selection-start="357" selection-end="357" vertical-scroll-proportion="-1.2676057" vertical-offset="780" max-vertical-offset="1530">
+          <folding />
         </state>
       </provider>
     </entry>
