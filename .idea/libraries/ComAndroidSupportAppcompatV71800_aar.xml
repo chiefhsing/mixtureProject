@@ -2,15 +2,10 @@
   <library name="ComAndroidSupportAppcompatV71800.aar">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/../../android/android-sdk-macosx/sources/android-17" />
-      <root url="file://$PROJECT_DIR$/../../android/android-sdk-macosx/sources/android-17" />
-      <root url="file://$PROJECT_DIR$/../../android/android-sdk-macosx/sources/android-17" />
-      <root url="file://$APPLICATION_HOME_DIR$/sdk/extras/android/support/v13/src/java" />
       <root url="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18" />
     </SOURCES>
   </library>

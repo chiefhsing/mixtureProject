@@ -1,6 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger>
 
+    <dataSet config="MixtureProjectMenudrawerUnspecified.aar" >
+        <source path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res" >
+            <file
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml"
+                qualifiers="" >
+                <declare-styleable name="MenuDrawer" >
+
+                    <!-- Drawable to use for the background of the content. -->
+                    <attr
+                        name="mdContentBackground"
+                        format="reference" />
+
+                    <!-- Drawable to use for the background of the menu. -->
+                    <attr
+                        name="mdMenuBackground"
+                        format="reference" />
+
+                    <!-- The size of the menu. -->
+                    <attr
+                        name="mdMenuSize"
+                        format="dimension" />
+
+                    <!-- Drawable used as indicator for the active view. -->
+                    <attr
+                        name="mdActiveIndicator"
+                        format="reference" />
+
+                    <!-- Defines whether the content will have a dropshadow onto the menu. Default is true. -->
+                    <attr
+                        name="mdDropShadowEnabled"
+                        format="boolean" />
+
+                    <!-- The size of the drop shadow. Default is 6dp -->
+                    <attr
+                        name="mdDropShadowSize"
+                        format="dimension" />
+
+                    <!-- The color of the drop shadow. Default is #FF000000. -->
+                    <attr
+                        name="mdDropShadowColor"
+                        format="color" />
+
+                    <!-- Drawable used for the drop shadow. -->
+                    <attr
+                        name="mdDropShadow"
+                        format="reference" />
+
+                    <!-- The touch bezel size. -->
+                    <attr
+                        name="mdTouchBezelSize"
+                        format="dimension" />
+
+                    <!-- Whether the indicator should be animated between active views. -->
+                    <attr
+                        name="mdAllowIndicatorAnimation"
+                        format="boolean" />
+
+                    <!-- The maximum animation duration -->
+                    <attr
+                        name="mdMaxAnimationDuration"
+                        format="integer" />
+
+                    <!-- Drawable that replaces the up indicator -->
+                    <attr
+                        name="mdSlideDrawable"
+                        format="reference" />
+
+                    <!-- String to use as the up indicators content description when the drawer is open -->
+                    <attr
+                        name="mdDrawerOpenUpContentDescription"
+                        format="string" />
+
+                    <!-- String to use as the up indicators content description when the drawer is closed -->
+                    <attr
+                        name="mdDrawerClosedUpContentDescription"
+                        format="string" />
+
+                    <!-- Whether an overlay should be drawn as the drawer is opened and closed -->
+                    <attr
+                        name="mdDrawOverlay"
+                        format="boolean" />
+
+                    <!-- The position of the drawer -->
+                    <attr
+                        name="mdPosition"
+                        format="enum" >
+                        <enum
+                            name="left"
+                            value="0" />
+                        <enum
+                            name="top"
+                            value="1" />
+                        <enum
+                            name="right"
+                            value="2" />
+                        <enum
+                            name="bottom"
+                            value="3" />
+                    </attr>
+                </declare-styleable>
+
+                <item
+                    name="mdActiveViewPosition"
+                    type="id"/>
+                <item
+                    name="md__translationY"
+                    type="id"/>
+                <item
+                    name="md__translationX"
+                    type="id"/>
+
+                <style name="Widget.MenuDrawer" >
+                    <item name="mdMenuBackground">
+@color/md__defaultBackground
+                    </item>
+                    <item name="mdContentBackground">
+?android:attr/windowBackground
+                    </item>
+                    <item name="mdDrawerOpenUpContentDescription">
+@string/md__drawerOpenIndicatorDesc
+                    </item>
+                    <item name="mdDrawerClosedUpContentDescription">
+@string/md__drawerClosedIndicatorDesc
+                    </item>
+                </style>
+
+                <string name="md__drawerOpenIndicatorDesc" >Close drawer
+                </string>
+
+                <color name="md__defaultBackground" >#FF555555
+                </color>
+
+                <attr
+                    name="menuDrawerStyle"
+                    format="reference" />
+
+                <item
+                    name="md__menu"
+                    type="id"/>
+                <item
+                    name="md__content"
+                    type="id"/>
+
+                <string name="md__drawerClosedIndicatorDesc" >Open drawer
+                </string>
+
+                <item
+                    name="mdMenu"
+                    type="id"/>
+
+                <style name="Widget" />
+
+                <item
+                    name="md__drawer"
+                    type="id"/>
+                <item
+                    name="mdContent"
+                    type="id"/>
+            </file>
+        </source>
+    </dataSet>
     <dataSet config="MixtureProjectMixtureFrameworkUnspecified.aar" >
         <source path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res" >
             <file
@@ -1430,10 +1591,6 @@
                 <string name="abc_searchview_description_query" >Search query
                 </string>
 
-                <item
-                    name="home"
-                    type="id"/>
-
                 <declare-styleable name="MenuView" >
 
                     <!-- Default appearance of menu item text. -->
@@ -1454,20 +1611,24 @@
                     <attr name="android:preserveIconSpacing" />
                 </declare-styleable>
 
-                <string name="abc_action_bar_up_description" >Navigate up
-                </string>
+                <item
+                    name="home"
+                    type="id"/>
 
                 <attr
                     name="actionModeStyle"
                     format="reference" />
 
-                <item
-                    name="action_bar_activity_content"
-                    type="id"/>
+                <string name="abc_action_bar_up_description" >Navigate up
+                </string>
 
                 <attr
                     name="actionBarSplitStyle"
                     format="reference" />
+
+                <item
+                    name="action_bar_activity_content"
+                    type="id"/>
 
                 <style
                     name="Widget.AppCompat.ActionBar"
@@ -1624,18 +1785,19 @@ true
                     </item>
                 </style>
 
-                <dimen name="abc_action_bar_stacked_max_height" >48dp
-                </dimen>
-
                 <attr
                     name="actionModeCloseDrawable"
                     format="reference" />
-                <attr
-                    name="searchViewTextField"
-                    format="reference" />
+
+                <dimen name="abc_action_bar_stacked_max_height" >48dp
+                </dimen>
 
                 <color name="abc_search_url_text_selected" >@android:color/black
                 </color>
+
+                <attr
+                    name="searchViewTextField"
+                    format="reference" />
 
                 <declare-styleable name="Spinner" >
 
@@ -1721,32 +1883,26 @@ middle
                 </style>
 
                 <style
-                    name="Widget.AppCompat.ActionBar.TabBar"
-                    parent="Widget.AppCompat.Base.ActionBar.TabBar" />
-
-                <style
                     name="Widget.AppCompat.Light.ActionBar.TabText"
                     parent="Widget.AppCompat.Light.Base.ActionBar.TabText" />
+
+                <style
+                    name="Widget.AppCompat.ActionBar.TabBar"
+                    parent="Widget.AppCompat.Base.ActionBar.TabBar" />
 
                 <attr
                     name="isLightTheme"
                     format="boolean" />
                 <attr
-                    name="actionOverflowButtonStyle"
+                    name="textAppearanceSearchResultSubtitle"
                     format="reference" />
                 <attr
-                    name="textAppearanceSearchResultSubtitle"
+                    name="actionOverflowButtonStyle"
                     format="reference" />
 
                 <style
                     name="Widget.AppCompat.ActivityChooserView"
                     parent="Widget.AppCompat.Base.ActivityChooserView" />
-
-                <string name="abc_action_menu_overflow_description" >More options
-                </string>
-
-                <dimen name="abc_action_bar_default_height" >48dip
-                </dimen>
 
                 <style
                     name="Widget.AppCompat.Light.Base.ActionBar.TabText.Inverse"
@@ -1755,6 +1911,12 @@ middle
 ?android:attr/textColorPrimaryInverseDisableOnly
                     </item>
                 </style>
+
+                <dimen name="abc_action_bar_default_height" >48dip
+                </dimen>
+
+                <string name="abc_action_menu_overflow_description" >More options
+                </string>
 
                 <style
                     name="Widget.AppCompat.Light.Base.ActionBar.TabText"
@@ -1770,10 +1932,6 @@ middle
                 <style
                     name="Widget.AppCompat.ActionBar.TabView"
                     parent="Widget.AppCompat.Base.ActionBar.TabView" />
-
-                <style
-                    name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse"
-                    parent="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" />
 
                 <style
                     name="Widget.AppCompat.Light.Base.ActionBar"
@@ -1801,6 +1959,10 @@ middle
                     </item>
                 </style>
 
+                <style
+                    name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse"
+                    parent="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" />
+
                 <attr
                     name="actionModeShareDrawable"
                     format="reference" />
@@ -1826,12 +1988,12 @@ normal
                     </item>
                 </style>
 
-                <string name="abc_shareactionprovider_share_with_application" >Share with %s
-                </string>
-
                 <attr
                     name="actionBarTabStyle"
                     format="reference" />
+
+                <string name="abc_shareactionprovider_share_with_application" >Share with %s
+                </string>
 
                 <style
                     name="Widget.AppCompat.Light.Base.PopupMenu"
@@ -1857,13 +2019,13 @@ wrap_content
                     name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle"
                     parent="android:TextAppearance.Small" />
 
-                <integer name="abc_max_action_buttons" >
-2
-                </integer>
-
                 <attr
                     name="actionBarItemBackground"
                     format="reference" />
+
+                <integer name="abc_max_action_buttons" >
+2
+                </integer>
 
                 <style
                     name="Widget.AppCompat.Light.Base.ActionBar.TabBar.Inverse"
@@ -1874,12 +2036,12 @@ wrap_content
                     format="reference" />
 
                 <style
-                    name="Widget.AppCompat.ActionMode"
-                    parent="Widget.AppCompat.Base.ActionMode" />
-
-                <style
                     name="Widget.AppCompat.Light.ActionButton"
                     parent="Widget.AppCompat.Light.Base.ActionButton" />
+
+                <style
+                    name="Widget.AppCompat.ActionMode"
+                    parent="Widget.AppCompat.Base.ActionMode" />
 
                 <style
                     name="Widget.AppCompat.ListView.DropDown"
@@ -1888,6 +2050,10 @@ wrap_content
                 <style
                     name="TextAppearance.AppCompat.Widget.PopupMenu.Large"
                     parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" />
+
+                <attr
+                    name="listPreferredItemHeightSmall"
+                    format="dimension" />
 
                 <declare-styleable name="MenuItem" >
 
@@ -2026,10 +2192,6 @@ wrap_content
                         name="actionProviderClass"
                         format="string" />
                 </declare-styleable>
-
-                <attr
-                    name="listPreferredItemHeightSmall"
-                    format="dimension" />
 
                 <style
                     name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"
@@ -2789,15 +2951,14 @@ true
                     <!-- Whether the items are enabled. -->
                     <attr name="android:enabled" />
                 </declare-styleable>
-
-                <attr
-                    name="textColorSearchUrl"
-                    format="reference|color" />
-
                 <declare-styleable name="ActionMenuView" >
 
                     <!-- Size of padding on either end of a divider. -->
                 </declare-styleable>
+
+                <attr
+                    name="textColorSearchUrl"
+                    format="reference|color" />
 
                 <style
                     name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small"
@@ -2814,12 +2975,12 @@ true
 false
                 </bool>
 
-                <dimen name="abc_dropdownitem_icon_width" >32dip
-                </dimen>
-
                 <style
                     name="Widget.AppCompat.Light.Base.DropDownItem.Spinner"
                     parent="Widget.AppCompat.Base.DropDownItem.Spinner" />
+
+                <dimen name="abc_dropdownitem_icon_width" >32dip
+                </dimen>
 
                 <attr
                     name="listPreferredItemPaddingLeft"
@@ -2972,12 +3133,12 @@ true
                     format="reference" />
 
                 <style
-                    name="Theme.AppCompat.CompactMenu"
-                    parent="Theme.AppCompat.Base.CompactMenu" />
-
-                <style
                     name="Widget.AppCompat.ListView.Menu"
                     parent="Widget.AppCompat.Base.ListView.Menu" />
+
+                <style
+                    name="Theme.AppCompat.CompactMenu"
+                    parent="Theme.AppCompat.Base.CompactMenu" />
 
                 <style
                     name="Theme.Base.AppCompat.Light"
@@ -3126,23 +3287,6 @@ true
                     </item>
                 </style>
 
-                <string name="abc_activity_chooser_view_see_all" >See all
-                </string>
-
-                <dimen name="abc_search_view_text_min_width" >160dip
-                </dimen>
-
-                <style
-                    name="Theme.AppCompat.Base.CompactMenu"
-                    parent="" >
-                    <item name="android:itemTextAppearance">
-            @style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item
-                    </item>
-                    <item name="android:listViewStyle">
-@style/Widget.AppCompat.ListView.Menu
-                    </item>
-                </style>
-
                 <style
                     name="Widget.AppCompat.Base.PopupMenu"
                     parent="" >
@@ -3162,6 +3306,23 @@ true
 wrap_content
                     </item>
                 </style>
+
+                <style
+                    name="Theme.AppCompat.Base.CompactMenu"
+                    parent="" >
+                    <item name="android:itemTextAppearance">
+            @style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item
+                    </item>
+                    <item name="android:listViewStyle">
+@style/Widget.AppCompat.ListView.Menu
+                    </item>
+                </style>
+
+                <dimen name="abc_search_view_text_min_width" >160dip
+                </dimen>
+
+                <string name="abc_activity_chooser_view_see_all" >See all
+                </string>
 
                 <style
                     name="TextAppearance.AppCompat.SearchResult.Subtitle"
@@ -3202,12 +3363,12 @@ wrap_content
                 </string>
 
                 <style
-                    name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse"
-                    parent="android:TextAppearance.Medium.Inverse" />
-
-                <style
                     name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item"
                     parent="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" />
+
+                <style
+                    name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse"
+                    parent="android:TextAppearance.Medium.Inverse" />
 
                 <style
                     name="Theme.AppCompat"
@@ -3294,9 +3455,6 @@ false
                     </item>
                 </style>
 
-                <dimen name="abc_config_prefDialogWidth" >320dp
-                </dimen>
-
                 <style
                     name="Widget.AppCompat.Light.Base.Spinner"
                     parent="Widget.AppCompat.Base.Spinner" >
@@ -3311,6 +3469,9 @@ false
                     </item>
                 </style>
 
+                <dimen name="abc_config_prefDialogWidth" >320dp
+                </dimen>
+
                 <declare-styleable name="ActionBarWindow" >
                     <attr
                         name="windowActionBar"
@@ -3323,14 +3484,13 @@ false
                         format="boolean" />
                 </declare-styleable>
 
-                <attr
-                    name="actionButtonStyle"
-                    format="reference" />
-
                 <style
                     name="Widget.AppCompat.Light.PopupMenu"
                     parent="Widget.AppCompat.Light.Base.PopupMenu" />
 
+                <attr
+                    name="actionButtonStyle"
+                    format="reference" />
                 <attr
                     name="searchViewAutoCompleteTextView"
                     format="reference" />
@@ -3343,27 +3503,27 @@ false
                     name="Widget.AppCompat.Light.ActionBar.TabView"
                     parent="Widget.AppCompat.Light.Base.ActionBar.TabView" />
 
+                <style
+                    name="Widget.AppCompat.Light.ActionBar.TabBar"
+                    parent="Widget.AppCompat.Light.Base.ActionBar.TabBar" />
+
                 <style name="TextAppearance.AppCompat.Base.SearchResult.Title" >
                     <item name="android:textSize">
 18sp
                     </item>
                 </style>
 
-                <style
-                    name="Widget.AppCompat.Light.ActionBar.TabBar"
-                    parent="Widget.AppCompat.Light.Base.ActionBar.TabBar" />
-
                 <attr
                     name="actionBarTabTextStyle"
                     format="reference" />
-                <attr
-                    name="searchResultListItemHeight"
-                    format="dimension" />
 
                 <style
                     name="Widget.AppCompat.ActionButton.Overflow"
                     parent="Widget.AppCompat.Base.ActionButton.Overflow" />
 
+                <attr
+                    name="searchResultListItemHeight"
+                    format="dimension" />
                 <attr
                     name="listPreferredItemHeight"
                     format="dimension" />
@@ -3408,9 +3568,6 @@ false
                 <style
                     name="Widget.AppCompat.Light.ActionButton.CloseMode"
                     parent="Widget.AppCompat.Light.Base.ActionButton.CloseMode" />
-
-                <dimen name="abc_action_bar_subtitle_top_margin" >-3dp
-                </dimen>
 
                 <style
                     name="Theme.Base.AppCompat.Light.DarkActionBar"
@@ -3476,6 +3633,9 @@ false
 @drawable/abc_list_selector_holo_dark
                     </item>
                 </style>
+
+                <dimen name="abc_action_bar_subtitle_top_margin" >-3dp
+                </dimen>
 
                 <style
                     name="TextAppearance.AppCompat.SearchResult.Title"
@@ -3548,9 +3708,6 @@ false
                     name="Widget.AppCompat.ProgressBar.Horizontal"
                     parent="Widget.AppCompat.Base.ProgressBar.Horizontal" />
 
-                <dimen name="abc_panel_menu_list_width" >296dp
-                </dimen>
-
                 <style
                     name="Widget.AppCompat.Light.Base.ActionButton.Overflow"
                     parent="Widget.AppCompat.Light.Base.ActionButton" >
@@ -3559,14 +3716,17 @@ false
                     </item>
                 </style>
 
+                <dimen name="abc_panel_menu_list_width" >296dp
+                </dimen>
+
+                <color name="abc_search_url_text_pressed" >@android:color/black
+                </color>
+
                 <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Title" >
                     <item name="android:textSize">
 18sp
                     </item>
                 </style>
-
-                <color name="abc_search_url_text_pressed" >@android:color/black
-                </color>
 
                 <style
                     name="Widget.AppCompat.Base.AutoCompleteTextView"
@@ -3610,13 +3770,13 @@ false
                     name="TextAppearance.AppCompat.Widget.ActionBar.Title"
                     parent="TextAppearance.AppCompat.Widget.Base.ActionBar.Title" />
 
-                <attr
-                    name="spinnerStyle"
-                    format="reference" />
-
                 <bool name="abc_split_action_bar_is_narrow" >
 true
                 </bool>
+
+                <attr
+                    name="spinnerStyle"
+                    format="reference" />
 
                 <style
                     name="Widget.AppCompat.Light.Base.AutoCompleteTextView"
@@ -3725,6 +3885,11 @@ useLogo|showHome|showTitle
                     <!-- The input type to set on the query text field. -->
                     <attr name="android:inputType" />
                 </declare-styleable>
+
+                <style
+                    name="Theme.AppCompat.CompactMenu.Dialog"
+                    parent="Theme.AppCompat.Base.CompactMenu.Dialog" />
+
                 <declare-styleable name="ActionMode" >
 
                     <!-- Specifies a style to use for title text. -->
@@ -3740,10 +3905,6 @@ useLogo|showHome|showTitle
                 </declare-styleable>
 
                 <style
-                    name="Theme.AppCompat.CompactMenu.Dialog"
-                    parent="Theme.AppCompat.Base.CompactMenu.Dialog" />
-
-                <style
                     name="Widget.AppCompat.Light.Base.ActivityChooserView"
                     parent="Widget.AppCompat.Base.ActivityChooserView" >
                     <item name="android:background">
@@ -3754,12 +3915,13 @@ useLogo|showHome|showTitle
             <file
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values-land/values.xml"
                 qualifiers="land" >
+                <dimen name="abc_action_bar_title_text_size" >16dp
+                </dimen>
+
                 <bool name="abc_config_allowActionMenuItemTextWithIcon" >
 true
                 </bool>
 
-                <dimen name="abc_action_bar_title_text_size" >16dp
-                </dimen>
                 <dimen name="abc_action_bar_icon_vertical_padding" >4dip
                 </dimen>
                 <dimen name="abc_action_bar_subtitle_top_margin" >-2dp
@@ -3862,6 +4024,10 @@ false
                     parent="android:Widget.Holo.AutoCompleteTextView" />
 
                 <style
+                    name="Widget.AppCompat.Base.ProgressBar"
+                    parent="android:Widget.Holo.ProgressBar" />
+
+                <style
                     name="Theme.Base"
                     parent="android:Theme.Holo" >
                     <item name="android:windowNoTitle">
@@ -3882,10 +4048,6 @@ false
 ?android:attr/selectableItemBackground
                     </item>
                 </style>
-
-                <style
-                    name="Widget.AppCompat.Base.ProgressBar"
-                    parent="android:Widget.Holo.ProgressBar" />
 
                 <style
                     name="Widget.AppCompat.Base.ProgressBar.Horizontal"
@@ -4047,10 +4209,6 @@ middle
                     parent="android:Widget.Holo.Light.Spinner" />
 
                 <style
-                    name="Widget.AppCompat.Base.DropDownItem.Spinner"
-                    parent="android:Widget.Holo.DropDownItem.Spinner" />
-
-                <style
                     name="Theme.Base.AppCompat.Light"
                     parent="android:Theme.Holo.Light" >
 
@@ -4108,6 +4266,10 @@ middle
 ?android:attr/buttonBarButtonStyle
                     </item>
                 </style>
+
+                <style
+                    name="Widget.AppCompat.Base.DropDownItem.Spinner"
+                    parent="android:Widget.Holo.DropDownItem.Spinner" />
 
                 <style
                     name="Widget.AppCompat.Light.Base.PopupMenu"
@@ -4293,11 +4455,11 @@ middle
                 <bool name="abc_config_allowActionMenuItemTextWithIcon" >
 true
                 </bool>
-                <bool name="abc_action_bar_embed_tabs_pre_jb" >
-true
-                </bool>
                 <bool name="abc_split_action_bar_is_narrow" >
 false
+                </bool>
+                <bool name="abc_action_bar_embed_tabs_pre_jb" >
+true
                 </bool>
             </file>
             <file
@@ -4327,9 +4489,9 @@ false
                 </dimen>
                 <dimen name="abc_action_bar_default_height" >56dip
                 </dimen>
-                <dimen name="abc_action_button_min_width" >64dip
-                </dimen>
                 <dimen name="abc_search_view_text_min_width" >192dip
+                </dimen>
+                <dimen name="abc_action_button_min_width" >64dip
                 </dimen>
             </file>
             <file
@@ -4353,26 +4515,71 @@ false
                 </dimen>
                 <dimen name="abc_action_bar_subtitle_text_size" >14dp
                 </dimen>
+                <dimen name="abc_action_bar_subtitle_top_margin" >-3dp
+                </dimen>
 
                 <bool name="abc_action_bar_expanded_action_views_exclusive" >
 false
                 </bool>
 
-                <dimen name="abc_action_bar_subtitle_top_margin" >-3dp
+                <dimen name="abc_action_bar_subtitle_bottom_margin" >9dip
                 </dimen>
                 <dimen name="abc_action_bar_default_height" >56dip
                 </dimen>
-                <dimen name="abc_action_bar_subtitle_bottom_margin" >9dip
+                <dimen name="abc_action_button_min_width" >64dip
                 </dimen>
                 <dimen name="abc_action_bar_title_text_size" >18dp
-                </dimen>
-                <dimen name="abc_action_button_min_width" >64dip
                 </dimen>
             </file>
         </source>
     </dataSet>
     <dataSet config="main" >
         <source path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res" >
+            <file
+                name="earth"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/earth.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_action_bar_bg_bitmap"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/ic_action_bar_bg_bitmap.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="jupiter"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/jupiter.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mars"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/mars.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mercury"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/mercury.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="neptune"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/neptune.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="saturn"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/saturn.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="uranus"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/uranus.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="venus"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/venus.jpg"
+                qualifiers=""
+                type="drawable" />
             <file
                 name="action_help_2"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/action_help_2.png"
@@ -4391,6 +4598,11 @@ false
             <file
                 name="ic_action_attach"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_attach.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_bar_bg"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_bar_bg.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
@@ -4512,6 +4724,21 @@ false
                 name="ic_launcher"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="social_share_6"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/social_share_6.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="action_help_2"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/action_help_2.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="action_search_2"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/action_search_2.png"
+                qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="drawer_shadow"
@@ -4644,6 +4871,21 @@ false
                 qualifiers="mdpi"
                 type="drawable" />
             <file
+                name="social_share_6"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/social_share_6.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="action_help_2"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/action_help_2.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="action_search_2"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/action_search_2.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
                 name="drawer_shadow"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/drawer_shadow.9.png"
                 qualifiers="xhdpi"
@@ -4774,10 +5016,25 @@ false
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
+                name="social_share_6"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/social_share_6.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xxhdpi/ic_launcher.png"
                 qualifiers="xxhdpi"
                 type="drawable" />
+            <file
+                name="action_bar_title"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/action_bar_title.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="action_provider"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/action_provider.xml"
+                qualifiers=""
+                type="layout" />
             <file
                 name="activity_main"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/activity_main.xml"
@@ -4831,6 +5088,9 @@ uranus
                     <item>
 neptune
                     </item>
+                    <item>
+menudrawer
+                    </item>
                 </string-array>
             </file>
             <file
@@ -4853,6 +5113,8 @@ neptune
                 <color name="color_yellow" >#FF8800
                 </color>
                 <color name="color_grey" >#9933CC
+                </color>
+                <color name="transparent" >#00000000
                 </color>
                 <color name="color_white" >#FFFFFF
                 </color>
@@ -4896,9 +5158,9 @@ neptune
                 </string>
                 <string name="action_search" >search
                 </string>
-                <string name="drawer_open" >Open navigation drawer
-                </string>
                 <string name="hello_world" >Hello world!
+                </string>
+                <string name="drawer_open" >Open navigation drawer
                 </string>
                 <string name="action_copy" >copy
                 </string>
@@ -4916,6 +5178,41 @@ neptune
                     parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" >
                     <item name="android:textColor">
 @color/color_blue_light
+                    </item>
+                </style>
+
+                <style name="MenuDrawer" />
+
+                <style name="MenuDrawer.Widget.Title" >
+                    <item name="android:background">
+@drawable/md__list_selector_holo_dark
+                    </item>
+                    <item name="android:textAppearance">
+?android:attr/textAppearance
+                    </item>
+                    <item name="android:textColor">
+?android:attr/textColorPrimaryInverse
+                    </item>
+                    <item name="android:textSize">
+18sp
+                    </item>
+                    <item name="android:paddingLeft">
+16dp
+                    </item>
+                    <item name="android:paddingRight">
+32dp
+                    </item>
+                    <item name="android:paddingTop">
+8dp
+                    </item>
+                    <item name="android:paddingBottom">
+8dp
+                    </item>
+                    <item name="android:drawablePadding">
+16dp
+                    </item>
+                    <item name="android:gravity">
+center_vertical
                     </item>
                 </style>
 
@@ -4938,6 +5235,27 @@ neptune
                     -->
                 </style>
 
+                <style name="MenuDrawer.Widget" />
+
+                <style
+                    name="MyActionBar"
+                    parent="@style/Widget.AppCompat.ActionBar" >
+
+                    <!-- <item name="android:titleTextStyle">@style/TitleTextStyle</item> -->
+                    <!-- <item name="android:background">@drawable/actionbar_background</item> -->
+                    <!-- <item name="android:backgroundStacked">@drawable/actionbar_background</item> -->
+                    <!-- <item name="android:backgroundSplit">@drawable/actionbar_background</item> -->
+
+
+                    <!-- Support library compatibility -->
+                    <item name="titleTextStyle">
+@style/TitleTextStyle
+                    </item>
+                    <item name="background">
+@drawable/ic_action_bar_bg_bitmap
+                    </item>
+                </style>
+
                 <style
                     name="CustomActionBarTheme"
                     parent="@style/Theme.AppCompat.Light" >
@@ -4956,25 +5274,6 @@ neptune
                     </item>
                     <item name="actionMenuTextColor">
 @color/color_blue_light
-                    </item>
-                </style>
-
-                <style
-                    name="MyActionBar"
-                    parent="@style/Widget.AppCompat.ActionBar" >
-
-                    <!-- <item name="android:titleTextStyle">@style/TitleTextStyle</item> -->
-                    <!-- <item name="android:background">@drawable/actionbar_background</item> -->
-                    <!-- <item name="android:backgroundStacked">@drawable/actionbar_background</item> -->
-                    <!-- <item name="android:backgroundSplit">@drawable/actionbar_background</item> -->
-
-
-                    <!-- Support library compatibility -->
-                    <item name="titleTextStyle">
-@style/TitleTextStyle
-                    </item>
-                    <item name="background">
-@drawable/ic_action_bar_bg_bitmap
                     </item>
                 </style>
 
@@ -5014,100 +5313,80 @@ neptune
                 </style>
             </file>
             <file
-                name="venus"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/venus.jpg"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="mars"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/mars.jpg"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="jupiter"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/jupiter.jpg"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="neptune"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/neptune.jpg"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="mercury"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/mercury.jpg"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="uranus"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/uranus.jpg"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="earth"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/earth.jpg"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="saturn"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/saturn.jpg"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="social_share_6"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/social_share_6.png"
+                name="md__list_selector_disabled_holo_dark"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/md__list_selector_disabled_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
-                name="action_help_2"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/action_help_2.png"
-                qualifiers="xhdpi"
+                name="md__list_focused_holo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/md__list_focused_holo.9.png"
+                qualifiers="mdpi"
                 type="drawable" />
             <file
-                name="social_share_6"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/social_share_6.png"
+                name="md__list_longpressed_holo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/md__list_longpressed_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
-                name="social_share_6"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/social_share_6.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="action_search_2"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/action_search_2.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="action_help_2"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/action_help_2.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="action_search_2"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/action_search_2.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="action_provider"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/action_provider.xml"
+                name="activity_menu_drawer"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/activity_menu_drawer.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                name="ic_action_bar_bg_bitmap"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/ic_action_bar_bg_bitmap.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="ic_action_bar_bg"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/ic_action_bar_bg.png"
+                name="md__list_focused_holo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/md__list_focused_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
-                name="action_bar_title"
-                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/action_bar_title.xml"
+                name="md__list_pressed_holo_dark"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/md__list_pressed_holo_dark.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="md__list_longpressed_holo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/md__list_longpressed_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="md__list_pressed_holo_dark"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/md__list_pressed_holo_dark.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="md__list_selector_holo_dark"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/md__list_selector_holo_dark.xml"
                 qualifiers=""
-                type="layout" />
+                type="drawable" />
+            <file
+                name="md__list_selector_disabled_holo_dark"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/md__list_selector_disabled_holo_dark.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="md__list_pressed_holo_dark"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/md__list_pressed_holo_dark.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="md__list_selector_background_transition_holo_dark"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable/md__list_selector_background_transition_holo_dark.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="md__list_selector_disabled_holo_dark"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/md__list_selector_disabled_holo_dark.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="md__list_longpressed_holo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/md__list_longpressed_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="md__list_focused_holo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/md__list_focused_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
         </source>
         <source path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/res/rs/debug" />
     </dataSet>

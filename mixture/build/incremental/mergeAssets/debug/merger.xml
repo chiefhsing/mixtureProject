@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger>
 
+    <dataSet config="MixtureProjectMenudrawerUnspecified.aar" >
+        <source path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/assets" />
+    </dataSet>
     <dataSet config="MixtureProjectMixtureFrameworkUnspecified.aar" >
         <source path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/assets" />
     </dataSet>

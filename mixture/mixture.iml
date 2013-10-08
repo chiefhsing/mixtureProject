@@ -77,6 +77,7 @@
     <orderEntry type="library" exported="" name="google-http-client-android-1.16.0-rc" level="project" />
     <orderEntry type="library" exported="" name="google-http-client-1.16.0-rc" level="project" />
     <orderEntry type="module" module-name="Mixture-framework" exported="" />
+    <orderEntry type="module" module-name="menudrawer" exported="" />
   </component>
 </module>
 

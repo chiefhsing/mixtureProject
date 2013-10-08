@@ -11,6 +11,7 @@
         <item>saturn</item>
         <item>uranus</item>
         <item>neptune</item>
+        <item>menudrawer</item>
     </string-array>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <attr name="actionBarDivider" format="reference" />
@@ -54,6 +55,9 @@
     <attr name="listPreferredItemHeightSmall" format="dimension" />
     <attr name="listPreferredItemPaddingLeft" format="dimension" />
     <attr name="listPreferredItemPaddingRight" format="dimension" />
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
+    <attr name="menuDrawerStyle" format="reference" />
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <attr name="searchDropdownBackground" format="reference" />
     <attr name="searchResultListItemHeight" format="dimension" />
     <attr name="searchViewAutoCompleteTextView" format="reference" />
@@ -101,6 +105,10 @@
     <color name="color_white">#FFFFFF</color>
     <color name="color_yellow">#FF8800</color>
     <color name="color_yellow_ligtht">#FFBB33</color>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
+    <color name="md__defaultBackground">#FF555555</color>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/colors.xml -->
+    <color name="transparent">#00000000</color>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <declare-styleable name="ActionBar">
 
@@ -220,6 +228,63 @@
         <!-- Size of padding on either end of a divider. -->
         <attr name="dividerPadding" format="dimension" />
     </declare-styleable>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
+    <declare-styleable name="MenuDrawer">
+
+        <!-- Drawable to use for the background of the content. -->
+        <attr name="mdContentBackground" format="reference" />
+
+        <!-- Drawable to use for the background of the menu. -->
+        <attr name="mdMenuBackground" format="reference" />
+
+        <!-- The size of the menu. -->
+        <attr name="mdMenuSize" format="dimension" />
+
+        <!-- Drawable used as indicator for the active view. -->
+        <attr name="mdActiveIndicator" format="reference" />
+
+        <!-- Defines whether the content will have a dropshadow onto the menu. Default is true. -->
+        <attr name="mdDropShadowEnabled" format="boolean" />
+
+        <!-- The size of the drop shadow. Default is 6dp -->
+        <attr name="mdDropShadowSize" format="dimension" />
+
+        <!-- The color of the drop shadow. Default is #FF000000. -->
+        <attr name="mdDropShadowColor" format="color" />
+
+        <!-- Drawable used for the drop shadow. -->
+        <attr name="mdDropShadow" format="reference" />
+
+        <!-- The touch bezel size. -->
+        <attr name="mdTouchBezelSize" format="dimension" />
+
+        <!-- Whether the indicator should be animated between active views. -->
+        <attr name="mdAllowIndicatorAnimation" format="boolean" />
+
+        <!-- The maximum animation duration -->
+        <attr name="mdMaxAnimationDuration" format="integer" />
+
+        <!-- Drawable that replaces the up indicator -->
+        <attr name="mdSlideDrawable" format="reference" />
+
+        <!-- String to use as the up indicators content description when the drawer is open -->
+        <attr name="mdDrawerOpenUpContentDescription" format="string" />
+
+        <!-- String to use as the up indicators content description when the drawer is closed -->
+        <attr name="mdDrawerClosedUpContentDescription" format="string" />
+
+        <!-- Whether an overlay should be drawn as the drawer is opened and closed -->
+        <attr name="mdDrawOverlay" format="boolean" />
+
+        <!-- The position of the drawer -->
+        <attr name="mdPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <declare-styleable name="MenuGroup">
 
         <!-- The ID of the group. -->
@@ -512,7 +577,16 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="home" type="id"/>
-
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
+    <item name="mdActiveViewPosition" type="id"/>
+    <item name="mdContent" type="id"/>
+    <item name="mdMenu" type="id"/>
+    <item name="md__content" type="id"/>
+    <item name="md__drawer" type="id"/>
+    <item name="md__menu" type="id"/>
+    <item name="md__translationX" type="id"/>
+    <item name="md__translationY" type="id"/>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <integer name="abc_max_action_buttons">2</integer>
 
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -545,6 +619,9 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="hello_world">Hello world!</string>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
+    <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
+    <string name="md__drawerOpenIndicatorDesc">Close drawer</string>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -569,6 +646,23 @@
         <item name="actionBarStyle">@style/MyActionBar</item>
         <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
         <item name="actionMenuTextColor">@color/color_blue_light</item>
+    </style>
+
+    <style name="MenuDrawer" />
+
+    <style name="MenuDrawer.Widget" />
+
+    <style name="MenuDrawer.Widget.Title">
+        <item name="android:background">@drawable/md__list_selector_holo_dark</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 
     <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
@@ -958,6 +1052,8 @@
     <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/color_blue_light</item>
     </style>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
+    <style name="Widget" />
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <style name="Widget.AppCompat.ActionBar" parent="Widget.AppCompat.Base.ActionBar" />
 
@@ -1236,5 +1332,12 @@
     <style name="Widget.AppCompat.ProgressBar.Horizontal" parent="Widget.AppCompat.Base.ProgressBar.Horizontal" />
 
     <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Widget.AppCompat.Base.Spinner" />
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
+    <style name="Widget.MenuDrawer">
+        <item name="mdMenuBackground">@color/md__defaultBackground</item>
+        <item name="mdContentBackground">?android:attr/windowBackground</item>
+        <item name="mdDrawerOpenUpContentDescription">@string/md__drawerOpenIndicatorDesc</item>
+        <item name="mdDrawerClosedUpContentDescription">@string/md__drawerClosedIndicatorDesc</item>
+    </style>
 
 </resources>

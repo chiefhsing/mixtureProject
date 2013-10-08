@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Mixture-framework/Mixture-framework.iml" filepath="$PROJECT_DIR$/Mixture-framework/Mixture-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menudrawer/target/generated-sources/generated-sources.iml" filepath="$PROJECT_DIR$/menudrawer/target/generated-sources/generated-sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menudrawer/menudrawer.iml" filepath="$PROJECT_DIR$/menudrawer/menudrawer.iml" />
       <module fileurl="file://$PROJECT_DIR$/mixture/mixture.iml" filepath="$PROJECT_DIR$/mixture/mixture.iml" />
       <module fileurl="file://$PROJECT_DIR$/mixtureProject.iml" filepath="$PROJECT_DIR$/mixtureProject.iml" />
     </modules>

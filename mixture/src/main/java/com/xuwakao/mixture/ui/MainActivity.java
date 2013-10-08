@@ -1,21 +1,17 @@
 package com.xuwakao.mixture.ui;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ActionProvider;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.ShareActionProvider;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -28,9 +24,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.xuwakao.mixture.R;
 import com.xuwakao.mixture.framework.utils.MLog;
+
+import net.simonvt.menudrawer.MenuDrawer;
 
 import java.util.Locale;
 
@@ -45,6 +44,8 @@ public class MainActivity extends ActionBarActivity {
     private ActionBarDrawerToggle mLeftDrawerToggle;
     private CharSequence mDrawerTitle;
     private ShareActionProvider mShareActionProvider;
+
+    private MenuDrawer drawer;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -179,20 +180,25 @@ public class MainActivity extends ActionBarActivity {
      * Swaps fragments in the main content view
      */
     private void selectItem(int position) {
-        // Create a new fragment and specify the planet to show based on position
-        Fragment fragment = new PlanetFragment();
-        Bundle args = new Bundle();
-        args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
-        fragment.setArguments(args);
+        if(position <= 7){
+            // Create a new fragment and specify the planet to show based on position
+            Fragment fragment = new PlanetFragment();
+            Bundle args = new Bundle();
+            args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
+            fragment.setArguments(args);
 
-        // Insert the fragment by replacing any existing fragment
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+            // Insert the fragment by replacing any existing fragment
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
-        // Highlight the selected item, update the title, and close the drawer
-        mLeftDrawerList.setItemChecked(position, true);
-        setTitle(mPlanetTitles[position]);
-        mDrawerLayout.closeDrawer(mLeftDrawerList);
+            // Highlight the selected item, update the title, and close the drawer
+            mLeftDrawerList.setItemChecked(position, true);
+            setTitle(mPlanetTitles[position]);
+            mDrawerLayout.closeDrawer(mLeftDrawerList);
+        }else if(position == 8){
+            Intent intent = new Intent(getBaseContext(), MenuDrawerActivity.class);
+            startActivity(intent);
+        }
     }
 
     @Override
