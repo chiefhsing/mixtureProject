@@ -2,6 +2,16 @@
 <resources>
 
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/arrays.xml -->
+    <string-array name="main_menu_array">
+        <item>main</item>
+        <item>collectionDemo</item>
+        <item>menudrawer</item>
+    </string-array>
+    <string-array name="main_tab">
+        <item>MUSIC</item>
+        <item>ARTIST</item>
+        <item>ALBUM</item>
+    </string-array>
     <string-array name="planets_array">
         <item>mercury</item>
         <item>venus</item>
@@ -11,7 +21,6 @@
         <item>saturn</item>
         <item>uranus</item>
         <item>neptune</item>
-        <item>menudrawer</item>
     </string-array>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <attr name="actionBarDivider" format="reference" />
@@ -615,7 +624,9 @@
     <string name="action_share">share</string>
     <string name="action_star">star</string>
     <string name="action_video">video</string>
+    <string name="album">ALBUM</string>
     <string name="app_name">mixture</string>
+    <string name="artist">ARTISTS</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="hello_world">Hello world!</string>

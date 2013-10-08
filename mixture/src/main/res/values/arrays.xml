@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="main_menu_array">
+        <item>main</item>
+        <item>collectionDemo</item>
+        <item>menudrawer</item>
+    </string-array>
     <string-array name="planets_array">
         <item>mercury</item>
         <item>venus</item>
@@ -9,6 +14,10 @@
         <item>saturn</item>
         <item>uranus</item>
         <item>neptune</item>
-        <item>menudrawer</item>
+    </string-array>
+    <string-array name="main_tab">
+        <item>MUSIC</item>
+        <item>ARTIST</item>
+        <item>ALBUM</item>
     </string-array>
 </resources>

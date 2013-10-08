@@ -19,7 +19,9 @@ public final class R {
     public static final class array {
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/arrays.xml 
          */
-        public static final int planets_array=0x7f050000;
+        public static final int main_menu_array=0x7f050000;
+        public static final int main_tab=0x7f050001;
+        public static final int planets_array=0x7f050002;
     }
     public static final class attr {
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml 
@@ -1094,8 +1096,8 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08003b;
         public static final int action_mode_bar_stub=0x7f08003a;
         public static final int action_mode_close_button=0x7f08002e;
-        public static final int action_settings=0x7f080057;
-        public static final int action_share=0x7f080058;
+        public static final int action_settings=0x7f080059;
+        public static final int action_share=0x7f08005a;
         public static final int activity_chooser_view_content=0x7f08002f;
         public static final int always=0x7f080013;
         public static final int beginning=0x7f08000a;
@@ -1136,12 +1138,14 @@ containing a value of this type.
         public static final int md__translationX=0x7f080022;
         public static final int md__translationY=0x7f080023;
         public static final int menu_list=0x7f080054;
-        public static final int menu_overflow=0x7f080059;
+        public static final int menu_overflow=0x7f08005b;
         public static final int middle=0x7f08000b;
         public static final int more_button=0x7f08004e;
         public static final int never=0x7f080011;
         public static final int none=0x7f080009;
         public static final int normal=0x7f080000;
+        public static final int pager=0x7f080057;
+        public static final int pager_title_strip=0x7f080058;
         public static final int progress_circular=0x7f080040;
         public static final int progress_horizontal=0x7f080041;
         public static final int radio=0x7f080039;
@@ -1211,8 +1215,10 @@ containing a value of this type.
         public static final int activity_main=0x7f03001a;
         public static final int activity_menu_drawer=0x7f03001b;
         public static final int drawer_list_item=0x7f03001c;
-        public static final int fragment_planet=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int fragment_collection_object=0x7f03001d;
+        public static final int fragment_planet=0x7f03001e;
+        public static final int main_pager_layout=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -1246,14 +1252,16 @@ containing a value of this type.
         public static final int action_share=0x7f0b0016;
         public static final int action_star=0x7f0b0017;
         public static final int action_video=0x7f0b0018;
-        public static final int app_name=0x7f0b0019;
-        public static final int drawer_close=0x7f0b001a;
-        public static final int drawer_open=0x7f0b001b;
-        public static final int hello_world=0x7f0b001c;
+        public static final int album=0x7f0b0019;
+        public static final int app_name=0x7f0b001a;
+        public static final int artist=0x7f0b001b;
+        public static final int drawer_close=0x7f0b001c;
+        public static final int drawer_open=0x7f0b001d;
+        public static final int hello_world=0x7f0b001e;
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml 
          */
-        public static final int md__drawerClosedIndicatorDesc=0x7f0b001d;
-        public static final int md__drawerOpenIndicatorDesc=0x7f0b001e;
+        public static final int md__drawerClosedIndicatorDesc=0x7f0b001f;
+        public static final int md__drawerOpenIndicatorDesc=0x7f0b0020;
     }
     public static final class style {
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/styles.xml 

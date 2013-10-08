@@ -5,13 +5,11 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.ShareActionProvider;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -19,24 +17,17 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.xuwakao.mixture.R;
 import com.xuwakao.mixture.framework.utils.MLog;
 
-import net.simonvt.menudrawer.MenuDrawer;
-
-import java.util.Locale;
-
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends UIActionBarActivity {
     private static final String TAG = MLog.makeLogTag(MainActivity.class);
 
-    private String[] mPlanetTitles;
+    private String[] menuTitles;
     private DrawerLayout mDrawerLayout;
     private ListView mLeftDrawerList;
     private ListView mRightDrawerList;
@@ -44,14 +35,13 @@ public class MainActivity extends ActionBarActivity {
     private ActionBarDrawerToggle mLeftDrawerToggle;
     private CharSequence mDrawerTitle;
     private ShareActionProvider mShareActionProvider;
-
-    private MenuDrawer drawer;
+    private ActionBar actionBar;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ActionBar actionBar = getSupportActionBar();
+        actionBar = getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -59,20 +49,19 @@ public class MainActivity extends ActionBarActivity {
                 ActionBar.LayoutParams.WRAP_CONTENT,
                 ActionBar.LayoutParams.WRAP_CONTENT);
         lp.gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
-        actionBar.setCustomView(LayoutInflater.from(getBaseContext()).inflate(R.layout.action_bar_title, null), lp);
+        actionBar.setCustomView(LayoutInflater.from(getContext()).inflate(R.layout.action_bar_title, null), lp);
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM, ActionBar.DISPLAY_SHOW_CUSTOM);
 
         mTitle = mDrawerTitle = getTitle();
 
-        mPlanetTitles = getResources().getStringArray(R.array.planets_array);
+        menuTitles = getResources().getStringArray(R.array.main_menu_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mLeftDrawerList = (ListView) findViewById(R.id.left_drawer);
         mRightDrawerList = (ListView) findViewById(R.id.right_drawer);
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-//        mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.END);
 
         // Set the adapter for the list view
-        mLeftDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, R.id.item_title, mPlanetTitles));
+        mLeftDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, R.id.item_title, menuTitles));
         // Set the list's click listener
         mLeftDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
@@ -122,7 +111,8 @@ public class MainActivity extends ActionBarActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    /** Defines a default (dummy) share intent to initialize the action provider.
+    /**
+     * Defines a default (dummy) share intent to initialize the action provider.
      * However, as soon as the actual content to be used in the intent
      * is known or changes, you must update the share intent by again calling
      * mShareActionProvider.setShareIntent()
@@ -180,55 +170,39 @@ public class MainActivity extends ActionBarActivity {
      * Swaps fragments in the main content view
      */
     private void selectItem(int position) {
-        if(position <= 7){
-            // Create a new fragment and specify the planet to show based on position
-            Fragment fragment = new PlanetFragment();
-            Bundle args = new Bundle();
-            args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
-            fragment.setArguments(args);
-
-            // Insert the fragment by replacing any existing fragment
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-
-            // Highlight the selected item, update the title, and close the drawer
-            mLeftDrawerList.setItemChecked(position, true);
-            setTitle(mPlanetTitles[position]);
-            mDrawerLayout.closeDrawer(mLeftDrawerList);
-        }else if(position == 8){
-            Intent intent = new Intent(getBaseContext(), MenuDrawerActivity.class);
-            startActivity(intent);
+        switch (position) {
+            case 0 :
+                break;
+            case 1 :
+                collectionDemoClicked(position);
+                break;
+            case 2 :
+                Intent intent = new Intent(getContext(), MenuDrawerActivity.class);
+                startActivity(intent);
+                break;
+            default :
         }
+    }
+
+    private void collectionDemoClicked(int position) {
+        // Insert the fragment by replacing any existing fragment
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        CollectionDemoFragment fragment = new CollectionDemoFragment();
+        // Insert the fragment by replacing any existing fragment
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+
+        menuItemClicked(position);
+    }
+
+    private void menuItemClicked(int position){
+        mLeftDrawerList.setItemChecked(position, true);
+        setTitle(menuTitles[position]);
+        mDrawerLayout.closeDrawer(mLeftDrawerList);
     }
 
     @Override
     public void setTitle(CharSequence title) {
         mTitle = title;
         getSupportActionBar().setTitle(mTitle);
-    }
-
-    /**
-     * Fragment that appears in the "content_frame", shows a planet
-     */
-    public static class PlanetFragment extends Fragment {
-        public static final String ARG_PLANET_NUMBER = "planet_number";
-
-        public PlanetFragment() {
-            // Empty constructor required for fragment subclasses
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_planet, container, false);
-            int i = getArguments().getInt(ARG_PLANET_NUMBER);
-            String planet = getResources().getStringArray(R.array.planets_array)[i];
-
-            int imageId = getResources().getIdentifier(planet.toLowerCase(Locale.getDefault()),
-                    "drawable", getActivity().getPackageName());
-            ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
-            getActivity().setTitle(planet);
-            return rootView;
-        }
     }
 }
