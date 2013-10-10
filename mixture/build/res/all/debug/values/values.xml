@@ -6,11 +6,15 @@
         <item>main</item>
         <item>collectionDemo</item>
         <item>menudrawer</item>
+        <item>actionBarTabs</item>
     </string-array>
     <string-array name="main_tab">
+        <item>RANKING</item>
         <item>MUSIC</item>
         <item>ARTIST</item>
         <item>ALBUM</item>
+        <item>TODAY</item>
+        <item>HISTORY</item>
     </string-array>
     <string-array name="planets_array">
         <item>mercury</item>
@@ -629,6 +633,7 @@
     <string name="artist">ARTISTS</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
     <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
@@ -647,16 +652,14 @@
     </style>
 
     <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light">
-
-        <!-- <item name="android:actionBarStyle">@style/MyActionBar</item> -->
-        <!-- <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item> -->
-        <!-- <item name="android:actionMenuTextColor">@color/color_blue_light</item> -->
-
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/color_gray</item>
 
         <!-- Support library compatibility -->
         <item name="actionBarStyle">@style/MyActionBar</item>
         <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
-        <item name="actionMenuTextColor">@color/color_blue_light</item>
+        <item name="actionMenuTextColor">@color/color_gray</item>
     </style>
 
     <style name="MenuDrawer" />
@@ -677,20 +680,20 @@
     </style>
 
     <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
-
-        <!-- <item name="android:titleTextStyle">@style/TitleTextStyle</item> -->
-        <!-- <item name="android:background">@drawable/actionbar_background</item> -->
-        <!-- <item name="android:backgroundStacked">@drawable/actionbar_background</item> -->
-        <!-- <item name="android:backgroundSplit">@drawable/actionbar_background</item> -->
-
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:background">@color/color_gray</item>
+        <item name="android:backgroundStacked">@color/color_green_shine</item>
+        <item name="android:backgroundSplit">@color/color_green_shine</item>
 
         <!-- Support library compatibility -->
         <item name="titleTextStyle">@style/TitleTextStyle</item>
-        <item name="background">@drawable/ic_action_bar_bg_bitmap</item>
+        <item name="background">@color/color_gray</item>
+        <item name="backgroundStacked">@color/color_green_shine</item>
+        <item name="backgroundSplit">@color/color_green_shine</item>
     </style>
 
     <style name="TabTextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">
-        <item name="android:textColor">@color/color_blue_light</item>
+        <item name="android:textColor">@color/color_gray</item>
     </style>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">
@@ -1061,7 +1064,7 @@
     <style name="Theme.Base.Light" parent="android:Theme.Light" />
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/styles.xml -->
     <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/color_blue_light</item>
+        <item name="android:textColor">@color/color_white</item>
     </style>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
     <style name="Widget" />

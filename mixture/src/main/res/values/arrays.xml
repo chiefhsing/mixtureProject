@@ -4,6 +4,7 @@
         <item>main</item>
         <item>collectionDemo</item>
         <item>menudrawer</item>
+        <item>actionBarTabs</item>
     </string-array>
     <string-array name="planets_array">
         <item>mercury</item>
@@ -16,8 +17,11 @@
         <item>neptune</item>
     </string-array>
     <string-array name="main_tab">
+        <item>RANKING</item>
         <item>MUSIC</item>
         <item>ARTIST</item>
         <item>ALBUM</item>
+        <item>TODAY</item>
+        <item>HISTORY</item>
     </string-array>
 </resources>

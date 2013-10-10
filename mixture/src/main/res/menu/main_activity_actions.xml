@@ -2,42 +2,66 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:mixture="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/action_search"
+        mixture:showAsAction="ifRoom|collapseActionView"
+        mixture:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item android:id="@+id/action_attach"
+        android:icon="@drawable/ic_action_attach"
+        android:title="@string/action_attach"
+        mixture:showAsAction="ifRoom"
+        />
+
     <item android:id="@+id/action_share"
         android:icon="@drawable/ic_action_share"
         android:title="@string/action_share"
         mixture:showAsAction="ifRoom"
         mixture:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
-        <!--mixture:actionProviderClass="com.xuwakao.mixture.ui.MainActivity.OverflowProvider"/>-->
+    <!--mixture:actionProviderClass="com.xuwakao.mixture.ui.MainActivity.OverflowProvider"/>-->
 
-    <item
-        android:id="@+id/menu_overflow"
-        android:icon="@drawable/ic_action_overflow"
-        android:title="@string/action_overflow"
-        android:showAsAction="always"
-        mixture:actionProviderClass="com.xuwakao.mixture.ui.MainOverFlowProvider">
-        <!--<menu>-->
-            <!--<item android:id="@+id/action_search"-->
-                <!--android:icon="@drawable/ic_action_search"-->
-                <!--android:title="@string/action_search"-->
-                <!--mixture:showAsAction="ifRoom|collapseActionView"-->
-                <!--mixture:actionViewClass="android.support.v7.widget.SearchView"/>-->
-            <!--<item android:id="@+id/action_attach"-->
-                <!--android:icon="@drawable/ic_action_attach"-->
-                <!--android:title="@string/action_attach"-->
-                <!--mixture:showAsAction="ifRoom"-->
-                <!--/>-->
-            <!--<item android:id="@+id/action_copy"-->
-                <!--android:icon="@drawable/ic_action_copy"-->
-                <!--android:title="@string/action_copy"-->
-                <!--mixture:showAsAction="ifRoom"/>-->
-            <!--<item android:id="@+id/action_done"-->
-                <!--android:icon="@drawable/ic_action_done"-->
-                <!--android:title="@string/action_done"-->
-                <!--mixture:showAsAction="ifRoom"/>-->
-            <!--<item android:id="@+id/action_mail_add"-->
-                <!--android:icon="@drawable/ic_action_mail_add"-->
-                <!--android:title="@string/action_mail_add"-->
-                <!--mixture:showAsAction="ifRoom"/>-->
-        <!--</menu>-->
-    </item>
+    <item android:id="@+id/action_copy"
+        android:icon="@drawable/ic_action_copy"
+        android:title="@string/action_copy"
+        mixture:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_done"
+        android:icon="@drawable/ic_action_done"
+        android:title="@string/action_done"
+        mixture:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_mail_add"
+        android:icon="@drawable/ic_action_mail_add"
+        android:title="@string/action_mail_add"
+        mixture:showAsAction="ifRoom"/>
+
+    <!--<item-->
+        <!--android:id="@+id/menu_overflow"-->
+        <!--android:icon="@drawable/ic_action_overflow"-->
+        <!--android:title="@string/action_overflow"-->
+        <!--android:showAsAction="always"-->
+        <!--mixture:actionProviderClass="com.xuwakao.mixture.ui.MainOverFlowProvider">-->
+        <!--&lt;!&ndash;<menu>&ndash;&gt;-->
+            <!--&lt;!&ndash;<item android:id="@+id/action_search"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:icon="@drawable/ic_action_search"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:title="@string/action_search"&ndash;&gt;-->
+                <!--&lt;!&ndash;mixture:showAsAction="ifRoom|collapseActionView"&ndash;&gt;-->
+                <!--&lt;!&ndash;mixture:actionViewClass="android.support.v7.widget.SearchView"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<item android:id="@+id/action_attach"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:icon="@drawable/ic_action_attach"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:title="@string/action_attach"&ndash;&gt;-->
+                <!--&lt;!&ndash;mixture:showAsAction="ifRoom"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<item android:id="@+id/action_copy"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:icon="@drawable/ic_action_copy"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:title="@string/action_copy"&ndash;&gt;-->
+                <!--&lt;!&ndash;mixture:showAsAction="ifRoom"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<item android:id="@+id/action_done"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:icon="@drawable/ic_action_done"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:title="@string/action_done"&ndash;&gt;-->
+                <!--&lt;!&ndash;mixture:showAsAction="ifRoom"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<item android:id="@+id/action_mail_add"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:icon="@drawable/ic_action_mail_add"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:title="@string/action_mail_add"&ndash;&gt;-->
+                <!--&lt;!&ndash;mixture:showAsAction="ifRoom"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</menu>&ndash;&gt;-->
+    <!--</item>-->
 </menu>

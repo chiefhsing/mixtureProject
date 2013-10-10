@@ -35,6 +35,10 @@
         <activity
             android:name=".ui.MenuDrawerActivity"
             android:theme="@style/CustomActionBarTheme"></activity>
+        <activity
+            android:name=".ui.ActionBarTabActivity"
+            android:theme="@style/CustomActionBarTheme"
+            android:parentActivityName=".ui.MainActivity"></activity>
     </application>
 
 </manifest>

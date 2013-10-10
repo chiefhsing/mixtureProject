@@ -96,50 +96,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="37" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.13157895" vertical-offset="390" max-vertical-offset="3210">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionBarTabListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ActionBarTabListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="39" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrays.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mixture/src/main/res/values/arrays.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="25" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AlbumFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/AlbumFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="15" column="0" selection-start="347" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,7 +110,7 @@
       <file leaf-file-name="ArtistFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ArtistFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="24" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="14" column="44" selection-start="328" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,48 +118,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionDemoFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/CollectionDemoFragment.java">
+      <file leaf-file-name="ActionBarTabActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ActionBarTabActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="57" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1455">
+            <state line="17" column="3" selection-start="481" selection-end="481" vertical-scroll-proportion="0.35123968" vertical-offset="0" max-vertical-offset="2175">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1316#1741#0" expanded="true" />
+                <element signature="e#1730#1731#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mixture/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="34" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../android/android-sdk-macosx/extras/android/support/v7/appcompat/res/values/styles.xml">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="3660">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mixtureProject.iml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mixtureProject.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="local.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="48" column="78" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="1410">
               <folding />
             </state>
           </provider>
@@ -208,38 +143,169 @@
       <file leaf-file-name="values.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="674" column="0" selection-start="36560" selection-end="36560" vertical-scroll-proportion="-7.0" vertical-offset="9935" max-vertical-offset="17385">
+            <state line="935" column="61" selection-start="54577" selection-end="54577" vertical-scroll-proportion="-3.32" vertical-offset="13859" max-vertical-offset="17385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/support/v4/app/Fragment.java">
+      <file leaf-file-name="values.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values-v14/values.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="615" column="78" selection-start="21341" selection-end="21356" vertical-scroll-proportion="-7.44" vertical-offset="8424" max-vertical-offset="24870">
+            <state line="119" column="84" selection-start="8296" selection-end="8296" vertical-scroll-proportion="-6.72" vertical-offset="1617" max-vertical-offset="2820">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FragmentManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/support/v4/app/FragmentManager.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="35" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="30240">
+            <state line="40" column="69" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="750">
               <folding>
-                <element signature="e#0#79981#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#16981#17093#0" expanded="false" />
-                <element signature="e#17086#17087#0" expanded="false" />
-                <element signature="e#18065#18215#0" expanded="false" />
-                <element signature="e#18204#18205#0" expanded="false" />
-                <element signature="e#18532#18686#0" expanded="false" />
-                <element signature="e#18675#18676#0" expanded="false" />
-                <element signature="e#19121#19275#0" expanded="false" />
-                <element signature="e#19264#19265#0" expanded="false" />
-                <element signature="e#61264#61281#0" expanded="false" />
+                <element signature="e#709#727#0" expanded="true" />
+                <element signature="e#975#993#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/data/res/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1912" column="17" selection-start="86106" selection-end="86106" vertical-scroll-proportion="0.0" vertical-offset="28508" max-vertical-offset="37710">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="abc_tab_indicator_ab_holo.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/drawable/abc_tab_indicator_ab_holo.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="126" selection-start="899" selection-end="899" vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RankingFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/RankingFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="65" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusicFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MusicFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="5" selection-start="326" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_action_bar_tabs.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/res/layout/activity_action_bar_tabs.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="284" selection-end="284" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_menu_drawer.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/res/layout/activity_menu_drawer.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="19" selection-start="763" selection-end="763" vertical-scroll-proportion="-11.666667" vertical-offset="0" max-vertical-offset="525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="184" column="62" selection-start="7350" selection-end="7350" vertical-scroll-proportion="0.0" vertical-offset="2430" max-vertical-offset="3285">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_collection_object.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/res/layout/fragment_collection_object.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_planet.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/res/layout/fragment_planet.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_pager_layout.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/res/layout/main_pager_layout.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="8" selection-start="83" selection-end="137" vertical-scroll-proportion="-1.6666666" vertical-offset="0" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrays.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/res/values/arrays.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="24" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionDemoFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/CollectionDemoFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="63" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="1455">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionBar.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/support/v7/app/ActionBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="478" column="7" selection-start="18753" selection-end="18753" vertical-scroll-proportion="0.0" vertical-offset="6551" max-vertical-offset="13830">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1306,22 +1372,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/mixture/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/mixture/src/main/res/drawable/md__list_selector_holo_dark.xml" />
-        <option value="$PROJECT_DIR$/mixture/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/mixture/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/mixture/src/main/res/layout/activity_menu_drawer.xml" />
-        <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/UIActionBarActivity.java" />
-        <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MenuDrawerActivity.java" />
-        <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ArtistFragment.java" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ActionBarTabListener.java" />
         <option value="$PROJECT_DIR$/mixture/src/main/res/layout/fragment_planet.xml" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/AlbumFragment.java" />
         <option value="$PROJECT_DIR$/mixture/src/main/res/layout/main_pager_layout.xml" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MainFragment.java" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/CollectionDemoFragment.java" />
-        <option value="$PROJECT_DIR$/mixture/src/main/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/mixture/build/res/all/debug/values/values.xml" />
+        <option value="$PROJECT_DIR$/mixture/src/main/res/menu/main_activity_actions.xml" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/mixture/src/main/res/layout/activity_action_bar_tabs.xml" />
+        <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MusicFragment.java" />
+        <option value="$PROJECT_DIR$/mixture/src/main/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/RankingFragment.java" />
+        <option value="$PROJECT_DIR$/mixture/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/mixture/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ActionBarTabActivity.java" />
       </list>
     </option>
   </component>
@@ -1594,7 +1660,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixtureProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1856,7 +1956,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2148541" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1866,19 +1966,19 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39920425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6896552" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27586207" sideWeight="0.55954087" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5265252" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28514588" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18965517" sideWeight="0.39311334" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27586207" sideWeight="0.43974176" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.26757532" sideWeight="0.7320955" order="7" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892396" sideWeight="0.6140584" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7718833" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29268292" sideWeight="0.8103448" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08967002" sideWeight="0.8103448" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29268292" sideWeight="0.7241379" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08967002" sideWeight="0.6710875" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17374006" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1926,42 +2026,27 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/res/values/styles.xml">
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MusicFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="46" selection-start="814" selection-end="814" vertical-scroll-proportion="0.3841912" vertical-offset="106" max-vertical-offset="1215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/support/v4/app/FragmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="35" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="30240">
+        <state line="20" column="5" selection-start="326" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding>
-            <element signature="e#0#79981#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#16981#17093#0" expanded="false" />
-            <element signature="e#17086#17087#0" expanded="false" />
-            <element signature="e#18065#18215#0" expanded="false" />
-            <element signature="e#18204#18205#0" expanded="false" />
-            <element signature="e#18532#18686#0" expanded="false" />
-            <element signature="e#18675#18676#0" expanded="false" />
-            <element signature="e#19121#19275#0" expanded="false" />
-            <element signature="e#19264#19265#0" expanded="false" />
-            <element signature="e#61264#61281#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/support/v4/app/Fragment.java">
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/RankingFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="615" column="78" selection-start="21341" selection-end="21356" vertical-scroll-proportion="-7.44" vertical-offset="8424" max-vertical-offset="24870">
-          <folding />
+        <state line="18" column="65" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/CollectionDemoFragment.java">
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="57" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1455">
+        <state line="184" column="62" selection-start="7350" selection-end="7350" vertical-scroll-proportion="0.0" vertical-offset="2370" max-vertical-offset="3285">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1970,92 +2055,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mixture/src/main/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+        <state line="18" column="24" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/AlbumFragment.java">
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ArtistFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="24" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="19" column="44" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ActionBarTabListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="39" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+        <state line="36" column="58" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="915">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/res/layout/fragment_section_dummy.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/data/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1912" column="17" selection-start="86106" selection-end="86106" vertical-scroll-proportion="0.0" vertical-offset="28508" max-vertical-offset="37710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values-v14/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="84" selection-start="8296" selection-end="8296" vertical-scroll-proportion="-6.72" vertical-offset="1617" max-vertical-offset="2820">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="674" column="0" selection-start="36560" selection-end="36560" vertical-scroll-proportion="-7.0" vertical-offset="9935" max-vertical-offset="17385">
+        <state line="935" column="61" selection-start="54577" selection-end="54577" vertical-scroll-proportion="-3.32" vertical-offset="13859" max-vertical-offset="17385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/support/v4/app/FragmentPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="22" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="2445">
+          <folding>
+            <element signature="e#0#6204#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/data/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="32" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.33204633" vertical-offset="413" max-vertical-offset="3075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/drawable/abc_tab_indicator_ab_holo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="126" selection-start="899" selection-end="899" vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="78" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="1410">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mixture/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <folding />
+        <state line="40" column="69" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="750">
+          <folding>
+            <element signature="e#709#727#0" expanded="true" />
+            <element signature="e#975#993#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../android/android-sdk-macosx/extras/android/support/v7/appcompat/res/values/styles.xml">
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ActionBarTabActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="3660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mixtureProject.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="27" selection-start="346" selection-end="346" vertical-scroll-proportion="0.5145798" vertical-offset="0" max-vertical-offset="583">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="37" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.13157895" vertical-offset="390" max-vertical-offset="3210">
+        <state line="17" column="3" selection-start="481" selection-end="481" vertical-scroll-proportion="0.35123968" vertical-offset="0" max-vertical-offset="2175">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1316#1741#0" expanded="true" />
+            <element signature="e#1730#1731#0" expanded="true" />
           </folding>
         </state>
       </provider>

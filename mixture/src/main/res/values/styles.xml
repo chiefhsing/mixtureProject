@@ -20,44 +20,57 @@
     <!-- the theme applied to the application or activity -->
     <style name="CustomActionBarTheme"
         parent="@style/Theme.AppCompat.Light">
-        <!--<item name="android:actionBarStyle">@style/MyActionBar</item>-->
-        <!--<item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>-->
-        <!--<item name="android:actionMenuTextColor">@color/color_blue_light</item>-->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/color_gray</item>
 
         <!-- Support library compatibility -->
         <item name="actionBarStyle">@style/MyActionBar</item>
         <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
-        <item name="actionMenuTextColor">@color/color_blue_light</item>
+        <item name="actionMenuTextColor">@color/color_gray</item>
     </style>
+
+    <!--<style name="CustomActionBarTheme.ActionTabs" parent="CustomActionBarTheme">-->
+        <!--<item name="android:actionBarTabStyle">@style/Widget.AppCompat.ActionBar.TabView</item>-->
+        <!--<item name="android:actionBarTabBarStyle">@style/Widget.AppCompat.ActionBar.TabBar</item>-->
+        <!--<item name="android:actionBarTabTextStyle">@style/Widget.AppCompat.ActionBar.TabText</item>-->
+
+        <!--&lt;!&ndash; Support library compatibility &ndash;&gt;-->
+        <!--<item name="actionBarTabStyle">@style/Widget.AppCompat.ActionBar.TabView</item>-->
+        <!--<item name="actionBarTabBarStyle">@style/Widget.AppCompat.ActionBar.TabBar</item>-->
+        <!--<item name="actionBarTabTextStyle">@style/Widget.AppCompat.ActionBar.TabText</item>-->
+    <!--</style>-->
 
     <!-- general styles for the action bar -->
     <style name="MyActionBar"
         parent="@style/Widget.AppCompat.ActionBar">
-        <!--<item name="android:titleTextStyle">@style/TitleTextStyle</item>-->
-        <!--<item name="android:background">@drawable/actionbar_background</item>-->
-        <!--<item name="android:backgroundStacked">@drawable/actionbar_background</item>-->
-        <!--<item name="android:backgroundSplit">@drawable/actionbar_background</item>-->
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:background">@color/color_gray</item>
+        <item name="android:backgroundStacked">@color/color_green_shine</item>
+        <item name="android:backgroundSplit">@color/color_green_shine</item>
 
         <!-- Support library compatibility -->
         <item name="titleTextStyle">@style/TitleTextStyle</item>
-        <item name="background">@drawable/ic_action_bar_bg_bitmap</item>
+        <item name="background">@color/color_gray</item>
+        <item name="backgroundStacked">@color/color_green_shine</item>
+        <item name="backgroundSplit">@color/color_green_shine</item>
     </style>
 
     <!-- action bar title text -->
     <style name="TitleTextStyle"
         parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/color_blue_light</item>
+        <item name="android:textColor">@color/color_white</item>
     </style>
 
     <!-- action bar tab text -->
     <style name="TabTextStyle"
         parent="@style/Widget.AppCompat.ActionBar.TabText">
-        <item name="android:textColor">@color/color_blue_light</item>
+        <item name="android:textColor">@color/color_gray</item>
     </style>
 
-    <style name="MenuDrawer" />
+    <style name="MenuDrawer"></style>
 
-    <style name="MenuDrawer.Widget" />
+    <style name="MenuDrawer.Widget"></style>
 
     <style name="MenuDrawer.Widget.Title">
         <item name="android:background">@drawable/md__list_selector_holo_dark</item>

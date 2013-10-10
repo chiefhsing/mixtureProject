@@ -1081,6 +1081,7 @@ containing a value of this type.
         public static final int venus=0x7f020083;
     }
     public static final class id {
+        public static final int action_attach=0x7f08005c;
         public static final int action_bar=0x7f080026;
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml 
          */
@@ -1091,25 +1092,29 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f08002d;
         public static final int action_bar_title=0x7f08002c;
         public static final int action_context_bar=0x7f080027;
+        public static final int action_copy=0x7f08005e;
+        public static final int action_done=0x7f08005f;
+        public static final int action_mail_add=0x7f080060;
         public static final int action_menu_divider=0x7f080019;
         public static final int action_menu_presenter=0x7f08001a;
         public static final int action_mode_bar=0x7f08003b;
         public static final int action_mode_bar_stub=0x7f08003a;
         public static final int action_mode_close_button=0x7f08002e;
-        public static final int action_settings=0x7f080059;
-        public static final int action_share=0x7f08005a;
+        public static final int action_search=0x7f08005b;
+        public static final int action_settings=0x7f08005a;
+        public static final int action_share=0x7f08005d;
         public static final int activity_chooser_view_content=0x7f08002f;
         public static final int always=0x7f080013;
         public static final int beginning=0x7f08000a;
         public static final int bottom=0x7f080010;
         public static final int checkbox=0x7f080037;
         public static final int collapseActionView=0x7f080015;
-        public static final int content_frame=0x7f080050;
+        public static final int content_frame=0x7f080051;
         public static final int default_activity_button=0x7f080032;
         public static final int dialog=0x7f080016;
         public static final int disableHome=0x7f080008;
-        public static final int drawer=0x7f080053;
-        public static final int drawer_layout=0x7f08004f;
+        public static final int drawer=0x7f080054;
+        public static final int drawer_layout=0x7f080050;
         public static final int dropdown=0x7f080017;
         public static final int edit_query=0x7f080042;
         public static final int end=0x7f08000c;
@@ -1120,10 +1125,10 @@ containing a value of this type.
         public static final int icon=0x7f080034;
         public static final int ifRoom=0x7f080012;
         public static final int image=0x7f080031;
-        public static final int item_image=0x7f080055;
-        public static final int item_title=0x7f080056;
+        public static final int item_image=0x7f080056;
+        public static final int item_title=0x7f080057;
         public static final int left=0x7f08000d;
-        public static final int left_drawer=0x7f080051;
+        public static final int left_drawer=0x7f080052;
         public static final int left_icon=0x7f08003d;
         public static final int listMode=0x7f080001;
         public static final int list_item=0x7f080033;
@@ -1137,21 +1142,20 @@ containing a value of this type.
         public static final int md__menu=0x7f080021;
         public static final int md__translationX=0x7f080022;
         public static final int md__translationY=0x7f080023;
-        public static final int menu_list=0x7f080054;
-        public static final int menu_overflow=0x7f08005b;
+        public static final int menu_list=0x7f080055;
         public static final int middle=0x7f08000b;
         public static final int more_button=0x7f08004e;
         public static final int never=0x7f080011;
         public static final int none=0x7f080009;
         public static final int normal=0x7f080000;
-        public static final int pager=0x7f080057;
-        public static final int pager_title_strip=0x7f080058;
+        public static final int pager=0x7f080058;
+        public static final int pager_title_strip=0x7f080059;
         public static final int progress_circular=0x7f080040;
         public static final int progress_horizontal=0x7f080041;
         public static final int radio=0x7f080039;
         public static final int right=0x7f08000f;
         public static final int right_container=0x7f08003e;
-        public static final int right_drawer=0x7f080052;
+        public static final int right_drawer=0x7f080053;
         public static final int right_icon=0x7f08003f;
         public static final int search_badge=0x7f080044;
         public static final int search_bar=0x7f080043;
@@ -1176,6 +1180,7 @@ containing a value of this type.
         public static final int top_action_bar=0x7f08002a;
         public static final int up=0x7f08002b;
         public static final int useLogo=0x7f080003;
+        public static final int view_pager=0x7f08004f;
         public static final int withText=0x7f080014;
     }
     public static final class integer {
@@ -1212,13 +1217,15 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030017;
         public static final int action_bar_title=0x7f030018;
         public static final int action_provider=0x7f030019;
-        public static final int activity_main=0x7f03001a;
-        public static final int activity_menu_drawer=0x7f03001b;
-        public static final int drawer_list_item=0x7f03001c;
-        public static final int fragment_collection_object=0x7f03001d;
-        public static final int fragment_planet=0x7f03001e;
-        public static final int main_pager_layout=0x7f03001f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+        public static final int activity_action_bar_tabs=0x7f03001a;
+        public static final int activity_main=0x7f03001b;
+        public static final int activity_menu_drawer=0x7f03001c;
+        public static final int drawer_list_item=0x7f03001d;
+        public static final int fragment_collection_object=0x7f03001e;
+        public static final int fragment_planet=0x7f03001f;
+        public static final int fragment_section_dummy=0x7f030020;
+        public static final int main_pager_layout=0x7f030021;
+        public static final int support_simple_spinner_dropdown_item=0x7f030022;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -1257,11 +1264,12 @@ containing a value of this type.
         public static final int artist=0x7f0b001b;
         public static final int drawer_close=0x7f0b001c;
         public static final int drawer_open=0x7f0b001d;
-        public static final int hello_world=0x7f0b001e;
+        public static final int dummy_section_text=0x7f0b001e;
+        public static final int hello_world=0x7f0b001f;
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml 
          */
-        public static final int md__drawerClosedIndicatorDesc=0x7f0b001f;
-        public static final int md__drawerOpenIndicatorDesc=0x7f0b0020;
+        public static final int md__drawerClosedIndicatorDesc=0x7f0b0020;
+        public static final int md__drawerOpenIndicatorDesc=0x7f0b0021;
     }
     public static final class style {
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/styles.xml 

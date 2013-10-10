@@ -42,15 +42,15 @@ public class MainActivity extends UIActionBarActivity {
         setContentView(R.layout.activity_main);
 
         actionBar = getSupportActionBar();
-        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        ActionBar.LayoutParams lp = new ActionBar.LayoutParams(
-                ActionBar.LayoutParams.WRAP_CONTENT,
-                ActionBar.LayoutParams.WRAP_CONTENT);
-        lp.gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
-        actionBar.setCustomView(LayoutInflater.from(getContext()).inflate(R.layout.action_bar_title, null), lp);
-        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM, ActionBar.DISPLAY_SHOW_CUSTOM);
+//        ActionBar.LayoutParams lp = new ActionBar.LayoutParams(
+//                ActionBar.LayoutParams.WRAP_CONTENT,
+//                ActionBar.LayoutParams.WRAP_CONTENT);
+//        lp.gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
+//        actionBar.setCustomView(LayoutInflater.from(getContext()).inflate(R.layout.action_bar_title, null), lp);
+//        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM, ActionBar.DISPLAY_SHOW_CUSTOM);
 
         mTitle = mDrawerTitle = getTitle();
 
@@ -170,6 +170,7 @@ public class MainActivity extends UIActionBarActivity {
      * Swaps fragments in the main content view
      */
     private void selectItem(int position) {
+        Intent intent = null;
         switch (position) {
             case 0 :
                 break;
@@ -177,7 +178,11 @@ public class MainActivity extends UIActionBarActivity {
                 collectionDemoClicked(position);
                 break;
             case 2 :
-                Intent intent = new Intent(getContext(), MenuDrawerActivity.class);
+                intent = new Intent(getContext(), MenuDrawerActivity.class);
+                startActivity(intent);
+                break;
+            case 3 :
+                intent = new Intent(getContext(), ActionBarTabActivity.class);
                 startActivity(intent);
                 break;
             default :
