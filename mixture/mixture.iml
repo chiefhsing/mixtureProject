@@ -74,10 +74,10 @@
     <orderEntry type="library" exported="" name="support-v4-18.0.0" level="project" />
     <orderEntry type="library" exported="" name="jsr305-1.3.9" level="project" />
     <orderEntry type="library" exported="" name="ComAndroidSupportAppcompatV71800.aar" level="project" />
+    <orderEntry type="module" module-name="menudrawer" exported="" />
     <orderEntry type="library" exported="" name="google-http-client-android-1.16.0-rc" level="project" />
     <orderEntry type="library" exported="" name="google-http-client-1.16.0-rc" level="project" />
     <orderEntry type="module" module-name="Mixture-framework" exported="" />
-    <orderEntry type="module" module-name="menudrawer" exported="" />
   </component>
 </module>
 

@@ -5207,6 +5207,9 @@ menudrawer
                     <item>
 actionBarTabs
                     </item>
+                    <item>
+dialogDemo
+                    </item>
                 </string-array>
             </file>
             <file
@@ -5214,11 +5217,11 @@ actionBarTabs
                 qualifiers="" >
                 <color name="color_green" >#669900
                 </color>
+                <color name="sdl_button_separator_dark" >#12ffffff
+                </color>
+                <color name="sdl_button_normal_dark" >@android:color/transparent
+                </color>
                 <color name="color_green_shine" >#99CC00
-                </color>
-                <color name="color_red" >#CC0000
-                </color>
-                <color name="color_red_light" >#FF4444
                 </color>
                 <color name="color_black" >#000000
                 </color>
@@ -5226,17 +5229,57 @@ actionBarTabs
                 </color>
                 <color name="color_grey_light" >#AA66CC
                 </color>
+                <color name="sdl_bright_foreground_disabled_holo_light" >#ffb2b2b2
+                </color>
+                <color name="sdl_button_focused_light" >#4C33B5E5
+                </color>
+                <color name="sdl_message_text_dark" >#FFFFFF
+                </color>
+                <color name="sdl_message_text_light" >#333333
+                </color>
                 <color name="color_yellow" >#FF8800
                 </color>
-                <color name="color_grey" >#9933CC
+                <color name="sdl_title_separator_dark" >#ff0099cc
+                </color>
+                <color name="sdl_button_separator_light" >#25000000
                 </color>
                 <color name="transparent" >#00000000
                 </color>
+                <color name="sdl_button_pressed_dark" >#990099cc
+                </color>
                 <color name="color_white" >#FFFFFF
                 </color>
-                <color name="color_blue_light" >#33B5E5
+                <color name="sdl_title_text_light" >#33B5E5
+                </color>
+                <color name="sdl_bright_foreground_holo_dark" >#fff3f3f3
                 </color>
                 <color name="color_yellow_ligtht" >#FFBB33
+                </color>
+                <color name="sdl_button_normal_light" >@android:color/transparent
+                </color>
+                <color name="sdl_bright_foreground_disabled_holo_dark" >#ff4c4c4c
+                </color>
+                <color name="sdl_button_focused_dark" >#4C0099cc
+                </color>
+                <color name="color_red" >#CC0000
+                </color>
+                <color name="color_red_light" >#FF4444
+                </color>
+                <color name="sdl_title_separator_light" >#33B5E5
+                </color>
+                <color name="sdl_button_pressed_light" >#9933B5E5
+                </color>
+                <color name="sdl_button_text_light" >@color/sdl_primary_text_holo_light
+                </color>
+                <color name="sdl_bright_foreground_holo_light" >#ff000000
+                </color>
+                <color name="sdl_button_text_dark" >@color/sdl_primary_text_holo_dark
+                </color>
+                <color name="color_grey" >#9933CC
+                </color>
+                <color name="sdl_title_text_dark" >#ff0099cc
+                </color>
+                <color name="color_blue_light" >#33B5E5
                 </color>
                 <color name="color_gray" >#333333
                 </color>
@@ -5244,9 +5287,69 @@ actionBarTabs
             <file
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/dimens.xml"
                 qualifiers="" >
+                <dimen name="grid_26" >104dp
+                </dimen>
+                <dimen name="grid_20" >80dp
+                </dimen>
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
                 <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="grid_4" >16dp
+                </dimen>
+                <dimen name="grid_3" >12dp
+                </dimen>
+                <dimen name="grid_6" >24dp
+                </dimen>
+                <dimen name="grid_5" >20dp
+                </dimen>
+                <dimen name="grid_8" >32dp
+                </dimen>
+                <dimen name="grid_7" >28dp
+                </dimen>
+                <dimen name="grid_9" >36dp
+                </dimen>
+                <dimen name="grid_43" >172dp
+                </dimen>
+                <dimen name="grid_44" >176dp
+                </dimen>
+                <dimen name="grid_18" >72dp
+                </dimen>
+                <dimen name="grid_45" >180dp
+                </dimen>
+                <dimen name="grid_46" >184dp
+                </dimen>
+                <dimen name="grid_2" >8dp
+                </dimen>
+                <dimen name="grid_16" >64dp
+                </dimen>
+                <dimen name="grid_1" >4dp
+                </dimen>
+                <dimen name="grid_17" >68dp
+                </dimen>
+                <dimen name="grid_13" >52dp
+                </dimen>
+                <dimen name="grid_12" >48dp
+                </dimen>
+                <dimen name="grid_15" >60dp
+                </dimen>
+                <dimen name="grid_28" >112dp
+                </dimen>
+                <dimen name="grid_14" >56dp
+                </dimen>
+                <dimen name="grid_27" >108dp
+                </dimen>
+                <dimen name="grid_11" >44dp
+                </dimen>
+                <dimen name="grid_10" >40dp
+                </dimen>
+                <dimen name="grid_58" >232dp
+                </dimen>
+                <dimen name="grid_57" >228dp
+                </dimen>
+                <dimen name="grid_90" >360dp
+                </dimen>
+                <dimen name="grid_55" >220dp
                 </dimen>
             </file>
             <file
@@ -5295,6 +5398,109 @@ actionBarTabs
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/styles.xml"
                 qualifiers="" >
 
+                <style name="Mixture.TextView.Title" >
+                    <item name="android:textSize">
+22sp
+                    </item>
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:paddingLeft">
+@dimen/grid_4
+                    </item>
+                    <item name="android:paddingRight">
+@dimen/grid_4
+                    </item>
+                    <item name="android:paddingTop">
+@dimen/grid_3
+                    </item>
+                    <item name="android:paddingBottom">
+@dimen/grid_3
+                    </item>
+                </style>
+
+                <style name="Mixture.HorizontalSeparator" >
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+1dp
+                    </item>
+                </style>
+
+                <style name="Mixture.Dialog.DialogStyleLight" >
+                    <item name="dialogBackground">
+@drawable/sdl_background_light
+                    </item>
+                    <item name="titleTextColor">
+@color/sdl_title_text_light
+                    </item>
+                    <item name="titleSeparatorColor">
+@color/sdl_title_separator_light
+                    </item>
+                    <item name="messageTextColor">
+@color/sdl_message_text_light
+                    </item>
+                    <item name="buttonTextColor">
+@color/sdl_button_text_light
+                    </item>
+                    <item name="buttonSeparatorColor">
+@color/sdl_button_separator_light
+                    </item>
+                    <item name="buttonBackgroundColorNormal">
+@color/sdl_button_normal_light
+                    </item>
+                    <item name="buttonBackgroundColorPressed">
+@color/sdl_button_pressed_light
+                    </item>
+                    <item name="buttonBackgroundColorFocused">
+@color/sdl_button_focused_light
+                    </item>
+                    <item name="actionButtonColorOrDrawable">
+true
+                    </item>
+                </style>
+
+                <style
+                    name="Mixture.Dialog"
+                    parent="android:Theme" >
+                    <item name="android:windowFrame">
+@null
+                    </item>
+                    <item name="android:windowIsFloating">
+true
+                    </item>
+                    <item name="android:windowNoTitle">
+true
+                    </item>
+                    <item name="android:windowContentOverlay">
+@null
+                    </item>
+                    <item name="android:windowSoftInputMode">
+stateUnspecified|adjustPan
+                    </item>
+                    <item name="android:backgroundDimAmount">
+0.6
+                    </item>
+                    <item name="android:colorBackgroundCacheHint">
+@null
+                    </item>
+                    <item name="mixtureDialogStyle">
+@style/Mixture.Dialog.DialogStyleLight
+                    </item>
+                </style>
+
+                <style
+                    name="Mixture.TextView"
+                    parent="android:style/Widget.TextView" >
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:layout_width">
+wrap_content
+                    </item>
+                </style>
+
                 <style
                     name="TitleTextStyle"
                     parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" >
@@ -5303,7 +5509,13 @@ actionBarTabs
                     </item>
                 </style>
 
-                <style name="MenuDrawer" />
+                <style
+                    name="TabTextStyle"
+                    parent="@style/Widget.AppCompat.ActionBar.TabText" >
+                    <item name="android:textColor">
+@color/color_gray
+                    </item>
+                </style>
 
                 <style name="MenuDrawer.Widget.Title" >
                     <item name="android:background">
@@ -5338,25 +5550,109 @@ center_vertical
                     </item>
                 </style>
 
-                <style name="MenuDrawer.Widget" />
-
-                <style
-                    name="TabTextStyle"
-                    parent="@style/Widget.AppCompat.ActionBar.TabText" >
-                    <item name="android:textColor">
-@color/color_gray
+                <style name="Mixture.Group.Horizontal" >
+                    <item name="android:orientation">
+horizontal
                     </item>
                 </style>
 
                 <style
-                    name="AppBaseTheme"
-                    parent="android:Theme.Light" >
+                    name="Mixture.CustomTheme"
+                    parent="CustomActionBarTheme" >
+                    <item name="mixtureDialogStyle">
+@style/Mixture.Dialog.DialogStyleLight
+                    </item>
+                </style>
 
-                    <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-                    -->
+                <style name="Mixture.ButtonSeparator" >
+                    <item name="android:layout_width">
+1dp
+                    </item>
+                    <item name="android:layout_height">
+match_parent
+                    </item>
+                </style>
+
+                <style name="Mixture.Group" >
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+match_parent
+                    </item>
+                    <item name="android:orientation">
+vertical
+                    </item>
+                </style>
+
+                <style name="Mixture.Group.ButtonPanel" >
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                </style>
+
+                <style name="Mixture.Dialog.ContentView" >
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+match_parent
+                    </item>
+                    <item name="android:orientation">
+vertical
+                    </item>
+                </style>
+
+                <style name="Mixture" />
+
+                <style name="Mixture.Group.Horizontal.ButtonPanel" >
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                </style>
+
+                <style name="Mixture.Group.Content" >
+                    <item name="android:layout_height">
+0dp
+                    </item>
+                    <item name="android:layout_weight">
+1
+                    </item>
+                    <item name="android:gravity">
+center
+                    </item>
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+
+                <style
+                    name="CustomActionBarTheme"
+                    parent="@style/Theme.AppCompat.Light" >
+                    <item name="android:actionBarStyle">
+@style/MyActionBar
+                    </item>
+                    <item name="android:actionBarTabTextStyle">
+@style/TabTextStyle
+                    </item>
+                    <item name="android:actionMenuTextColor">
+@color/color_gray
+                    </item>
+
+                    <!-- Support library compatibility -->
+                    <item name="actionBarStyle">
+@style/MyActionBar
+                    </item>
+                    <item name="actionBarTabTextStyle">
+@style/TabTextStyle
+                    </item>
+                    <item name="actionMenuTextColor">
+@color/color_gray
+                    </item>
                 </style>
 
                 <style
@@ -5390,36 +5686,97 @@ center_vertical
                     </item>
                 </style>
 
-                <style
-                    name="CustomActionBarTheme"
-                    parent="@style/Theme.AppCompat.Light" >
-                    <item name="android:actionBarStyle">
-@style/MyActionBar
+                <style name="Mixture.Button" >
+                    <item name="android:layout_height">
+wrap_content
                     </item>
-                    <item name="android:actionBarTabTextStyle">
-@style/TabTextStyle
+                    <item name="android:paddingTop">
+@dimen/grid_3
                     </item>
-                    <item name="android:actionMenuTextColor">
-@color/color_gray
+                    <item name="android:paddingBottom">
+@dimen/grid_3
                     </item>
+                    <item name="android:minHeight">
+48dip
+                    </item>
+                    <item name="android:minWidth">
+64dip
+                    </item>
+                    <item name="android:paddingLeft">
+4dip
+                    </item>
+                    <item name="android:paddingRight">
+4dip
+                    </item>
+                    <item name="android:layout_width">
+0dp
+                    </item>
+                    <item name="android:layout_weight">
+1
+                    </item>
+                    <item name="android:textSize">
+15sp
+                    </item>
+                    <item name="android:textStyle">
+normal
+                    </item>
+                    <item name="android:layout_gravity">
+center_vertical
+                    </item>
+                </style>
 
-                    <!-- Support library compatibility -->
-                    <item name="actionBarStyle">
-@style/MyActionBar
+                <style name="MenuDrawer" />
+
+                <style name="Mixture.Group.Wrap" >
+                    <item name="android:layout_height">
+wrap_content
                     </item>
-                    <item name="actionBarTabTextStyle">
-@style/TabTextStyle
+                    <item name="android:layout_weight">
+1
                     </item>
-                    <item name="actionMenuTextColor">
-@color/color_gray
+                </style>
+
+                <style name="Mixture.TextView.Message" >
+                    <item name="android:textSize">
+16sp
+                    </item>
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:paddingLeft">
+@dimen/grid_4
+                    </item>
+                    <item name="android:paddingRight">
+@dimen/grid_4
+                    </item>
+                    <item name="android:paddingTop">
+@dimen/grid_4
+                    </item>
+                    <item name="android:paddingBottom">
+@dimen/grid_4
                     </item>
                 </style>
 
                 <style
-                    name="AppTheme"
-                    parent="AppBaseTheme" >
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
 
-                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style name="MenuDrawer.Widget" />
+
+                <style name="Mixture.Dialog.TitleSeparator" >
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+2dp
+                    </item>
                 </style>
             </file>
             <file
@@ -5458,6 +5815,139 @@ center_vertical
             <file
                 name="fragment_section_dummy"
                 path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/fragment_section_dummy.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_dialog_demo"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/fragment_dialog_demo.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fade_in"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/anim/fade_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="fade_out"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/anim/fade_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="dialog_message"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/dialog_message.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="sdl_background_light"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-hdpi/sdl_background_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="sdl_background_light"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-mdpi/sdl_background_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="sdl_background_light"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/drawable-xhdpi/sdl_background_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="mixture_dialog_layout"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/mixture_dialog_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="sdl_primary_text_holo_dark"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/color/sdl_primary_text_holo_dark.xml"
+                qualifiers=""
+                type="color" />
+            <file
+                name="sdl_primary_text_holo_light"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/color/sdl_primary_text_holo_light.xml"
+                qualifiers=""
+                type="color" />
+            <file
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/attr.xml"
+                qualifiers="" >
+                <declare-styleable name="StyledDialogs" >
+                    <attr
+                        name="mixtureDialogStyle"
+                        format="reference" />
+                </declare-styleable>
+                <declare-styleable name="DialogStyle" >
+                    <attr
+                        name="dialogBackground"
+                        format="reference" />
+                    <attr
+                        name="titleTextColor"
+                        format="color|reference" />
+                    <attr
+                        name="titleSeparatorColor"
+                        format="color|reference" />
+                    <attr
+                        name="messageTextColor"
+                        format="color|reference" />
+                    <attr
+                        name="buttonTextColor"
+                        format="color|reference" />
+                    <attr
+                        name="buttonSeparatorColor"
+                        format="color|reference" />
+                    <attr
+                        name="buttonBackgroundColorNormal"
+                        format="color|reference" />
+                    <attr
+                        name="buttonBackgroundColorPressed"
+                        format="color|reference" />
+                    <attr
+                        name="buttonBackgroundColorFocused"
+                        format="color|reference" />
+                    <attr
+                        name="buttonBackgroundDrawableNormal"
+                        format="reference" />
+                    <attr
+                        name="buttonBackgroundDrawablePressed"
+                        format="reference" />
+                    <attr
+                        name="buttonBackgroundDrawableFocused"
+                        format="reference" />
+                    <attr
+                        name="actionButtonColorOrDrawable"
+                        format="boolean" />
+                </declare-styleable>
+            </file>
+            <file
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/ids.xml"
+                qualifiers="" >
+                <item
+                    name="dialog__neutral_button"
+                    type="id"/>
+                <item
+                    name="dialog__negative_button"
+                    type="id"/>
+                <item
+                    name="dialog__positive_button"
+                    type="id"/>
+            </file>
+            <file
+                name="dialog_button_panel"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/dialog_button_panel.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="dialog_action_button"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/dialog_action_button.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="dialog_custom_view"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/dialog_custom_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="dialog_aciton_button_separator"
+                path="/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/layout/dialog_aciton_button_separator.xml"
                 qualifiers=""
                 type="layout" />
         </source>

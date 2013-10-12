@@ -5,14 +5,13 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.ShareActionProvider;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -20,11 +19,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.xuwakao.mixture.R;
 import com.xuwakao.mixture.framework.utils.MLog;
+import com.xuwakao.mixture.utils.MixtureAlertDialogFragment;
+import com.xuwakao.mixture.utils.MixtureBaseAlertDialogFragment;
+import com.xuwakao.mixture.utils.MixtureSimpleAlertDialogFragment;
 
-public class MainActivity extends UIActionBarActivity {
+public class MainActivity extends UIActionBarActivity implements MixtureSimpleAlertDialogFragment.MixtureSimpleNoticeListener{
     private static final String TAG = MLog.makeLogTag(MainActivity.class);
 
     private String[] menuTitles;
@@ -159,6 +162,16 @@ public class MainActivity extends UIActionBarActivity {
         mLeftDrawerToggle.onConfigurationChanged(newConfig);
     }
 
+    @Override
+    public void onDialogPositiveClick(DialogFragment dialog) {
+        Toast.makeText(getContext(), "您已经被炒鱿鱼看了", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onDialogNegativeClick(DialogFragment dialog) {
+        Toast.makeText(getContext(), "滚一边去了", Toast.LENGTH_SHORT).show();
+    }
+
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView parent, View view, int position, long id) {
@@ -185,8 +198,17 @@ public class MainActivity extends UIActionBarActivity {
                 intent = new Intent(getContext(), ActionBarTabActivity.class);
                 startActivity(intent);
                 break;
+            case 4 :
+                dialogDemoClicked(position);
             default :
         }
+    }
+
+    private void dialogDemoClicked(int position){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        DialogDemoFragment fragment = new DialogDemoFragment();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        menuItemClicked(position);
     }
 
     private void collectionDemoClicked(int position) {
