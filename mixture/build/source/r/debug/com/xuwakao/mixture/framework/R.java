@@ -7,8 +7,109 @@
 package com.xuwakao.mixture.framework;
 
 public final class R {
+	public static final class attr {
+		public static final int actionButtonColorOrDrawable = 0x7f010063;
+		public static final int buttonBackgroundColorFocused = 0x7f01005f;
+		public static final int buttonBackgroundColorNormal = 0x7f01005d;
+		public static final int buttonBackgroundColorPressed = 0x7f01005e;
+		public static final int buttonBackgroundDrawableFocused = 0x7f010062;
+		public static final int buttonBackgroundDrawableNormal = 0x7f010060;
+		public static final int buttonBackgroundDrawablePressed = 0x7f010061;
+		public static final int buttonSeparatorColor = 0x7f01005c;
+		public static final int buttonTextColor = 0x7f01005b;
+		public static final int dialogBackground = 0x7f010057;
+		public static final int messageTextColor = 0x7f01005a;
+		public static final int mixtureDialogStyle = 0x7f010082;
+		public static final int titleCloseIcon = 0x7f010065;
+		public static final int titleIcon = 0x7f010064;
+		public static final int titleSeparatorColor = 0x7f010059;
+		public static final int titleTextColor = 0x7f010058;
+	}
+	public static final class color {
+		public static final int sdl_bright_foreground_disabled_holo_dark = 0x7f070011;
+		public static final int sdl_bright_foreground_disabled_holo_light = 0x7f070012;
+		public static final int sdl_bright_foreground_holo_dark = 0x7f070013;
+		public static final int sdl_bright_foreground_holo_light = 0x7f070014;
+		public static final int sdl_button_focused_dark = 0x7f070015;
+		public static final int sdl_button_focused_light = 0x7f070016;
+		public static final int sdl_button_normal_dark = 0x7f070017;
+		public static final int sdl_button_normal_light = 0x7f070018;
+		public static final int sdl_button_pressed_dark = 0x7f070019;
+		public static final int sdl_button_pressed_light = 0x7f07001a;
+		public static final int sdl_button_separator_dark = 0x7f07001b;
+		public static final int sdl_button_separator_light = 0x7f07001c;
+		public static final int sdl_button_text_dark = 0x7f07001d;
+		public static final int sdl_button_text_light = 0x7f07001e;
+		public static final int sdl_message_text_dark = 0x7f07001f;
+		public static final int sdl_message_text_light = 0x7f070020;
+		public static final int sdl_primary_text_holo_dark = 0x7f070027;
+		public static final int sdl_primary_text_holo_light = 0x7f070028;
+		public static final int sdl_title_separator_dark = 0x7f070021;
+		public static final int sdl_title_separator_light = 0x7f070022;
+		public static final int sdl_title_text_dark = 0x7f070023;
+		public static final int sdl_title_text_light = 0x7f070024;
+	}
+	public static final class dimen {
+		public static final int grid_1 = 0x7f090012;
+		public static final int grid_10 = 0x7f090013;
+		public static final int grid_11 = 0x7f090014;
+		public static final int grid_12 = 0x7f090015;
+		public static final int grid_13 = 0x7f090016;
+		public static final int grid_14 = 0x7f090017;
+		public static final int grid_15 = 0x7f090018;
+		public static final int grid_16 = 0x7f090019;
+		public static final int grid_17 = 0x7f09001a;
+		public static final int grid_18 = 0x7f09001b;
+		public static final int grid_2 = 0x7f09001c;
+		public static final int grid_20 = 0x7f09001d;
+		public static final int grid_26 = 0x7f09001e;
+		public static final int grid_27 = 0x7f09001f;
+		public static final int grid_28 = 0x7f090020;
+		public static final int grid_3 = 0x7f090021;
+		public static final int grid_4 = 0x7f090022;
+		public static final int grid_43 = 0x7f090023;
+		public static final int grid_44 = 0x7f090024;
+		public static final int grid_45 = 0x7f090025;
+		public static final int grid_46 = 0x7f090026;
+		public static final int grid_5 = 0x7f090027;
+		public static final int grid_55 = 0x7f090028;
+		public static final int grid_57 = 0x7f090029;
+		public static final int grid_58 = 0x7f09002a;
+		public static final int grid_6 = 0x7f09002b;
+		public static final int grid_7 = 0x7f09002c;
+		public static final int grid_8 = 0x7f09002d;
+		public static final int grid_9 = 0x7f09002e;
+		public static final int grid_90 = 0x7f09002f;
+	}
 	public static final class drawable {
 		public static final int ic_launcher = 0x7f020075;
+		public static final int sdl_background_light = 0x7f020081;
+	}
+	public static final class id {
+		public static final int dialog__button_panel = 0x7f08005a;
+		public static final int dialog__negative_button = 0x7f08001b;
+		public static final int dialog__neutral_button = 0x7f08001c;
+		public static final int dialog__positive_button = 0x7f08001d;
+		public static final int dialog__titleDivider = 0x7f080069;
+		public static final int dialog_button_horizontal_panel = 0x7f08005c;
+		public static final int dialog_button_separator = 0x7f080059;
+		public static final int dialog_content = 0x7f08006a;
+		public static final int dialog_custom_content = 0x7f08005e;
+		public static final int dialog_custom_panel = 0x7f08005d;
+		public static final int dialog_horizontal_separator = 0x7f08005b;
+		public static final int dialog_title = 0x7f080067;
+		public static final int dialog_title_close = 0x7f080068;
+		public static final int dialog_title_layout = 0x7f080066;
+		public static final int dilog_message = 0x7f080060;
+		public static final int dilog_message_scroll = 0x7f08005f;
+	}
+	public static final class layout {
+		public static final int dialog_aciton_button_separator = 0x7f03001d;
+		public static final int dialog_action_button = 0x7f03001e;
+		public static final int dialog_button_panel = 0x7f03001f;
+		public static final int dialog_custom_view = 0x7f030020;
+		public static final int dialog_message = 0x7f030021;
+		public static final int mixture_dialog_layout = 0x7f030028;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f0b001a;
@@ -16,5 +117,44 @@ public final class R {
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f0c0000;
 		public static final int AppTheme = 0x7f0c0001;
+		public static final int Mixture = 0x7f0c0007;
+		public static final int Mixture_Button = 0x7f0c0008;
+		public static final int Mixture_ButtonSeparator = 0x7f0c0009;
+		public static final int Mixture_Dialog = 0x7f0c000a;
+		public static final int Mixture_Dialog_ContentView = 0x7f0c000b;
+		public static final int Mixture_Dialog_DialogStyleLight = 0x7f0c000c;
+		public static final int Mixture_Dialog_TitleSeparator = 0x7f0c000d;
+		public static final int Mixture_Group = 0x7f0c000e;
+		public static final int Mixture_Group_ButtonPanel = 0x7f0c000f;
+		public static final int Mixture_Group_Content = 0x7f0c0010;
+		public static final int Mixture_Group_Horizontal = 0x7f0c0011;
+		public static final int Mixture_Group_Horizontal_ButtonPanel = 0x7f0c0012;
+		public static final int Mixture_Group_Wrap = 0x7f0c0013;
+		public static final int Mixture_HorizontalSeparator = 0x7f0c0014;
+		public static final int Mixture_ImageView = 0x7f0c0015;
+		public static final int Mixture_RelativeLayout = 0x7f0c0016;
+		public static final int Mixture_TextView = 0x7f0c0017;
+		public static final int Mixture_TextView_Message = 0x7f0c0018;
+		public static final int Mixture_TextView_Title = 0x7f0c0019;
+	}
+	public static final class styleable {
+		public static final int[] DialogStyle = { 0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a, 0x7f01005b, 0x7f01005c, 0x7f01005d, 0x7f01005e, 0x7f01005f, 0x7f010060, 0x7f010061, 0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065 };
+		public static final int DialogStyle_actionButtonColorOrDrawable = 12;
+		public static final int DialogStyle_buttonBackgroundColorFocused = 8;
+		public static final int DialogStyle_buttonBackgroundColorNormal = 6;
+		public static final int DialogStyle_buttonBackgroundColorPressed = 7;
+		public static final int DialogStyle_buttonBackgroundDrawableFocused = 11;
+		public static final int DialogStyle_buttonBackgroundDrawableNormal = 9;
+		public static final int DialogStyle_buttonBackgroundDrawablePressed = 10;
+		public static final int DialogStyle_buttonSeparatorColor = 5;
+		public static final int DialogStyle_buttonTextColor = 4;
+		public static final int DialogStyle_dialogBackground = 0;
+		public static final int DialogStyle_messageTextColor = 3;
+		public static final int DialogStyle_titleCloseIcon = 14;
+		public static final int DialogStyle_titleIcon = 13;
+		public static final int DialogStyle_titleSeparatorColor = 2;
+		public static final int DialogStyle_titleTextColor = 1;
+		public static final int[] StyledDialogs = { 0x7f010082 };
+		public static final int StyledDialogs_mixtureDialogStyle = 0;
 	}
 }

@@ -1,9 +1,18 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1380282848000 14383 82acdd75e3fcc36026109406625edc69d4d7212d /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/drawable-xhdpi/ic_launcher.png
-1380282848000 341 3c84fff8ab7e65ce3c69119af9c57e1cdc09981c /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/values-v11/values.xml
-1380282848000 836 882d812664257484b2d3ea680a4ccfdf0d0ae5a8 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/values/values.xml
-1380282848000 9397 4a5a9affbb731f195fc18fea78d51be7db7536a2 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/drawable-hdpi/ic_launcher.png
-1380282848000 5237 7761bceaf18ed25cdba5f34bf00a55616d078acf /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/drawable-mdpi/ic_launcher.png
-1380282848000 355 fe299a589a388a9f7586e6ad99a28e1e6be2111f /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/values-v14/values.xml
+1381737835000 1495 eaa3ae95e94e8d37486ab9c9313a25efdb7e3e4c /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/color/sdl_primary_text_holo_dark.xml
+1381737835000 296 607c46c0d7e3b36d91b65914249590b281186411 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/layout/dialog_action_button.xml
+1381737835000 985 8fc3bfa1c589ebc5820c6b55b442b20cfc72a521 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/layout/mixture_dialog_layout.xml
+1381737835000 9397 4a5a9affbb731f195fc18fea78d51be7db7536a2 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/drawable-hdpi/ic_launcher.png
+1381737835000 457 45e4e14eb986ab49f850418a8eda0beb3a1f93f9 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/layout/dialog_custom_view.xml
+1381737835000 5237 7761bceaf18ed25cdba5f34bf00a55616d078acf /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/drawable-mdpi/ic_launcher.png
+1381737835000 944 3fa84e03a908952df719e47816e182711ebcee41 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/drawable-mdpi/sdl_background_light.9.png
+1381737835000 630 df6b345dfc01ebe67a6af52ae729c7263d9f4309 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/layout/dialog_button_panel.xml
+1381737835000 349 81084989eeed307d20799f9d21d49fd1888403f3 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/layout/dialog_aciton_button_separator.xml
+1381737835000 14383 82acdd75e3fcc36026109406625edc69d4d7212d /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/drawable-xhdpi/ic_launcher.png
+1381737835000 2231 c7239773ca4dd8e7769f09c4666cddc174ba2de9 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/drawable-xhdpi/sdl_background_light.9.png
+1381737835000 1515 123bfa755057e18574e0a7716ef1aaaa5f0f6886 /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/drawable-hdpi/sdl_background_light.9.png
+1381741246000 10923 48e5def8443174429e8444f911cb00c26bfd452b /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/values/values.xml
+1381737835000 459 aa9b72e92b79cd5ee18ed596c276fb04ff226aac /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/layout/dialog_message.xml
+1381737835000 1498 cea9676bd5e81430a5105011f4eeb05ffb1557bd /Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/build/res/all/release/color/sdl_primary_text_holo_light.xml

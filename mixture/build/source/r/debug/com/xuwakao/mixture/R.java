@@ -1002,7 +1002,7 @@ containing a value of this type.
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml 
          */
         public static final int md__defaultBackground=0x7f070010;
-        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/colors.xml 
+        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml 
          */
         public static final int sdl_bright_foreground_disabled_holo_dark=0x7f070011;
         public static final int sdl_bright_foreground_disabled_holo_light=0x7f070012;
@@ -1026,6 +1026,8 @@ containing a value of this type.
         public static final int sdl_title_separator_light=0x7f070022;
         public static final int sdl_title_text_dark=0x7f070023;
         public static final int sdl_title_text_light=0x7f070024;
+        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/colors.xml 
+         */
         public static final int transparent=0x7f070025;
     }
     public static final class dimen {
@@ -1053,6 +1055,8 @@ containing a value of this type.
          */
         public static final int activity_horizontal_margin=0x7f090010;
         public static final int activity_vertical_margin=0x7f090011;
+        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml 
+         */
         public static final int grid_1=0x7f090012;
         public static final int grid_10=0x7f090013;
         public static final int grid_11=0x7f090014;
@@ -1253,7 +1257,7 @@ containing a value of this type.
         public static final int default_activity_button=0x7f080035;
         public static final int dialog=0x7f080016;
         public static final int dialog__button_panel=0x7f08005a;
-        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/ids.xml 
+        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml 
          */
         public static final int dialog__negative_button=0x7f08001b;
         public static final int dialog__neutral_button=0x7f08001c;
@@ -1455,13 +1459,15 @@ containing a value of this type.
          */
         public static final int AppTheme=0x7f0c0001;
         public static final int CustomActionBarTheme=0x7f0c0002;
-        public static final int MenuDrawer=0x7f0c0003;
-        public static final int MenuDrawer_Widget=0x7f0c0004;
-        public static final int MenuDrawer_Widget_Title=0x7f0c0005;
-        public static final int Mixture=0x7f0c0006;
-        public static final int Mixture_Button=0x7f0c0007;
-        public static final int Mixture_ButtonSeparator=0x7f0c0008;
-        public static final int Mixture_CustomTheme=0x7f0c0009;
+        public static final int CustomTheme=0x7f0c0003;
+        public static final int MenuDrawer=0x7f0c0004;
+        public static final int MenuDrawer_Widget=0x7f0c0005;
+        public static final int MenuDrawer_Widget_Title=0x7f0c0006;
+        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml 
+         */
+        public static final int Mixture=0x7f0c0007;
+        public static final int Mixture_Button=0x7f0c0008;
+        public static final int Mixture_ButtonSeparator=0x7f0c0009;
         public static final int Mixture_Dialog=0x7f0c000a;
         public static final int Mixture_Dialog_ContentView=0x7f0c000b;
         /**  <item name="titleIcon">@drawable/ic_launcher</item> 
@@ -1481,6 +1487,8 @@ containing a value of this type.
         public static final int Mixture_TextView=0x7f0c0017;
         public static final int Mixture_TextView_Message=0x7f0c0018;
         public static final int Mixture_TextView_Title=0x7f0c0019;
+        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/styles.xml 
+         */
         public static final int MyActionBar=0x7f0c001a;
         public static final int TabTextStyle=0x7f0c001b;
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml 
@@ -2232,7 +2240,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
-        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/attr.xml 
+        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml 
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
@@ -3515,7 +3523,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:spinnerMode
         */
         public static final int Spinner_spinnerMode = 7;
-        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/attr.xml 
+        /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml 
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />

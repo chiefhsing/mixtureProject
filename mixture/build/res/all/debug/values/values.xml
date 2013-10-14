@@ -121,7 +121,7 @@
     <color name="color_yellow_ligtht">#FFBB33</color>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
     <color name="md__defaultBackground">#FF555555</color>
-    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml -->
     <color name="sdl_bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
     <color name="sdl_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="sdl_bright_foreground_holo_dark">#fff3f3f3</color>
@@ -142,6 +142,7 @@
     <color name="sdl_title_separator_light">#33B5E5</color>
     <color name="sdl_title_text_dark">#ff0099cc</color>
     <color name="sdl_title_text_light">#33B5E5</color>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/colors.xml -->
     <color name="transparent">#00000000</color>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <declare-styleable name="ActionBar">
@@ -248,7 +249,7 @@
         <!-- Present the text in ALL CAPS. This may use a small-caps form when available. -->
         <attr name="textAllCaps" format="reference|boolean" />
     </declare-styleable>
-    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/attr.xml -->
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml -->
     <declare-styleable name="DialogStyle">
         <attr name="dialogBackground" format="reference" />
         <attr name="titleTextColor" format="color|reference" />
@@ -565,7 +566,7 @@
         -->
         <attr name="disableChildrenWhenDisabled" format="boolean" />
     </declare-styleable>
-    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/attr.xml -->
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml -->
     <declare-styleable name="StyledDialogs">
         <attr name="mixtureDialogStyle" format="reference" />
     </declare-styleable>
@@ -630,6 +631,7 @@
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/dimens.xml -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml -->
     <dimen name="grid_1">4dp</dimen>
     <dimen name="grid_10">40dp</dimen>
     <dimen name="grid_11">44dp</dimen>
@@ -664,7 +666,7 @@
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/ids.xml -->
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml -->
     <item name="dialog__negative_button" type="id"/>
     <item name="dialog__neutral_button" type="id"/>
     <item name="dialog__positive_button" type="id"/>
@@ -742,6 +744,10 @@
         <item name="actionMenuTextColor">@color/color_gray</item>
     </style>
 
+    <style name="CustomTheme" parent="CustomActionBarTheme">
+        <item name="mixtureDialogStyle">@style/Mixture.Dialog.DialogStyleLight</item>
+    </style>
+
     <style name="MenuDrawer" />
 
     <style name="MenuDrawer.Widget" />
@@ -758,7 +764,7 @@
         <item name="android:drawablePadding">16dp</item>
         <item name="android:gravity">center_vertical</item>
     </style>
-
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml -->
     <style name="Mixture" />
 
     <style name="Mixture.Button">
@@ -779,10 +785,6 @@
     <style name="Mixture.ButtonSeparator">
         <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">match_parent</item>
-    </style>
-
-    <style name="Mixture.CustomTheme" parent="CustomActionBarTheme">
-        <item name="mixtureDialogStyle">@style/Mixture.Dialog.DialogStyleLight</item>
     </style>
 
     <style name="Mixture.Dialog" parent="android:Theme">
@@ -860,12 +862,12 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_margin">@dimen/grid_1</item>
-        <item name="android:layout_centerVertical">true</item>
     </style>
 
     <style name="Mixture.RelativeLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 
     <style name="Mixture.TextView" parent="android:style/Widget.TextView">
@@ -885,9 +887,10 @@
     <style name="Mixture.TextView.Title">
         <item name="android:textSize">22sp</item>
         <item name="android:padding">@dimen/grid_1</item>
-        <item name="android:gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
     </style>
-
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/styles.xml -->
     <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
         <item name="android:titleTextStyle">@style/TitleTextStyle</item>
         <item name="android:background">@color/color_gray</item>
