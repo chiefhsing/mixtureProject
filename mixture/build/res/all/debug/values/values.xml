@@ -8,6 +8,7 @@
         <item>menudrawer</item>
         <item>actionBarTabs</item>
         <item>dialogDemo</item>
+        <item>imageDemo</item>
     </string-array>
     <string-array name="main_tab">
         <item>RANKING</item>
@@ -119,6 +120,8 @@
     <color name="color_white">#FFFFFF</color>
     <color name="color_yellow">#FF8800</color>
     <color name="color_yellow_ligtht">#FFBB33</color>
+    <color name="grid_state_focused">#777dbcd3</color>
+    <color name="grid_state_pressed">#BB7dbcd3</color>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
     <color name="md__defaultBackground">#FF555555</color>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml -->
@@ -662,6 +665,10 @@
     <dimen name="grid_8">32dp</dimen>
     <dimen name="grid_9">36dp</dimen>
     <dimen name="grid_90">360dp</dimen>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/dimens.xml -->
+    <dimen name="image_detail_pager_margin">80dp</dimen>
+    <dimen name="image_thumbnail_size">198dp</dimen>
+    <dimen name="image_thumbnail_spacing">2dp</dimen>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
@@ -717,9 +724,12 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="dummy_section_text">Section %1d is just a dummy section.</string>
     <string name="hello_world">Hello world!</string>
+    <string name="imageview_description">Image Thumbnail</string>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMenudrawerUnspecified.aar/res/values/values.xml -->
     <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
     <string name="md__drawerOpenIndicatorDesc">Close drawer</string>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/MixtureProjectMixtureFrameworkUnspecified.aar/res/values/values.xml -->
+    <string name="no_network_connection_toast">No network connection found</string>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -902,6 +912,11 @@
         <item name="background">@color/color_gray</item>
         <item name="backgroundStacked">@color/color_green_shine</item>
         <item name="backgroundSplit">@color/color_green_shine</item>
+    </style>
+
+    <style name="PhotoGridLayout">
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:listSelector">@drawable/photogrid_list_selector</item>
     </style>
 
     <style name="TabTextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">

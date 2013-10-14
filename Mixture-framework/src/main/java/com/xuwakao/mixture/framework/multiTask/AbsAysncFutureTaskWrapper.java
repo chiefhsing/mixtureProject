@@ -70,6 +70,10 @@ public abstract class AbsAysncFutureTaskWrapper {
         };
     }
 
+    protected boolean isCancelled(){
+        return this.task.isCancelled();
+    }
+
     /**
      * Post result
      *

@@ -20,4 +20,5 @@
     <string name="artist">ARTISTS</string>
     <string name="album">ALBUM</string>
     <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+    <string name="imageview_description">Image Thumbnail</string>
 </resources>

@@ -185,6 +185,8 @@ public class MainActivity extends UIActionBarActivity{
                 break;
             case 4 :
                 dialogDemoClicked(position);
+            case 5 :
+                imageClicked(position);
             default :
         }
     }
@@ -192,6 +194,13 @@ public class MainActivity extends UIActionBarActivity{
     private void dialogDemoClicked(int position){
         FragmentManager fragmentManager = getSupportFragmentManager();
         DialogDemoFragment fragment = new DialogDemoFragment();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        menuItemClicked(position);
+    }
+
+    private void imageClicked(int position){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        ImageGridFragment fragment = new ImageGridFragment();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
         menuItemClicked(position);
     }

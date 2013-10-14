@@ -6,6 +6,7 @@
         <item>menudrawer</item>
         <item>actionBarTabs</item>
         <item>dialogDemo</item>
+        <item>imageDemo</item>
     </string-array>
     <string-array name="planets_array">
         <item>mercury</item>

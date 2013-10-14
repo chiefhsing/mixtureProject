@@ -87,4 +87,9 @@
     <style name="CustomTheme" parent="CustomActionBarTheme">
         <item name="mixtureDialogStyle">@style/Mixture.Dialog.DialogStyleLight</item>
     </style>
+
+    <style name="PhotoGridLayout">
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:listSelector">@drawable/photogrid_list_selector</item>
+    </style>
 </resources>

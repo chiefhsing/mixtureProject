@@ -26,28 +26,28 @@ public final class R {
 		public static final int titleTextColor = 0x7f010058;
 	}
 	public static final class color {
-		public static final int sdl_bright_foreground_disabled_holo_dark = 0x7f070011;
-		public static final int sdl_bright_foreground_disabled_holo_light = 0x7f070012;
-		public static final int sdl_bright_foreground_holo_dark = 0x7f070013;
-		public static final int sdl_bright_foreground_holo_light = 0x7f070014;
-		public static final int sdl_button_focused_dark = 0x7f070015;
-		public static final int sdl_button_focused_light = 0x7f070016;
-		public static final int sdl_button_normal_dark = 0x7f070017;
-		public static final int sdl_button_normal_light = 0x7f070018;
-		public static final int sdl_button_pressed_dark = 0x7f070019;
-		public static final int sdl_button_pressed_light = 0x7f07001a;
-		public static final int sdl_button_separator_dark = 0x7f07001b;
-		public static final int sdl_button_separator_light = 0x7f07001c;
-		public static final int sdl_button_text_dark = 0x7f07001d;
-		public static final int sdl_button_text_light = 0x7f07001e;
-		public static final int sdl_message_text_dark = 0x7f07001f;
-		public static final int sdl_message_text_light = 0x7f070020;
-		public static final int sdl_primary_text_holo_dark = 0x7f070027;
-		public static final int sdl_primary_text_holo_light = 0x7f070028;
-		public static final int sdl_title_separator_dark = 0x7f070021;
-		public static final int sdl_title_separator_light = 0x7f070022;
-		public static final int sdl_title_text_dark = 0x7f070023;
-		public static final int sdl_title_text_light = 0x7f070024;
+		public static final int sdl_bright_foreground_disabled_holo_dark = 0x7f070013;
+		public static final int sdl_bright_foreground_disabled_holo_light = 0x7f070014;
+		public static final int sdl_bright_foreground_holo_dark = 0x7f070015;
+		public static final int sdl_bright_foreground_holo_light = 0x7f070016;
+		public static final int sdl_button_focused_dark = 0x7f070017;
+		public static final int sdl_button_focused_light = 0x7f070018;
+		public static final int sdl_button_normal_dark = 0x7f070019;
+		public static final int sdl_button_normal_light = 0x7f07001a;
+		public static final int sdl_button_pressed_dark = 0x7f07001b;
+		public static final int sdl_button_pressed_light = 0x7f07001c;
+		public static final int sdl_button_separator_dark = 0x7f07001d;
+		public static final int sdl_button_separator_light = 0x7f07001e;
+		public static final int sdl_button_text_dark = 0x7f07001f;
+		public static final int sdl_button_text_light = 0x7f070020;
+		public static final int sdl_message_text_dark = 0x7f070021;
+		public static final int sdl_message_text_light = 0x7f070022;
+		public static final int sdl_primary_text_holo_dark = 0x7f070029;
+		public static final int sdl_primary_text_holo_light = 0x7f07002a;
+		public static final int sdl_title_separator_dark = 0x7f070023;
+		public static final int sdl_title_separator_light = 0x7f070024;
+		public static final int sdl_title_text_dark = 0x7f070025;
+		public static final int sdl_title_text_light = 0x7f070026;
 	}
 	public static final class dimen {
 		public static final int grid_1 = 0x7f090012;
@@ -82,24 +82,24 @@ public final class R {
 		public static final int grid_90 = 0x7f09002f;
 	}
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f020075;
-		public static final int sdl_background_light = 0x7f020081;
+		public static final int ic_launcher = 0x7f020076;
+		public static final int sdl_background_light = 0x7f020083;
 	}
 	public static final class id {
 		public static final int dialog__button_panel = 0x7f08005a;
 		public static final int dialog__negative_button = 0x7f08001b;
 		public static final int dialog__neutral_button = 0x7f08001c;
 		public static final int dialog__positive_button = 0x7f08001d;
-		public static final int dialog__titleDivider = 0x7f080069;
+		public static final int dialog__titleDivider = 0x7f08006b;
 		public static final int dialog_button_horizontal_panel = 0x7f08005c;
 		public static final int dialog_button_separator = 0x7f080059;
-		public static final int dialog_content = 0x7f08006a;
+		public static final int dialog_content = 0x7f08006c;
 		public static final int dialog_custom_content = 0x7f08005e;
 		public static final int dialog_custom_panel = 0x7f08005d;
 		public static final int dialog_horizontal_separator = 0x7f08005b;
-		public static final int dialog_title = 0x7f080067;
-		public static final int dialog_title_close = 0x7f080068;
-		public static final int dialog_title_layout = 0x7f080066;
+		public static final int dialog_title = 0x7f080069;
+		public static final int dialog_title_close = 0x7f08006a;
+		public static final int dialog_title_layout = 0x7f080068;
 		public static final int dilog_message = 0x7f080060;
 		public static final int dilog_message_scroll = 0x7f08005f;
 	}
@@ -109,10 +109,11 @@ public final class R {
 		public static final int dialog_button_panel = 0x7f03001f;
 		public static final int dialog_custom_view = 0x7f030020;
 		public static final int dialog_message = 0x7f030021;
-		public static final int mixture_dialog_layout = 0x7f030028;
+		public static final int mixture_dialog_layout = 0x7f03002b;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f0b001a;
+		public static final int no_network_connection_toast = 0x7f0b0023;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f0c0000;

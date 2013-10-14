@@ -80,6 +80,7 @@
     <item name="dialog__positive_button" type="id"/>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/mixture_strings.xml -->
     <string name="app_name">mixFramwork</string>
+    <string name="no_network_connection_toast">No network connection found</string>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/mixture_theme.xml -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

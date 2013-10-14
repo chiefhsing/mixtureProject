@@ -25,4 +25,7 @@
     <color name="color_black">#000000</color>
     <color name="color_gray">#333333</color>
     <color name="transparent">#00000000</color>
+
+    <color name="grid_state_pressed">#BB7dbcd3</color>
+    <color name="grid_state_focused">#777dbcd3</color>
 </resources>

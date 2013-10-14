@@ -190,6 +190,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/mixture_strings.xml 
          */
         public static int app_name=0x7f070000;
+        public static int no_network_connection_toast=0x7f070001;
     }
     public static final class style {
         /**  From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/Mixture-framework/src/main/res/values/mixture_theme.xml 
