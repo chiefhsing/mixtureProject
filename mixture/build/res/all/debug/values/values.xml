@@ -263,6 +263,8 @@
         <attr name="buttonBackgroundDrawablePressed" format="reference" />
         <attr name="buttonBackgroundDrawableFocused" format="reference" />
         <attr name="actionButtonColorOrDrawable" format="boolean" />
+        <attr name="titleIcon" format="reference" />
+        <attr name="titleCloseIcon" format="reference" />
     </declare-styleable>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <declare-styleable name="LinearLayoutICS">
@@ -811,6 +813,8 @@
         <item name="buttonBackgroundColorPressed">@color/sdl_button_pressed_light</item>
         <item name="buttonBackgroundColorFocused">@color/sdl_button_focused_light</item>
         <item name="actionButtonColorOrDrawable">true</item>
+        <!-- <item name="titleIcon">@drawable/ic_launcher</item> -->
+        <!-- <item name="titleCloseIcon">@drawable/action_help_2</item> -->
     </style>
 
     <style name="Mixture.Dialog.TitleSeparator">
@@ -852,6 +856,18 @@
         <item name="android:layout_height">1dp</item>
     </style>
 
+    <style name="Mixture.ImageView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/grid_1</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Mixture.RelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
     <style name="Mixture.TextView" parent="android:style/Widget.TextView">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -868,11 +884,8 @@
 
     <style name="Mixture.TextView.Title">
         <item name="android:textSize">22sp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:paddingLeft">@dimen/grid_4</item>
-        <item name="android:paddingRight">@dimen/grid_4</item>
-        <item name="android:paddingTop">@dimen/grid_3</item>
-        <item name="android:paddingBottom">@dimen/grid_3</item>
+        <item name="android:padding">@dimen/grid_1</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 
     <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">

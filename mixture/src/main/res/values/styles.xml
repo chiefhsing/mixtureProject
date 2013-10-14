@@ -101,6 +101,8 @@
         <item name="buttonBackgroundColorPressed">@color/sdl_button_pressed_light</item>
         <item name="buttonBackgroundColorFocused">@color/sdl_button_focused_light</item>
         <item name="actionButtonColorOrDrawable">true</item>
+        <!--<item name="titleIcon">@drawable/ic_launcher</item>-->
+        <!--<item name="titleCloseIcon">@drawable/action_help_2</item>-->
     </style>
 
     <style name="Mixture.Dialog" parent="android:Theme">
@@ -122,11 +124,8 @@
 
     <style name="Mixture.TextView.Title">
         <item name="android:textSize">22sp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:paddingLeft">@dimen/grid_4</item>
-        <item name="android:paddingRight">@dimen/grid_4</item>
-        <item name="android:paddingTop">@dimen/grid_3</item>
-        <item name="android:paddingBottom">@dimen/grid_3</item>
+        <item name="android:padding">@dimen/grid_1</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 
     <style name="Mixture.TextView.Message">
@@ -136,6 +135,13 @@
         <item name="android:paddingRight">@dimen/grid_4</item>
         <item name="android:paddingTop">@dimen/grid_4</item>
         <item name="android:paddingBottom">@dimen/grid_4</item>
+    </style>
+
+    <style name="Mixture.ImageView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/grid_1</item>
+        <item name="android:layout_centerVertical">true</item>
     </style>
 
     <style name="Mixture.Dialog.TitleSeparator">
@@ -161,6 +167,7 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <!--use layout wrap_content in height-->
     <style name="Mixture.Group.Wrap">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
@@ -178,7 +185,13 @@
     <style name="Mixture.Group.Horizontal">
         <item name="android:orientation">horizontal</item>
     </style>
+
     <style name="Mixture.Group.Horizontal.ButtonPanel">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Mixture.RelativeLayout">
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 

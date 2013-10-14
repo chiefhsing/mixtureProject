@@ -5,7 +5,6 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
@@ -19,15 +18,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.xuwakao.mixture.R;
 import com.xuwakao.mixture.framework.utils.MLog;
-import com.xuwakao.mixture.utils.MixtureAlertDialogFragment;
-import com.xuwakao.mixture.utils.MixtureBaseAlertDialogFragment;
-import com.xuwakao.mixture.utils.MixtureSimpleAlertDialogFragment;
 
-public class MainActivity extends UIActionBarActivity implements MixtureSimpleAlertDialogFragment.MixtureSimpleNoticeListener{
+public class MainActivity extends UIActionBarActivity{
     private static final String TAG = MLog.makeLogTag(MainActivity.class);
 
     private String[] menuTitles;
@@ -160,16 +155,6 @@ public class MainActivity extends UIActionBarActivity implements MixtureSimpleAl
         super.onConfigurationChanged(newConfig);
         // Pass any configuration change to the drawer toggls
         mLeftDrawerToggle.onConfigurationChanged(newConfig);
-    }
-
-    @Override
-    public void onDialogPositiveClick(DialogFragment dialog) {
-        Toast.makeText(getContext(), "您已经被炒鱿鱼看了", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onDialogNegativeClick(DialogFragment dialog) {
-        Toast.makeText(getContext(), "滚一边去了", Toast.LENGTH_SHORT).show();
     }
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
