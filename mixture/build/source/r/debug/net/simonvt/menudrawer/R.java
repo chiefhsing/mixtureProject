@@ -44,12 +44,12 @@ public final class R {
 		public static final int top = 0x7f08000e;
 	}
 	public static final class string {
-		public static final int md__drawerClosedIndicatorDesc = 0x7f0b0021;
-		public static final int md__drawerOpenIndicatorDesc = 0x7f0b0022;
+		public static final int md__drawerClosedIndicatorDesc = 0x7f0b0023;
+		public static final int md__drawerOpenIndicatorDesc = 0x7f0b0024;
 	}
 	public static final class style {
-		public static final int Widget = 0x7f0c0053;
-		public static final int Widget_MenuDrawer = 0x7f0c009e;
+		public static final int Widget = 0x7f0c0054;
+		public static final int Widget_MenuDrawer = 0x7f0c009f;
 	}
 	public static final class styleable {
 		public static final int[] MenuDrawer = { 0x7f010068, 0x7f010069, 0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d, 0x7f01006e, 0x7f01006f, 0x7f010070, 0x7f010071, 0x7f010072, 0x7f010073, 0x7f010074, 0x7f010075, 0x7f010076, 0x7f010077 };

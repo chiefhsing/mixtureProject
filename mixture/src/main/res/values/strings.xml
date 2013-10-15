@@ -21,4 +21,6 @@
     <string name="album">ALBUM</string>
     <string name="dummy_section_text">Section %1d is just a dummy section.</string>
     <string name="imageview_description">Image Thumbnail</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
 </resources>

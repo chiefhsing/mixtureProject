@@ -42,7 +42,7 @@
             android:parentActivityName=".ui.MainActivity"></activity>
         <activity
             android:name=".ui.ImageDetailActivity"
-            android:theme="@style/CustomActionBarTheme"
+            android:theme="@style/CustomTheme"
             android:parentActivityName=".ui.MainActivity"></activity>
     </application>
 

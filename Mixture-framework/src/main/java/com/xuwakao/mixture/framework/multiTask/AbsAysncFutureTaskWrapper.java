@@ -14,9 +14,9 @@ import java.util.concurrent.TimeUnit;
  * Created by xujiexing on 13-9-23.
  */
 public abstract class AbsAysncFutureTaskWrapper {
-    private static final int SUCCESS_MESSAGE = 0x1 << 1;
-    private static final int CANCELED_MESSAGE = 0x1 << 2;
-    private static final int EXCEPTIONAL_MESSAGE = 0x1 << 3;
+    private static final int SUCCESS_MESSAGE = 0x1 << 0;
+    private static final int CANCELED_MESSAGE = 0x1 << 1;
+    private static final int EXCEPTIONAL_MESSAGE = 0x1 << 2;
 
     /**
      * The mParam used to excute the http request

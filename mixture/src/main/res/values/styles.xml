@@ -88,6 +88,12 @@
         <item name="mixtureDialogStyle">@style/Mixture.Dialog.DialogStyleLight</item>
     </style>
 
+    <style name="CustomTheme.ActionBarOverlay" parent="CustomTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
     <style name="PhotoGridLayout">
         <item name="android:drawSelectorOnTop">true</item>
         <item name="android:listSelector">@drawable/photogrid_list_selector</item>

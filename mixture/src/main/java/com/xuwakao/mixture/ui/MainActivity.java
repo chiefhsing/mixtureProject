@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -185,10 +186,23 @@ public class MainActivity extends UIActionBarActivity{
                 break;
             case 4 :
                 dialogDemoClicked(position);
+                break;
             case 5 :
                 imageClicked(position);
+                break;
             default :
+                break;
         }
+    }
+
+    private void collectionDemoClicked(int position) {
+        // Insert the fragment by replacing any existing fragment
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        CollectionDemoFragment fragment = new CollectionDemoFragment();
+        // Insert the fragment by replacing any existing fragment
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+
+        menuItemClicked(position);
     }
 
     private void dialogDemoClicked(int position){
@@ -201,16 +215,9 @@ public class MainActivity extends UIActionBarActivity{
     private void imageClicked(int position){
         FragmentManager fragmentManager = getSupportFragmentManager();
         ImageGridFragment fragment = new ImageGridFragment();
-        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-        menuItemClicked(position);
-    }
-
-    private void collectionDemoClicked(int position) {
-        // Insert the fragment by replacing any existing fragment
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        CollectionDemoFragment fragment = new CollectionDemoFragment();
-        // Insert the fragment by replacing any existing fragment
-        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.addToBackStack(null);
+        transaction.replace(R.id.content_frame, fragment).commit();
 
         menuItemClicked(position);
     }

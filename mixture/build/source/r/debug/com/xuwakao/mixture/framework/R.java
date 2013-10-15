@@ -113,30 +113,30 @@ public final class R {
 	}
 	public static final class string {
 		public static final int app_name = 0x7f0b001a;
-		public static final int no_network_connection_toast = 0x7f0b0023;
+		public static final int no_network_connection_toast = 0x7f0b0025;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f0c0000;
 		public static final int AppTheme = 0x7f0c0001;
-		public static final int Mixture = 0x7f0c0007;
-		public static final int Mixture_Button = 0x7f0c0008;
-		public static final int Mixture_ButtonSeparator = 0x7f0c0009;
-		public static final int Mixture_Dialog = 0x7f0c000a;
-		public static final int Mixture_Dialog_ContentView = 0x7f0c000b;
-		public static final int Mixture_Dialog_DialogStyleLight = 0x7f0c000c;
-		public static final int Mixture_Dialog_TitleSeparator = 0x7f0c000d;
-		public static final int Mixture_Group = 0x7f0c000e;
-		public static final int Mixture_Group_ButtonPanel = 0x7f0c000f;
-		public static final int Mixture_Group_Content = 0x7f0c0010;
-		public static final int Mixture_Group_Horizontal = 0x7f0c0011;
-		public static final int Mixture_Group_Horizontal_ButtonPanel = 0x7f0c0012;
-		public static final int Mixture_Group_Wrap = 0x7f0c0013;
-		public static final int Mixture_HorizontalSeparator = 0x7f0c0014;
-		public static final int Mixture_ImageView = 0x7f0c0015;
-		public static final int Mixture_RelativeLayout = 0x7f0c0016;
-		public static final int Mixture_TextView = 0x7f0c0017;
-		public static final int Mixture_TextView_Message = 0x7f0c0018;
-		public static final int Mixture_TextView_Title = 0x7f0c0019;
+		public static final int Mixture = 0x7f0c0008;
+		public static final int Mixture_Button = 0x7f0c0009;
+		public static final int Mixture_ButtonSeparator = 0x7f0c000a;
+		public static final int Mixture_Dialog = 0x7f0c000b;
+		public static final int Mixture_Dialog_ContentView = 0x7f0c000c;
+		public static final int Mixture_Dialog_DialogStyleLight = 0x7f0c000d;
+		public static final int Mixture_Dialog_TitleSeparator = 0x7f0c000e;
+		public static final int Mixture_Group = 0x7f0c000f;
+		public static final int Mixture_Group_ButtonPanel = 0x7f0c0010;
+		public static final int Mixture_Group_Content = 0x7f0c0011;
+		public static final int Mixture_Group_Horizontal = 0x7f0c0012;
+		public static final int Mixture_Group_Horizontal_ButtonPanel = 0x7f0c0013;
+		public static final int Mixture_Group_Wrap = 0x7f0c0014;
+		public static final int Mixture_HorizontalSeparator = 0x7f0c0015;
+		public static final int Mixture_ImageView = 0x7f0c0016;
+		public static final int Mixture_RelativeLayout = 0x7f0c0017;
+		public static final int Mixture_TextView = 0x7f0c0018;
+		public static final int Mixture_TextView_Message = 0x7f0c0019;
+		public static final int Mixture_TextView_Title = 0x7f0c001a;
 	}
 	public static final class styleable {
 		public static final int[] DialogStyle = { 0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a, 0x7f01005b, 0x7f01005c, 0x7f01005d, 0x7f01005e, 0x7f01005f, 0x7f010060, 0x7f010061, 0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065 };

@@ -667,7 +667,7 @@
     <dimen name="grid_90">360dp</dimen>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/dimens.xml -->
     <dimen name="image_detail_pager_margin">80dp</dimen>
-    <dimen name="image_thumbnail_size">198dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
     <dimen name="image_thumbnail_spacing">2dp</dimen>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <item name="action_bar_activity_content" type="id"/>
@@ -720,6 +720,8 @@
     <string name="album">ALBUM</string>
     <string name="app_name">mixture</string>
     <string name="artist">ARTISTS</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="clear_cache_menu">Clear Caches</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="dummy_section_text">Section %1d is just a dummy section.</string>
@@ -756,6 +758,12 @@
 
     <style name="CustomTheme" parent="CustomActionBarTheme">
         <item name="mixtureDialogStyle">@style/Mixture.Dialog.DialogStyleLight</item>
+    </style>
+
+    <style name="CustomTheme.ActionBarOverlay" parent="CustomTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
     </style>
 
     <style name="MenuDrawer" />

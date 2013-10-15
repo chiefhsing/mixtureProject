@@ -19,7 +19,7 @@
         </activity>
         <activity android:name="com.xuwakao.mixture.ui.MenuDrawerActivity" android:theme="@style/CustomActionBarTheme"/>
         <activity android:name="com.xuwakao.mixture.ui.ActionBarTabActivity" android:parentActivityName=".ui.MainActivity" android:theme="@style/CustomActionBarTheme"/>
-        <activity android:name="com.xuwakao.mixture.ui.ImageDetailActivity" android:parentActivityName=".ui.MainActivity" android:theme="@style/CustomActionBarTheme"/>
+        <activity android:name="com.xuwakao.mixture.ui.ImageDetailActivity" android:parentActivityName=".ui.MainActivity" android:theme="@style/CustomTheme"/>
     </application>
 
 </manifest>
