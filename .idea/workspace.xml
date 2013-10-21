@@ -135,7 +135,7 @@
       <file leaf-file-name="ImageWorker.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="281" column="80" selection-start="10950" selection-end="10950" vertical-scroll-proportion="-1.4872204" vertical-offset="5146" max-vertical-offset="7320">
+            <state line="55" column="82" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.46325877" vertical-offset="535" max-vertical-offset="7320">
               <folding>
                 <element signature="e#0#18127#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -1977,7 +1977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="80" selection-start="10950" selection-end="10950" vertical-scroll-proportion="-1.4872204" vertical-offset="5146" max-vertical-offset="7320">
+        <state line="55" column="82" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.46325877" vertical-offset="535" max-vertical-offset="7320">
           <folding>
             <element signature="e#0#18127#0" expanded="true" />
             <element signature="imports" expanded="true" />
