@@ -85,7 +85,7 @@ public abstract class AbsAysncFutureTaskWrapper {
             throw new IllegalStateException();
         }
 
-        MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "### TaskWrapper postResult with what = " + what + ", object = " + object + " ###");
+//        MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "### TaskWrapper postResult with what = " + what + ", object = " + object + " ###");
         internalHandler.obtainMessage(what, object).sendToTarget();
     }
 
@@ -115,7 +115,7 @@ public abstract class AbsAysncFutureTaskWrapper {
 
         @Override
         public void handleMessage(Message msg) {
-            MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "### InternalHandler with msg = " + msg + " in thread = " + Thread.currentThread().getName() + " ###");
+//            MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "### InternalHandler with msg = " + msg + " in thread = " + Thread.currentThread().getName() + " ###");
             TaskAbsResult result = null;
 
             int what = msg.what;

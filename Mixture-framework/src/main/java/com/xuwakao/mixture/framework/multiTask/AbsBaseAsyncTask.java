@@ -50,8 +50,10 @@ public abstract class AbsBaseAsyncTask extends AbsAysncFutureTaskWrapper impleme
 
     @Override
     public void cancel(boolean mayInterruptIfRunning) {
-        if (!this.getTask().isDone() && !this.getTask().isCancelled())
+        if (!this.getTask().isDone() && !this.getTask().isCancelled()){
+            MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "Task [ " + this + " ] is cancelling with param = " + this.getParam());
             this.getTask().cancel(mayInterruptIfRunning);
+        }
     }
 
     @Override

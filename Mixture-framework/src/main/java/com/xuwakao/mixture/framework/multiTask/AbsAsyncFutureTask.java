@@ -37,10 +37,11 @@ public abstract class AbsAsyncFutureTask<Params extends Comparable, Result> exte
      */
     @Override
     protected void done() {
-        MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "### AbsAsyncTask " + this + " has DONE with param = " + param +
-                "in thread = " + Thread.currentThread() + " ###");
+//        MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "### AbsAsyncTask " + this + " has DONE with param = " + param +
+//                "in thread = " + Thread.currentThread() + " ###");
         super.done();
         try {
+            MLog.warn(ServiceConfig.MULTIPLE_TASK_TAG, "### AbsAsyncTask has DONE ###");
             successJob(this.get());
         } catch (ExecutionException e) {
             MLog.warn(ServiceConfig.MULTIPLE_TASK_TAG, "### AbsAsyncTask has ExecutionException occured and the throwable message = " + e + " ###");
@@ -52,6 +53,7 @@ public abstract class AbsAsyncFutureTask<Params extends Comparable, Result> exte
         /**
          * {@link java.util.concurrent.FutureTask#awaitDone} cause this exception,idealy it would not happen here,because work done
          */ catch (InterruptedException e) {
+            MLog.warn(ServiceConfig.MULTIPLE_TASK_TAG, "### AbsAsyncTask has InterruptedException occured and the throwable message = " + e + " ###");
             //TODO
         } finally {
             //TODO

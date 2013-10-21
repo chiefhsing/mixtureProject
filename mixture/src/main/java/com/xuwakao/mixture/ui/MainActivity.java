@@ -91,6 +91,20 @@ public class MainActivity extends UIActionBarActivity{
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        MLog.verbose(TAG, "MainActivity onSaveInstanceState called");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        MLog.verbose(TAG, "MainActivity onDestroy called");
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
