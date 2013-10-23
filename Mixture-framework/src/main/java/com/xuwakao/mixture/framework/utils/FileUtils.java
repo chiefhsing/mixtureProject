@@ -22,7 +22,7 @@ public class FileUtils {
      * @return
      */
     public static File getExtStorageRoot(Context context) {
-        return new File(Environment.getExternalStorageDirectory() + File.separator + AppConfig.EXTERNAL_DIR);
+        return new File(Environment.getExternalStorageDirectory().getPath() + File.separator + context.getPackageName());
     }
 
     /**
@@ -87,7 +87,7 @@ public class FileUtils {
 
         // Before Froyo we need to construct the external cache dir ourselves
         final String cacheDir = "/Android/data/" + context.getPackageName() + File.separator + "cache";
-        return new File(Environment.getExternalStorageDirectory() + File.separator + cacheDir);
+        return new File(Environment.getExternalStorageDirectory().getPath() + File.separator + cacheDir);
     }
 
     /**
@@ -130,16 +130,16 @@ public class FileUtils {
      *                {@link android.os.Environment#DIRECTORY_NOTIFICATIONS}, {@link android.os.Environment#DIRECTORY_PICTURES},
      *                {@link android.os.Environment#DIRECTORY_MOVIES}, {@link android.os.Environment#DIRECTORY_DOWNLOADS}, or
      *                {@link android.os.Environment#DIRECTORY_DCIM}.  May not be null.
+     * @param uniqueName The unique name of directory
      * @return
      */
     @TargetApi(8)
-    public static File getPermanentExtStorageDir(Context context, String type) {
+    public static File getPermanentExtStorageDir(Context context, String type, String uniqueName) {
         if (Utils.hasFroyo()) {
             return Environment.getExternalStoragePublicDirectory(type);
         }
 
-        String dir = "/Android/data/" + context.getPackageName() + File.separator + type;
-        return new File(Environment.getExternalStorageDirectory().getPath() + File.separator + dir);
+        return new File(getExtStorageRoot(context).getPath() + File.separator + uniqueName);
     }
 
 
@@ -160,16 +160,16 @@ public class FileUtils {
      *
      * @param context
      * @param type
+     * @param uniqueName The unique name of directory
      * @return
      */
     @TargetApi(8)
-    public static File getImpermanentExtStorageDir(Context context, String type) {
+    public static File getImpermanentExtStorageDir(Context context, String type, String uniqueName) {
         if (Utils.hasFroyo()) {
             return context.getExternalFilesDir(type);
         }
 
-        String dir = "/Android/data/" + context.getPackageName() + File.separator + "files";
-        return new File(Environment.getExternalStorageDirectory().getPath() + File.separator + dir);
+        return new File(getExtStorageRoot(context).getPath() + File.separator + uniqueName);
     }
 
     /**

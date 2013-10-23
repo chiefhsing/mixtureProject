@@ -25,7 +25,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="bitmaptask" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="processBitmap -" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32a445df-2bb5-4ad8-8573-4e8c61ca44b7" name="Default" comment="" />
@@ -96,105 +96,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AbsAsyncFutureTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/multiTask/AbsAsyncFutureTask.java">
+      <file leaf-file-name="ImageFetcher.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageFetcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="39" selection-start="2864" selection-end="2875" vertical-scroll-proportion="0.0" vertical-offset="804" max-vertical-offset="1155">
+            <state line="16" column="44" selection-start="665" selection-end="665" vertical-scroll-proportion="0.40268457" vertical-offset="0" max-vertical-offset="4770">
+              <folding>
+                <element signature="e#0#11330#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#6431#6438#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageResizer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageResizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="3" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3720">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AsyncTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/AsyncTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="663" column="25" selection-start="26874" selection-end="26874" vertical-scroll-proportion="0.0" vertical-offset="9216" max-vertical-offset="9915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbsBaseAsyncTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/multiTask/AbsBaseAsyncTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="71" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbsAysncFutureTaskWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/multiTask/AbsAysncFutureTaskWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="22" selection-start="2223" selection-end="2223" vertical-scroll-proportion="-6.2" vertical-offset="760" max-vertical-offset="2625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageWorker.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImageWorker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="82" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.46325877" vertical-offset="535" max-vertical-offset="7320">
+            <state line="437" column="40" selection-start="17141" selection-end="17141" vertical-scroll-proportion="-5.72" vertical-offset="6412" max-vertical-offset="7170">
               <folding>
-                <element signature="e#0#18127#0" expanded="true" />
+                <element signature="e#0#17851#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildConfig.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/build/source/buildConfig/debug/com/xuwakao/mixture/framework/BuildConfig.java">
+      <file leaf-file-name="ImageCache.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="69" selection-start="193" selection-end="193" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageFetcher.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageFetcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="11" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.0" vertical-offset="620" max-vertical-offset="4485">
+            <state line="12" column="70" selection-start="581" selection-end="581" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="9600">
               <folding>
-                <element signature="e#0#10879#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecyclingBitmapDrawable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/RecyclingBitmapDrawable.java">
+      <file leaf-file-name="DialogDemoFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/DialogDemoFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="11" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="1350">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageDetailFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageDetailFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="17" selection-start="2990" selection-end="2990" vertical-scroll-proportion="0.0" vertical-offset="789" max-vertical-offset="1440">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0-sources.jar!/android/support/v4/app/Fragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1148" column="16" selection-start="42327" selection-end="42327" vertical-scroll-proportion="0.0" vertical-offset="16398" max-vertical-offset="24990">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoaderManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0-sources.jar!/android/support/v4/app/LoaderManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="771" column="9" selection-start="32513" selection-end="32513" vertical-scroll-proportion="0.0" vertical-offset="11017" max-vertical-offset="12240">
+            <state line="51" column="50" selection-start="2212" selection-end="2212" vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -203,28 +153,7 @@
       <file leaf-file-name="ImageGridFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageGridFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="7" selection-start="2610" selection-end="2610" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="3765">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_dialog_demo.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mixture/src/main/res/layout/fragment_dialog_demo.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="48" selection-start="492" selection-end="492" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecyclingImageView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/RecyclingImageView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="48" selection-start="2341" selection-end="2341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+            <state line="199" column="16" selection-start="7922" selection-end="7922" vertical-scroll-proportion="0.0" vertical-offset="2073" max-vertical-offset="3765">
               <folding />
             </state>
           </provider>
@@ -1292,11 +1221,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/mixture/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/mixture/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/mixture/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageGridFragment.java" />
-        <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageFetcher.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/ui/dialog/MixtureBaseAlertDialogFragment.java" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ActionBarTabActivity.java" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/MainActivity.java" />
@@ -1307,7 +1232,11 @@
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/DialogDemoFragment.java" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageDetailActivity.java" />
         <option value="$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageDetailFragment.java" />
+        <option value="$PROJECT_DIR$/mixture/src/main/res/layout-land/fragment_dialog_demo.xml" />
+        <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageFetcher.java" />
         <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageWorker.java" />
+        <option value="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageCache.java" />
       </list>
     </option>
   </component>
@@ -1421,7 +1350,227 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Mixture-framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixtureProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mixture-framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixtureProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mixture-framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixtureProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mixture-framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixtureProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixtureProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixtureProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixtureProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixtureProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1571,11 +1720,11 @@
       <recent name="com.xuwakao.mixture.framework.image" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mixture/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/mixture/src/main/res/layout-land" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/mixture/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/mixture/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/mixture/src/main/res/drawable-nodpi" />
-      <recent name="$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.xuwakao.mixture.framework" />
@@ -1809,14 +1958,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5265252" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3050398" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08222812" sideWeight="0.43974176" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.122015916" sideWeight="0.43974176" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.26757532" sideWeight="0.7320955" order="7" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892396" sideWeight="0.6140584" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7718833" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22596844" sideWeight="0.9177719" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25824964" sideWeight="0.9177719" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2804878" sideWeight="0.8633952" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.241033" sideWeight="0.8779841" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28116712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1865,122 +2014,125 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="23" selection-start="5514" selection-end="5514" vertical-scroll-proportion="-7.32" vertical-offset="1767" max-vertical-offset="3285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/ServiceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="362" column="42" selection-start="15781" selection-end="15781" vertical-scroll-proportion="1.0778985" vertical-offset="4385" max-vertical-offset="6270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/multiTask/AbsAysncFutureTaskWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="22" selection-start="2223" selection-end="2223" vertical-scroll-proportion="-6.2" vertical-offset="760" max-vertical-offset="2625">
+        <state line="72" column="22" selection-start="2223" selection-end="2223" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="2625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/build/source/buildConfig/debug/com/xuwakao/mixture/framework/BuildConfig.java">
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/DiskLruCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="69" selection-start="193" selection-end="193" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageGridFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="7" selection-start="2610" selection-end="2610" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="3765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageFetcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="11" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.0" vertical-offset="620" max-vertical-offset="4485">
-          <folding>
-            <element signature="e#0#10879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="78" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.3888889" vertical-offset="600" max-vertical-offset="2850">
-          <folding>
-            <element signature="e#0#7788#0" expanded="true" />
-            <element signature="e#6007#6011#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/graphics/drawable/Drawable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="306" column="22" selection-start="12525" selection-end="12525" vertical-scroll-proportion="0.0" vertical-offset="3825" max-vertical-offset="14355">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14194" column="16" selection-start="552469" selection-end="552469" vertical-scroll-proportion="0.0" vertical-offset="211265" max-vertical-offset="274440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/widget/ImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="394" column="16" selection-start="13287" selection-end="13287" vertical-scroll-proportion="0.0" vertical-offset="5190" max-vertical-offset="17460">
+        <state line="309" column="31" selection-start="12521" selection-end="12521" vertical-scroll-proportion="0.0" vertical-offset="3761" max-vertical-offset="13935">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/DialogDemoFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="42" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.3929314" vertical-offset="111" max-vertical-offset="975">
+        <state line="51" column="50" selection-start="2212" selection-end="2212" vertical-scroll-proportion="0.0" vertical-offset="301" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0-sources.jar!/android/support/v4/app/LoaderManager.java">
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="771" column="9" selection-start="32513" selection-end="32513" vertical-scroll-proportion="0.0" vertical-offset="11017" max-vertical-offset="12240">
+        <state line="69" column="42" selection-start="2908" selection-end="2908" vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="2640">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0-sources.jar!/android/support/v4/app/Fragment.java">
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/MLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1148" column="16" selection-start="42327" selection-end="42327" vertical-scroll-proportion="0.0" vertical-offset="16398" max-vertical-offset="24990">
+        <state line="67" column="23" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0" vertical-offset="764" max-vertical-offset="2970">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/multiTask/AbsAsyncFutureTask.java">
+    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageGridFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="39" selection-start="2864" selection-end="2875" vertical-scroll-proportion="0.0" vertical-offset="804" max-vertical-offset="1155">
+        <state line="199" column="16" selection-start="7922" selection-end="7922" vertical-scroll-proportion="0.0" vertical-offset="2073" max-vertical-offset="3765">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/ImageDetailFragment.java">
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/os/Environment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="17" selection-start="2990" selection-end="2990" vertical-scroll-proportion="0.0" vertical-offset="789" max-vertical-offset="1440">
+        <state line="604" column="26" selection-start="23443" selection-end="23443" vertical-scroll-proportion="0.32649842" vertical-offset="8553" max-vertical-offset="9540">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/RecyclingBitmapDrawable.java">
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="11" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1350">
+        <state line="66" column="38" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1380">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/graphics/drawable/BitmapDrawable.java">
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="30" selection-start="4185" selection-end="4185" vertical-scroll-proportion="1.8975904" vertical-offset="0" max-vertical-offset="7980">
+        <state line="13" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageResizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="3" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3720">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="82" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.46325877" vertical-offset="535" max-vertical-offset="7320">
+        <state line="437" column="40" selection-start="17141" selection-end="17141" vertical-scroll-proportion="-5.72" vertical-offset="6412" max-vertical-offset="7170">
           <folding>
-            <element signature="e#0#18127#0" expanded="true" />
+            <element signature="e#0#17851#0" expanded="true" />
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="70" selection-start="581" selection-end="581" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="9600">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/java/com/xuwakao/mixture/framework/image/ImageFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="44" selection-start="665" selection-end="665" vertical-scroll-proportion="0.40268457" vertical-offset="0" max-vertical-offset="4770">
+          <folding>
+            <element signature="e#0#11330#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6431#6438#0" expanded="true" />
           </folding>
         </state>
       </provider>
