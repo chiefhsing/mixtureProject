@@ -19,6 +19,12 @@ import java.util.concurrent.TimeoutException;
  * This make available to order the priority of task.
  */
 public abstract class AbsAsyncFutureTask<Params extends Comparable, Result> extends FutureTask<Result> implements Comparable<AbsAsyncFutureTask<Params, Result>> {
+    public static final int NEW = 0;
+    public static final int EXECUTING = 1;
+    public static final int SUCCESS = 2;
+    public static final int EXCEPTIONAL = 3;
+    public static final int CANCELLED = 4;
+    private volatile int state;
 
     /**
      * Task param;
@@ -35,6 +41,7 @@ public abstract class AbsAsyncFutureTask<Params extends Comparable, Result> exte
     public AbsAsyncFutureTask(Callable<Result> runnable, Params param) {
         super(runnable);
         this.param = param;
+        state = NEW;
     }
 
     /**
@@ -50,22 +57,38 @@ public abstract class AbsAsyncFutureTask<Params extends Comparable, Result> exte
     protected void done() {
         try {
             successJob(get());
+            state = SUCCESS;
             MLog.debug(ServiceConfig.MULTIPLE_TASK_TAG, "### AbsAsyncTask has Successfully ###,task = " + this);
         } catch (ExecutionException e) {
+            state = EXCEPTIONAL;
             MLog.warn(ServiceConfig.MULTIPLE_TASK_TAG, "### AbsAsyncTask has ExecutionException occured and the throwable message = " + e + " ###,task = " + this);
             exceptionalJob(e);
         } catch (CancellationException e) {
+            state = CANCELLED;
             MLog.warn(ServiceConfig.MULTIPLE_TASK_TAG, "### AbsAsyncTask has CancellationException occured and the throwable message = " + e + " ###,task = " + this);
             canceledJob();
         }
         /**
          * {@link java.util.concurrent.FutureTask#awaitDone} cause this exception,idealy it would not happen here,because work doneExecution
          */ catch (InterruptedException e) {
+            state = EXCEPTIONAL;
             MLog.warn(ServiceConfig.MULTIPLE_TASK_TAG, "### AbsAsyncTask has InterruptedException occured and the throwable message = " + e + " ###,task = " + this);
             //TODO
         } finally {
             //TODO
         }
+    }
+
+    public int getState() {
+        return this.state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    public boolean hasCompleted() {
+        return this.state >= SUCCESS;
     }
 
     /**
@@ -86,7 +109,7 @@ public abstract class AbsAsyncFutureTask<Params extends Comparable, Result> exte
     protected abstract void exceptionalJob(Exception e);
 
     public static abstract class AbsTaskRunnable<Params, Result> implements Callable<Result> {
-        private WeakReference<AbsAsyncFutureTask> mTask;
+        protected WeakReference<AbsAsyncFutureTask> mTask;
         Params mParam;
 
         public void setTask(AbsAsyncFutureTask mTask) {

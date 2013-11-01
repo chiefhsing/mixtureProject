@@ -45,6 +45,8 @@ public abstract class AbsAysncFutureTaskWrapper {
             public TaskAbsResult call() throws Exception {
                 this.mParam = param;
                 onPreExecution();
+                if(mTask != null && mTask.get() != null)
+                    mTask.get().setState(AbsAsyncFutureTask.EXECUTING);
                 TaskWatchDog.shareInstance().checkTimeOutTask(AbsAysncFutureTaskWrapper.this);
                 return execute(param);
             }
@@ -66,6 +68,7 @@ public abstract class AbsAysncFutureTaskWrapper {
                 postResult(CANCELED_MESSAGE, null);
             }
         };
+        this.mRunnable.setTask(this.mTask);
     }
 
     protected boolean isCancelled() {

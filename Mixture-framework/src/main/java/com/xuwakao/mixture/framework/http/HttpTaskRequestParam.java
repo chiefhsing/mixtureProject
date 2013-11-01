@@ -11,7 +11,7 @@ public class HttpTaskRequestParam extends AbsAysncFutureTaskWrapper.TaskRequestP
     public String url;
 
     public HttpTaskRequestParam(){
-        this.timeout = 1;
+        this.timeout = 15;
         this.retryCount = 0;
         this.priority = TaskPriority.DEFAULT;
     }
