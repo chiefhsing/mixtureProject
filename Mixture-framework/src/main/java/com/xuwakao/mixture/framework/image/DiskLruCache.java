@@ -189,7 +189,7 @@ public final class DiskLruCache implements Closeable {
     }
 
     /**
-     * Returns the remainder of 'reader' as a string, closing it when done.
+     * Returns the remainder of 'reader' as a string, closing it when doneExecution.
      */
     public static String readFully(Reader reader) throws IOException {
         try {
@@ -393,7 +393,7 @@ public final class DiskLruCache implements Closeable {
         } else if (parts[0].equals(DIRTY) && parts.length == 2) {
             entry.currentEditor = new Editor(entry);
         } else if (parts[0].equals(READ) && parts.length == 2) {
-            // this work was already done by calling lruEntries.get()
+            // this work was already doneExecution by calling lruEntries.get()
         } else {
             throw new IOException("unexpected journal line: " + line);
         }

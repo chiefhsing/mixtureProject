@@ -34,8 +34,8 @@ public class HttpTask extends AbsBaseAsyncTask {
     }
 
     @Override
-    protected TaskAbsResult executeJob(TaskAbsRequestParam param) throws Exception {
-        MLog.verbose(HttpServiceConfig.HTTP_TASK_TAG, "executeJob" + this + " before with mParams = " + param + " in thread = " + Thread.currentThread());
+    protected TaskAbsResult execute(TaskAbsRequestParam param) throws Exception {
+        MLog.verbose(HttpServiceConfig.HTTP_TASK_TAG, "execute" + this + " before with mParams = " + param + " in thread = " + Thread.currentThread());
         FileResult result = new FileResult();
         HttpTaskRequestParam mParams = (HttpTaskRequestParam) param;
 
@@ -61,8 +61,8 @@ public class HttpTask extends AbsBaseAsyncTask {
     }
 
     @Override
-    protected void doneWithResult(TaskAbsResult result) {
-        MLog.verbose(HttpServiceConfig.HTTP_TASK_TAG, "doneWithResult " + this + " return reuslt = " + result);
+    protected void doneExecution(TaskAbsResult result) {
+        MLog.verbose(HttpServiceConfig.HTTP_TASK_TAG, "doneExecution " + this + " return reuslt = " + result);
     }
 
     private class FileResult extends HttpTaskResult {

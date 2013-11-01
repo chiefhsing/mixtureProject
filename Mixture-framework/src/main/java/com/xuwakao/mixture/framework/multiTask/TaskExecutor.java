@@ -1,5 +1,8 @@
 package com.xuwakao.mixture.framework.multiTask;
 
+import android.os.Handler;
+import android.os.HandlerThread;
+
 import com.xuwakao.mixture.framework.ServiceConfig;
 
 import java.util.concurrent.BlockingQueue;
@@ -13,31 +16,31 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Created by xujiexing on 13-9-23.
  */
 public class TaskExecutor extends AbsTaskExecutor {
-    private static ThreadPoolExecutor executor;
-    private static BlockingQueue<Runnable> queue;
+    private static ThreadPoolExecutor mExecutor;
+    private static BlockingQueue<Runnable> mQueue;
 
-    private static TaskExecutor worker;
+    private static TaskExecutor mSingletonInstance;
 
     private TaskExecutor() {
         super();
     }
 
     public static synchronized TaskExecutor getInstance() {
-        if (worker == null) {
-            worker = new TaskExecutor();
+        if (mSingletonInstance == null) {
+            mSingletonInstance = new TaskExecutor();
             doInit();
         }
-        return worker;
+        return mSingletonInstance;
     }
 
     private static void doInit() {
         TaskPriority.InvertedComparator comparator = new TaskPriority.InvertedComparator<TaskPriority>();
-        queue = new PriorityBlockingQueue<Runnable>(ServiceConfig.EXECUTOR_QUEUE_INITIALIZED_CAPACITY, comparator);
-        executor = new ThreadPoolExecutor(ServiceConfig.EXECUTOR_CORE_POOL_MIN_SIZE,
+        mQueue = new PriorityBlockingQueue<Runnable>(ServiceConfig.EXECUTOR_QUEUE_INITIALIZED_CAPACITY, comparator);
+        mExecutor = new ThreadPoolExecutor(ServiceConfig.EXECUTOR_CORE_POOL_MIN_SIZE,
                 ServiceConfig.EXECUTOR_POOL_MAX_SIZE,
                 ServiceConfig.EXCESS_THREAD_KEEP_ALIVE_TIME,
                 TimeUnit.SECONDS,
-                queue,
+                mQueue,
                 new TaskThreadFactory(),
                 new ThreadPoolExecutor.DiscardOldestPolicy());
     }
@@ -49,26 +52,18 @@ public class TaskExecutor extends AbsTaskExecutor {
      */
     @Override
     public synchronized void submit(AbsAysncFutureTaskWrapper taskWrapper) {
-        executor.execute(taskWrapper.getTask());
+        mExecutor.execute(taskWrapper.getTask());
     }
 
     @Override
     public void shutDown() {
-        executor.shutdown();
-        worker = null;
+        mExecutor.shutdown();
+        mSingletonInstance = null;
     }
 
     public static class TaskThreadFactory implements ThreadFactory {
         private AtomicInteger threadId = new AtomicInteger(0);
 
-        /**
-         * Constructs a new {@code Thread}.  Implementations may also initialize
-         * priority, name, daemon status, {@code ThreadGroup}, etc.
-         *
-         * @param r a runnable to be executed by new thread instance
-         * @return constructed thread, or {@code null} if the request to
-         * create a thread is rejected
-         */
         @Override
         public Thread newThread(Runnable r) {
             return new Thread(r, "MultipleTask  # " + threadId.incrementAndGet() + " # Thread");

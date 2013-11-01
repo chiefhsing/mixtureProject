@@ -10,9 +10,9 @@ import android.net.ConnectivityManager;
 import android.view.ViewConfiguration;
 
 import com.xuwakao.mixture.framework.AppConfig;
-import com.xuwakao.mixture.framework.ServiceConfig;
+import com.xuwakao.mixture.framework.multiTask.TaskWatchDog;
 import com.xuwakao.mixture.framework.utils.MLog;
-import com.xuwakao.mixture.utils.NetworkMonitor;
+import com.xuwakao.mixture.framework.utils.NetworkMonitor;
 
 import java.lang.reflect.Field;
 
@@ -36,15 +36,6 @@ public class MixtureApp extends Application{
         super.onCreate();
 
         doInit();
-    }
-
-    /**
-     * This method is for use in emulated process environments.  It will
-     * never be called on a production Android device, where processes are
-     * removed by simply killing them; no user code (including this callback)
-     * is executed when doing so.
-     */
-    public void onTerminate() {
     }
 
     public void onConfigurationChanged(Configuration newConfig) {

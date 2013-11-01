@@ -4,19 +4,18 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-import com.xuwakao.mixture.framework.ServiceConfig;
-import com.xuwakao.mixture.framework.utils.MLog;
 import com.xuwakao.mixture.framework.utils.Utils;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by xujiexing on 13-9-23.
+ * <p/>
+ * A proxy implementing of {@link com.xuwakao.mixture.framework.multiTask.AbsAsyncFutureTask}
  */
 public abstract class AbsAysncFutureTaskWrapper {
-    private static final int SUCCESS_MESSAGE = 0x1 << 0;
-    private static final int CANCELED_MESSAGE = 0x1 << 1;
-    private static final int EXCEPTIONAL_MESSAGE = 0x1 << 2;
+    protected static final int SUCCESS_MESSAGE = 0x1 << 0;
+    protected static final int CANCELED_MESSAGE = 0x1 << 1;
+    protected static final int EXCEPTIONAL_MESSAGE = 0x1 << 2;
+    protected static final int TIMEOUT_MESSAGE = 0x1 << 3;
 
     /**
      * The mParam used to excute the http request
@@ -24,35 +23,34 @@ public abstract class AbsAysncFutureTaskWrapper {
     private TaskAbsRequestParam mParam;
 
     /**
-     * The real task to be executed on
+     * The real mTask to be executed on
      */
-    private AbsAsyncFutureTask task;
+    private AbsAsyncFutureTask mTask;
 
-    private AbsAsyncFutureTask.AbsTaskRunnable<TaskAbsRequestParam, TaskAbsResult> runnable;
+    private AbsAsyncFutureTask.AbsTaskRunnable<TaskAbsRequestParam, TaskAbsResult> mRunnable;
 
-    private InternalHandler internalHandler;
-
-    private boolean completed = false;
+    private InternalHandler mInternalHandler;
 
     /**
      * Constructor
      *
      * @param param  The param used to execute the request
-     * @param looper The looper of the thread which execute this task
+     * @param looper The looper of the thread which execute this mTask
      */
-    protected AbsAysncFutureTaskWrapper(TaskAbsRequestParam param, Looper looper) {
+    protected AbsAysncFutureTaskWrapper(final TaskAbsRequestParam param, Looper looper) {
         this.mParam = param;
-        this.internalHandler = new InternalHandler(looper);
-        this.runnable = new AbsAsyncFutureTask.AbsTaskRunnable<TaskAbsRequestParam, TaskAbsResult>() {
+        this.mInternalHandler = new InternalHandler(looper);
+        this.mRunnable = new AbsAsyncFutureTask.AbsTaskRunnable<TaskAbsRequestParam, TaskAbsResult>() {
             @Override
             public TaskAbsResult call() throws Exception {
-                this.mParam = AbsAysncFutureTaskWrapper.this.mParam;
-
-                return executeJob(this.mParam);
+                this.mParam = param;
+                onPreExecution();
+                TaskWatchDog.shareInstance().checkTimeOutTask(AbsAysncFutureTaskWrapper.this);
+                return execute(param);
             }
         };
 
-        this.task = new AbsAsyncFutureTask<TaskAbsRequestParam, TaskAbsResult>(this.runnable, this.mParam) {
+        this.mTask = new AbsAsyncFutureTask<TaskAbsRequestParam, TaskAbsResult>(this.mRunnable, this.mParam) {
             @Override
             protected void exceptionalJob(Exception e) {
                 postResult(EXCEPTIONAL_MESSAGE, e);
@@ -70,8 +68,8 @@ public abstract class AbsAysncFutureTaskWrapper {
         };
     }
 
-    protected boolean isCancelled(){
-        return this.task.isCancelled();
+    protected boolean isCancelled() {
+        return this.mTask.isCancelled();
     }
 
     /**
@@ -81,26 +79,25 @@ public abstract class AbsAysncFutureTaskWrapper {
      * @param object
      */
     public void postResult(int what, Object object) {
-        if (internalHandler == null) {
+        if (mInternalHandler == null) {
             throw new IllegalStateException();
         }
 
-//        MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "### TaskWrapper postResult with what = " + what + ", object = " + object + " ###");
-        internalHandler.obtainMessage(what, object).sendToTarget();
+        mInternalHandler.obtainMessage(what, object).sendToTarget();
     }
 
 
     /**
-     * Return the task used to execute on.
+     * Return the mTask used to execute on.
      *
      * @return
      */
     public AbsAsyncFutureTask getTask() {
-        return this.task;
+        return this.mTask;
     }
 
     /**
-     * Return the mParam of the request used to execute the task
+     * Return the mParam of the request used to execute the mTask
      *
      * @return
      */
@@ -115,7 +112,6 @@ public abstract class AbsAysncFutureTaskWrapper {
 
         @Override
         public void handleMessage(Message msg) {
-//            MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "### InternalHandler with msg = " + msg + " in thread = " + Thread.currentThread().getName() + " ###");
             TaskAbsResult result = null;
 
             int what = msg.what;
@@ -131,7 +127,7 @@ public abstract class AbsAysncFutureTaskWrapper {
                     result.exception = null;
                     break;
                 case EXCEPTIONAL_MESSAGE:
-                    if (AbsAysncFutureTaskWrapper.this.retryJob()) {
+                    if (AbsAysncFutureTaskWrapper.this.retryExecution()) {
                         return;
                     }
 
@@ -142,15 +138,17 @@ public abstract class AbsAysncFutureTaskWrapper {
                     break;
             }
 
-            AbsAysncFutureTaskWrapper.this.doneWithResult(result);
+            AbsAysncFutureTaskWrapper.this.doneExecution(result);
         }
     }
 
-    protected abstract TaskAbsResult executeJob(TaskAbsRequestParam mParams) throws Exception;
+    protected abstract TaskAbsResult execute(TaskAbsRequestParam mParams) throws Exception;
 
-    protected abstract void doneWithResult(TaskAbsResult result);
+    protected abstract void doneExecution(TaskAbsResult result);
 
-    protected abstract boolean retryJob();
+    protected abstract boolean retryExecution();
+
+    protected abstract void onPreExecution();
 
     public static class TaskRequestParamBase extends TaskAbsRequestParam {
 

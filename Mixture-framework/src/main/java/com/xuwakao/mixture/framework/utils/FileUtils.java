@@ -36,7 +36,7 @@ public class FileUtils {
      * <p/>
      * if want to store something which persist even when app has been uninstalled,dont use this method.
      * <p/>
-     * Use the method {@link #getPermanentExtStorageDir(android.content.Context, String)}
+     * Use the method {@link #getPermanentExtStorageDir(android.content.Context, String, String)}
      * <p/>
      * --------------------------------------
      *

@@ -2,7 +2,7 @@
 
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16"/>
 
-    <application android:label="@string/app_name">
+    <application android:debuggable="true" android:label="@string/app_name">
 
     </application>
 

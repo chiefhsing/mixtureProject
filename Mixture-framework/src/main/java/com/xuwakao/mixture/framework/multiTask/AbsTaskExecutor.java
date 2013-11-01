@@ -10,8 +10,7 @@ public abstract class AbsTaskExecutor {
      *
      * @param task
      */
-    public abstract  void submit(AbsAysncFutureTaskWrapper task);
+    public abstract void submit(AbsAysncFutureTaskWrapper task);
 
     public abstract void shutDown();
-
 }

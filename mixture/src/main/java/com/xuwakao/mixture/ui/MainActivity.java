@@ -3,6 +3,7 @@ package com.xuwakao.mixture.ui;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Looper;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
@@ -11,6 +12,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.ShareActionProvider;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,7 +23,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.xuwakao.mixture.R;
+import com.xuwakao.mixture.framework.multiTask.TaskWatchDog;
 import com.xuwakao.mixture.framework.utils.MLog;
+import com.xuwakao.mixture.test.TestCase;
 
 public class MainActivity extends UIActionBarActivity{
     private static final String TAG = MLog.makeLogTag(MainActivity.class);
@@ -39,6 +43,8 @@ public class MainActivity extends UIActionBarActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TestCase.multipleTaskTest(Looper.getMainLooper());
 
         actionBar = getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(true);
@@ -100,6 +106,7 @@ public class MainActivity extends UIActionBarActivity{
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        TaskWatchDog.shareInstance().shutDown();
 
         MLog.verbose(TAG, "MainActivity onDestroy called");
     }
@@ -110,8 +117,8 @@ public class MainActivity extends UIActionBarActivity{
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_activity_actions, menu);
 
-//        MenuItem searchItem = menu.findItem(R.id.action_search);
-//        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
 
         // Set up ShareActionProvider's default share intent
         MenuItem shareItem = menu.findItem(R.id.action_share);

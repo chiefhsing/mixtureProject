@@ -5,6 +5,8 @@ import android.os.Looper;
 
 import com.xuwakao.mixture.framework.http.HttpTask;
 import com.xuwakao.mixture.framework.http.HttpTaskRequestParam;
+import com.xuwakao.mixture.framework.multiTask.AbsAysncFutureTaskWrapper;
+import com.xuwakao.mixture.framework.multiTask.TaskAbsRequestParam;
 import com.xuwakao.mixture.framework.multiTask.TaskPriority;
 import com.xuwakao.mixture.framework.test.TestImage;
 
@@ -15,38 +17,39 @@ public class TestCase {
 
     /**
      * Test multiple task framwork
+     *
      * @param looper
      */
-    public static void httpModuleTest(Looper looper){
-        HttpTask task08 = null;
-        HttpTask task03 = null;
+    public static void multipleTaskTest(Looper looper) {
+        TestMultipleTask task08 = null;
+        TestMultipleTask task03 = null;
 
-        for(int i = 1000; i < 1020; i++){
-            HttpTaskRequestParam param = new HttpTaskRequestParam();
-            param.url = "http://xuwakao.com/index=" + i;
+        for (int i = 1000; i < 1020; i++) {
+            AbsAysncFutureTaskWrapper.TaskRequestParamBase param = new AbsAysncFutureTaskWrapper.TaskRequestParamBase();
             param.priority = TaskPriority.DEFAULT;
             param.retryCount = 0;
-            if(i == 1013 || i == 1007 || i == 1019){
+            param.timeout = 1;
+            if (i == 1013 || i == 1007 || i == 1019) {
                 param.priority = TaskPriority.HIGH;
             }
 
-            if(i == 1012 || i == 1009){
+            if (i == 1012 || i == 1009) {
                 param.priority = TaskPriority.LOW;
             }
 
-            final HttpTask task = new HttpTask(param, looper);
-            if(i == 1003){
+            final TestMultipleTask task = new TestMultipleTask(param, looper);
+            if (i == 1003) {
                 task03 = task;
             }
 
-            if(i == 1008){
+            if (i == 1008) {
                 task08 = task;
             }
             task.submit();
         }
 
-        final HttpTask finalTask03 = task03;
-        final HttpTask finalTask08 = task08;
+        final TestMultipleTask finalTask03 = task03;
+        final TestMultipleTask finalTask08 = task08;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -56,11 +59,11 @@ public class TestCase {
                 assert finalTask08 != null;
                 finalTask08.cancel(true);
             }
-        },5000);
+        }, 5000);
     }
 
-    public static void imageFetchTest(Looper looper){
-        for(int i = 0; i < 10; i++){
+    public static void imageFetchTest(Looper looper) {
+        for (int i = 0; i < 10; i++) {
             String url = TestImage.imageUrls[i];
             HttpTaskRequestParam param = new HttpTaskRequestParam();
             param.url = url;
