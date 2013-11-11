@@ -8,8 +8,6 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
 /**
  * Created by xujiexing on 13-9-23.
@@ -27,6 +25,13 @@ public abstract class AbsAsyncFutureTask<Params extends Comparable, Result> exte
     private volatile int state;
 
     /**
+     * Used to judge whether task should be retried when task is timeout.
+     * When timeout occur, task would be canceled.This cancel execution is different from
+     * the cacel execution manually.
+     */
+    private boolean mShouldTimeoutRetry = false;
+
+    /**
      * Task param;
      */
     protected Params param;
@@ -42,6 +47,16 @@ public abstract class AbsAsyncFutureTask<Params extends Comparable, Result> exte
         super(runnable);
         this.param = param;
         state = NEW;
+    }
+
+    @Override
+    public boolean cancel(boolean mayInterruptIfRunning) {
+        return this.cancel(mayInterruptIfRunning, false);
+    }
+
+    public boolean cancel(boolean mayInterruptIfRunning, boolean shouldTimeoutRetryRetry) {
+        mShouldTimeoutRetry = shouldTimeoutRetryRetry;
+        return super.cancel(mayInterruptIfRunning);
     }
 
     /**
@@ -89,6 +104,14 @@ public abstract class AbsAsyncFutureTask<Params extends Comparable, Result> exte
 
     public boolean hasCompleted() {
         return this.state >= SUCCESS;
+    }
+
+    public boolean isShouldTimeoutRetry() {
+        return mShouldTimeoutRetry;
+    }
+
+    public void setShouldTimeoutRetry(boolean mShouldRetry) {
+        this.mShouldTimeoutRetry = mShouldRetry;
     }
 
     /**

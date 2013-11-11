@@ -56,12 +56,9 @@ public abstract class AbsBaseAsyncTask extends AbsAysncFutureTaskWrapper impleme
     }
 
     @Override
-    protected boolean retryExecution() {
-        if (this.getParam().retryCount-- > 0) {
-//            MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "Task [ " + this + " ] is retrying with param = " + this.getParam());
-            TaskExecutor.getInstance().submit(this);
-            return true;
-        }
-        return false;
+    protected void retryExecution(AbsAysncFutureTaskWrapper task) {
+        MLog.verbose(ServiceConfig.MULTIPLE_TASK_TAG, "Task [ " + this + " ] is retrying with param = " + this.getParam());
+
+        TaskExecutor.getInstance().submit(task);
     }
 }

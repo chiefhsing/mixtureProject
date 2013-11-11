@@ -3,6 +3,8 @@ package com.xuwakao.mixture.framework;
 import android.content.Context;
 import android.content.res.Configuration;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Created by xuwakao on 13-8-28.
  */
@@ -11,6 +13,10 @@ public class AppConfig {
     public static final String LOG_FILE_NAME = "log.txt";
 
     public static final String EXTERNAL_DIR = "xuwakao";
+
+    public static AtomicInteger loadImage = new AtomicInteger(0);
+    public static AtomicInteger submitImage = new AtomicInteger(0);
+    public static AtomicInteger getView = new AtomicInteger(0);
 
     private static AppConfig config;
     private Configuration configuration;

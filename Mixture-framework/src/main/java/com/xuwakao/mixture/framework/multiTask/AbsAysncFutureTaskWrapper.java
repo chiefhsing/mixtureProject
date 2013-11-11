@@ -45,7 +45,7 @@ public abstract class AbsAysncFutureTaskWrapper {
             public TaskAbsResult call() throws Exception {
                 this.mParam = param;
                 onPreExecution();
-                if(mTask != null && mTask.get() != null)
+                if (mTask != null && mTask.get() != null)
                     mTask.get().setState(AbsAsyncFutureTask.EXECUTING);
                 TaskWatchDog.shareInstance().checkTimeOutTask(AbsAysncFutureTaskWrapper.this);
                 return execute(param);
@@ -125,12 +125,18 @@ public abstract class AbsAysncFutureTaskWrapper {
                     result.exception = null;
                     break;
                 case CANCELED_MESSAGE:
+                    if (AbsAysncFutureTaskWrapper.this.getTask().isShouldTimeoutRetry() && isShouldRetry()) {
+                        retryExecution(AbsAysncFutureTaskWrapper.this);
+                        return;
+                    }
+
                     result = new TaskResultBase();
                     result.resultCode = TaskAbsResult.TaskResultCode.CANCELED;
                     result.exception = null;
                     break;
                 case EXCEPTIONAL_MESSAGE:
-                    if (AbsAysncFutureTaskWrapper.this.retryExecution()) {
+                    if (isShouldRetry()) {
+                        retryExecution(AbsAysncFutureTaskWrapper.this);
                         return;
                     }
 
@@ -145,13 +151,22 @@ public abstract class AbsAysncFutureTaskWrapper {
         }
     }
 
+    /**
+     * Whether task should retry depends on the param field {@link TaskAbsRequestParam#retryCount}
+     *
+     * @return
+     */
+    private boolean isShouldRetry() {
+        return this.getParam().retryCount-- > 0 ? true : false;
+    }
+
     protected abstract TaskAbsResult execute(TaskAbsRequestParam mParams) throws Exception;
 
     protected abstract void doneExecution(TaskAbsResult result);
 
-    protected abstract boolean retryExecution();
-
     protected abstract void onPreExecution();
+
+    protected abstract void retryExecution(AbsAysncFutureTaskWrapper task);
 
     public static class TaskRequestParamBase extends TaskAbsRequestParam {
 

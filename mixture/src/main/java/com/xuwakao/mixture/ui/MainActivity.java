@@ -44,7 +44,7 @@ public class MainActivity extends UIActionBarActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        TestCase.multipleTaskTest(Looper.getMainLooper());
+        TestCase.multipleTaskTest(Looper.getMainLooper());
 
         actionBar = getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(true);

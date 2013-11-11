@@ -27,7 +27,7 @@ public class TestCase {
         for (int i = 1000; i < 1020; i++) {
             AbsAysncFutureTaskWrapper.TaskRequestParamBase param = new AbsAysncFutureTaskWrapper.TaskRequestParamBase();
             param.priority = TaskPriority.DEFAULT;
-            param.retryCount = 0;
+            param.retryCount = 1;
             param.timeout = 1;
             if (i == 1013 || i == 1007 || i == 1019) {
                 param.priority = TaskPriority.HIGH;
