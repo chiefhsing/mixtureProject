@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="main_menu_array">
-        <item>main</item>
-        <item>collectionDemo</item>
-        <item>menudrawer</item>
-        <item>actionBarTabs</item>
-        <item>dialogDemo</item>
-        <item>imageDemo</item>
+        <item>Main</item>
+        <item>CollectionDemo</item>
+        <item>Menudrawer</item>
+        <item>ActionBarTabs</item>
+        <item>Dialog</item>
+        <item>Image</item>
+        <item>Video</item>
     </string-array>
     <string-array name="planets_array">
         <item>mercury</item>

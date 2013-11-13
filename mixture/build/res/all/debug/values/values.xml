@@ -3,12 +3,13 @@
 
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/arrays.xml -->
     <string-array name="main_menu_array">
-        <item>main</item>
-        <item>collectionDemo</item>
-        <item>menudrawer</item>
-        <item>actionBarTabs</item>
-        <item>dialogDemo</item>
-        <item>imageDemo</item>
+        <item>Main</item>
+        <item>CollectionDemo</item>
+        <item>Menudrawer</item>
+        <item>ActionBarTabs</item>
+        <item>Dialog</item>
+        <item>Image</item>
+        <item>Video</item>
     </string-array>
     <string-array name="main_tab">
         <item>RANKING</item>
@@ -269,6 +270,16 @@
         <attr name="actionButtonColorOrDrawable" format="boolean" />
         <attr name="titleIcon" format="reference" />
         <attr name="titleCloseIcon" format="reference" />
+    </declare-styleable>
+    <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/src/main/res/values/attrs.xml -->
+    <declare-styleable name="DragVideoStyle">
+
+        <!-- <attr name="headerId" format="integer"></attr> -->
+        <!-- <attr name="footerId" format="integer"></attr> -->
+        <attr name="layout_position">
+            <enum name="above" value="1" />
+            <enum name="below" value="2" />
+        </attr>
     </declare-styleable>
     <!-- From: file:/Users/duowan/Desktop/xuwakao/android-example/mixtureProject/mixture/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <declare-styleable name="LinearLayoutICS">

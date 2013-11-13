@@ -19,7 +19,7 @@ public final class R {
 		public static final int buttonTextColor = 0x7f01005b;
 		public static final int dialogBackground = 0x7f010057;
 		public static final int messageTextColor = 0x7f01005a;
-		public static final int mixtureDialogStyle = 0x7f010082;
+		public static final int mixtureDialogStyle = 0x7f010083;
 		public static final int titleCloseIcon = 0x7f010065;
 		public static final int titleIcon = 0x7f010064;
 		public static final int titleSeparatorColor = 0x7f010059;
@@ -86,22 +86,22 @@ public final class R {
 		public static final int sdl_background_light = 0x7f020083;
 	}
 	public static final class id {
-		public static final int dialog__button_panel = 0x7f08005a;
-		public static final int dialog__negative_button = 0x7f08001b;
-		public static final int dialog__neutral_button = 0x7f08001c;
-		public static final int dialog__positive_button = 0x7f08001d;
-		public static final int dialog__titleDivider = 0x7f08006b;
-		public static final int dialog_button_horizontal_panel = 0x7f08005c;
-		public static final int dialog_button_separator = 0x7f080059;
-		public static final int dialog_content = 0x7f08006c;
-		public static final int dialog_custom_content = 0x7f08005e;
-		public static final int dialog_custom_panel = 0x7f08005d;
-		public static final int dialog_horizontal_separator = 0x7f08005b;
-		public static final int dialog_title = 0x7f080069;
-		public static final int dialog_title_close = 0x7f08006a;
-		public static final int dialog_title_layout = 0x7f080068;
-		public static final int dilog_message = 0x7f080060;
-		public static final int dilog_message_scroll = 0x7f08005f;
+		public static final int dialog__button_panel = 0x7f08005c;
+		public static final int dialog__negative_button = 0x7f08001d;
+		public static final int dialog__neutral_button = 0x7f08001e;
+		public static final int dialog__positive_button = 0x7f08001f;
+		public static final int dialog__titleDivider = 0x7f080070;
+		public static final int dialog_button_horizontal_panel = 0x7f08005e;
+		public static final int dialog_button_separator = 0x7f08005b;
+		public static final int dialog_content = 0x7f080071;
+		public static final int dialog_custom_content = 0x7f080060;
+		public static final int dialog_custom_panel = 0x7f08005f;
+		public static final int dialog_horizontal_separator = 0x7f08005d;
+		public static final int dialog_title = 0x7f08006e;
+		public static final int dialog_title_close = 0x7f08006f;
+		public static final int dialog_title_layout = 0x7f08006d;
+		public static final int dilog_message = 0x7f080062;
+		public static final int dilog_message_scroll = 0x7f080061;
 	}
 	public static final class layout {
 		public static final int dialog_aciton_button_separator = 0x7f03001d;
@@ -109,7 +109,7 @@ public final class R {
 		public static final int dialog_button_panel = 0x7f03001f;
 		public static final int dialog_custom_view = 0x7f030020;
 		public static final int dialog_message = 0x7f030021;
-		public static final int mixture_dialog_layout = 0x7f03002b;
+		public static final int mixture_dialog_layout = 0x7f03002c;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f0b001a;
@@ -155,7 +155,7 @@ public final class R {
 		public static final int DialogStyle_titleIcon = 13;
 		public static final int DialogStyle_titleSeparatorColor = 2;
 		public static final int DialogStyle_titleTextColor = 1;
-		public static final int[] StyledDialogs = { 0x7f010082 };
+		public static final int[] StyledDialogs = { 0x7f010083 };
 		public static final int StyledDialogs_mixtureDialogStyle = 0;
 	}
 }

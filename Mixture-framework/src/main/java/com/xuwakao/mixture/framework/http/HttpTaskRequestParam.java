@@ -7,12 +7,12 @@ import com.xuwakao.mixture.framework.utils.Utils;
 /**
  * Created by xujiexing on 13-9-23.
  */
-public class HttpTaskRequestParam extends AbsAysncFutureTaskWrapper.TaskRequestParamBase{
+public class HttpTaskRequestParam extends AbsAysncFutureTaskWrapper.TaskRequestParamBase {
     public String url;
 
-    public HttpTaskRequestParam(){
+    public HttpTaskRequestParam() {
         this.timeout = 15;
-        this.retryCount = 0;
+        this.retryCount = 1;
         this.priority = TaskPriority.DEFAULT;
     }
 

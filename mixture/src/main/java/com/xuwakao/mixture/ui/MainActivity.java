@@ -44,7 +44,7 @@ public class MainActivity extends UIActionBarActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TestCase.multipleTaskTest(Looper.getMainLooper());
+//        TestCase.multipleTaskTest(Looper.getMainLooper());
 
         actionBar = getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(true);
@@ -211,9 +211,19 @@ public class MainActivity extends UIActionBarActivity{
             case 5 :
                 imageClicked(position);
                 break;
+            case 6 :
+                videoClicked(position);
             default :
                 break;
         }
+    }
+
+    private void videoClicked(int position) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        VideoFragment fragment = new VideoFragment();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+
+        menuItemClicked(position);
     }
 
     private void collectionDemoClicked(int position) {
