@@ -25,8 +25,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="VideoDragLayout" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="mCurrentExpectHeight" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32a445df-2bb5-4ad8-8573-4e8c61ca44b7" name="Default" comment="" />
@@ -100,10 +99,17 @@
       <file leaf-file-name="VideoDragLayout.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/VideoDragLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="19" selection-start="2404" selection-end="2404" vertical-scroll-proportion="-1.2677305" vertical-offset="1915" max-vertical-offset="5280">
-              <folding>
-                <element signature="e#2231#2921#0" expanded="true" />
-              </folding>
+            <state line="98" column="49" selection-start="2734" selection-end="2734" vertical-scroll-proportion="-0.43429846" vertical-offset="1470" max-vertical-offset="5280">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewDragHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0-sources.jar!/android/support/v4/widget/ViewDragHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="148" column="11" selection-start="4746" selection-end="4746" vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="21825">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,7 +117,7 @@
       <file leaf-file-name="VideoFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/VideoFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+            <state line="15" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
@@ -123,7 +129,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="810">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -132,7 +138,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mixture/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="46" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="825">
+            <state line="37" column="46" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -169,15 +175,6 @@
         <entry file="file://$PROJECT_DIR$/mixture/src/main/res/menu/main_activity_actions.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="48" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1080">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VelocityTracker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/view/VelocityTracker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="20" selection-start="6408" selection-end="6408" vertical-scroll-proportion="0.0" vertical-offset="2925" max-vertical-offset="5265">
               <folding />
             </state>
           </provider>
@@ -1938,33 +1935,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2148541" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34121123" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39920425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3050398" sideWeight="0.56025827" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5265252" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3050398" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16445623" sideWeight="0.43974176" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3501326" sideWeight="0.43974176" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.26757532" sideWeight="0.7320955" order="7" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892396" sideWeight="0.6140584" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7718833" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28694403" sideWeight="0.83554375" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2862267" sideWeight="0.64986736" order="0" side_tool="false" content_ui="combo" x="545" y="89" width="350" height="740" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28116712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07819225" sideWeight="0.69496024" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34121123" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24668436" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3050398" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2008,18 +2005,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Mixture-framework/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="38" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mixture/src/main/res/menu/color_demo_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="426">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2842" column="16" selection-start="121582" selection-end="121582" vertical-scroll-proportion="0.33171913" vertical-offset="41248" max-vertical-offset="78360" />
@@ -2090,9 +2075,7 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/graphics/RectF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="19" selection-start="2634" selection-end="2634" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="8895">
-          <folding />
-        </state>
+        <state line="78" column="19" selection-start="2634" selection-end="2634" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="8895" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mixture/src/main/res/layout/fragment_video.xml">
@@ -2112,12 +2095,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/view/VelocityTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="195" column="20" selection-start="6408" selection-end="6408" vertical-scroll-proportion="0.0" vertical-offset="2925" max-vertical-offset="5265" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0-sources.jar!/android/support/v4/widget/ViewDragHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="11" selection-start="4746" selection-end="4746" vertical-scroll-proportion="0.0" vertical-offset="1676" max-vertical-offset="21360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mixture/src/main/java/com/xuwakao/mixture/ui/VideoDragLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="19" selection-start="2404" selection-end="2404" vertical-scroll-proportion="-1.2677305" vertical-offset="1915" max-vertical-offset="5280">
-          <folding>
-            <element signature="e#2231#2921#0" expanded="true" />
-          </folding>
+        <state line="98" column="49" selection-start="2734" selection-end="2734" vertical-scroll-proportion="-0.43429846" vertical-offset="1470" max-vertical-offset="5280">
+          <folding />
         </state>
       </provider>
     </entry>

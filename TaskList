@@ -1,0 +1,6 @@
+1.针对Timeout抛出的CancellationException处理，只有这样才能对timeout的任务retry，主动cancel任务是不需要retry的。
+
+
+2.图片模块应该存在bugs，出现大量的返回，可能有冗余的请求发生。还有就是明明是成功的请求也发生了CancellationException的发生，
+  原因可能是ImageWorker那里，具体还要跟踪，不会是multipleTask的原因，因为用Testcase是不会出现这样的冗余的。(原因：不是bug的问题，
+  是因为gridview的getview次数极其频繁导致，存在优化的可能，看看如何减少某些无谓请求的发生）

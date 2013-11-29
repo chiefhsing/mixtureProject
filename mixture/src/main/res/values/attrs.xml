@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DragVideoStyle">
+        <!--<attr name="headerId" format="integer"></attr>-->
+        <!--<attr name="footerId" format="integer"></attr>-->
+        <attr name="layout_position">
+            <enum name="above" value="1" />
+            <enum name="below" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
